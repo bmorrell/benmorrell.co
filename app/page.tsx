@@ -227,15 +227,15 @@ export default function Home() {
                 what: "A full-stack build: Claude API, an MCP server, Stripe billing, auth, lead scoring, an open-source CRM, and SEO/GEO/AEO.",
               },
               {
-                name: "sharedcontext-mcp",
+                name: "MCP context server",
                 what: "A production remote MCP server that gives Claude a shared, GitHub-backed business-context layer across chat and code.",
               },
               {
-                name: "vendrpulse",
+                name: "AI research agent",
                 what: "AI vendor due-diligence. A Claude agent fans out across public sources to produce structured reports.",
               },
               {
-                name: "quote-kit",
+                name: "Configurable quote engine",
                 what: "A configurable instant-quote engine for rules-based trades, with CRM, email, WhatsApp and Slack outputs.",
               },
             ].map((b) => (
