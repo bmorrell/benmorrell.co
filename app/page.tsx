@@ -95,7 +95,7 @@ export default function Home() {
           <div>
             <p className="eyebrow text-accent">Strategic partnerships leader · AI-native builder</p>
             <h1 className="mt-5 max-w-2xl font-serif text-5xl font-semibold leading-[1.05] tracking-tight sm:text-6xl">
-              I build revenue where technology meets the customer.
+              I build the partnerships that turn technology into revenue.
             </h1>
 
             {/* Role / company slot — personalised on per-company pages */}
