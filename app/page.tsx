@@ -286,9 +286,9 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col justify-center gap-4">
-            <a href="mailto:morrellbc@gmail.com" className="group flex items-center justify-between border-b border-rule pb-3">
+            <a href="mailto:hello@benmorrell.co" className="group flex items-center justify-between border-b border-rule pb-3">
               <span className="text-sm text-slate">Email</span>
-              <span className="font-medium group-hover:text-accent">morrellbc@gmail.com</span>
+              <span className="font-medium group-hover:text-accent">hello@benmorrell.co</span>
             </a>
             <a href="https://linkedin.com/in/morrellbc" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-between border-b border-rule pb-3">
               <span className="text-sm text-slate">LinkedIn</span>
