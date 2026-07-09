@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Marquee, type MarqueeItem } from "./components/Marquee";
 
 const metrics = [
   { value: "<$300K → ~$11.5M", label: "ARR grown at Brightcove APAC" },
@@ -10,10 +11,10 @@ const metrics = [
 const tracks = [
   {
     tag: "Track A",
-    title: "Revenue leadership",
-    body: "Partnerships, GTM, and sales leadership. I build partner ecosystems that carry real pipeline, open new markets, and lead teams that scale revenue — from a 4-person office to market leadership.",
+    title: "Partnerships & GTM leadership",
+    body: "Partnerships, alliances, and GTM. I build partner ecosystems that carry real pipeline, sign the strategic deals, open new markets, and lead the teams behind them. I have done it from a 4-person office to regional market leadership.",
     points: [
-      "Partnerships / alliances / BD",
+      "Strategic partnerships / alliances / BD",
       "Sales leadership & GTM",
       "Solutions & sales engineering",
     ],
@@ -21,7 +22,7 @@ const tracks = [
   {
     tag: "Track B",
     title: "Commercial × technology",
-    body: "I translate commercial needs into product, automation, and AI — and I ship it myself: agents, MCP servers, GTM tooling, dashboards. The rare operator who can sit in the deal and build the system that delivers it.",
+    body: "I translate commercial needs into product, automation, and AI, then I ship it myself: agents, MCP servers, GTM tooling, dashboards. I can sit in the deal and build the system that delivers it.",
     points: [
       "GTM engineering & revenue systems",
       "Applied AI / forward-deployed / field CTO",
@@ -30,35 +31,42 @@ const tracks = [
   },
 ];
 
-const work = [
-  "Brightcove",
-  "Livepeer",
-  "Mux",
-  "Roche",
-  "BBC",
-  "NHS",
-  "Encoding.com",
-  "Grass Valley",
+const workedFor: MarqueeItem[] = [
+  { name: "Brightcove" },
+  { name: "Livepeer" },
+  { name: "Mux" },
+  { name: "Visionular" },
+  { name: "BinaryMed" },
+  { name: "Encoding.com" },
+  { name: "Grass Valley" },
+  { name: "BBC" },
 ];
 
-const builds = [
-  {
-    name: "gofasterwith.ai",
-    what: "AI product & GTM-automation studio — Claude API, MCP, Stripe billing, auth, lead scoring, open-source CRM, SEO/GEO/AEO.",
-  },
-  {
-    name: "sharedcontext-mcp",
-    what: "A production remote MCP server giving Claude a shared, GitHub-backed business-context layer across chat and code.",
-  },
-  {
-    name: "vendrpulse",
-    what: "AI vendor due-diligence — a Claude agent fanning out across public sources to produce structured reports.",
-  },
-  {
-    name: "quote-kit",
-    what: "A configurable instant-quote engine for rules-based trades, with CRM, email, WhatsApp and Slack outputs.",
-  },
+const customers: MarqueeItem[] = [
+  { name: "OLVG Lab", sub: "Netherlands" },
+  { name: "Channel 7", sub: "Thailand" },
+  { name: "SET TV", sub: "Taiwan" },
+  { name: "Asahi International", sub: "Europe" },
+  { name: "NHS", sub: "UK" },
+  { name: "HBO", sub: "Singapore" },
+  { name: "Sony Pictures Networks", sub: "Singapore" },
+  { name: "Mediacorp", sub: "Singapore" },
+  { name: "Astro", sub: "Malaysia" },
+  { name: "Verizon Media", sub: "US" },
 ];
+
+const partnerships: MarqueeItem[] = [
+  { name: "Roche Diagnostics", sub: "Medical · Switzerland" },
+  { name: "Brightcove", sub: "SaaS · USA" },
+  { name: "Aptos", sub: "Web3 · USA" },
+  { name: "Ideal Systems", sub: "Singapore" },
+];
+
+// Root homepage role context. Per-company pages (/[company]-[role]) override these two lines.
+const roleContext = {
+  label: "Open to new roles",
+  line: "Senior strategic-partnerships leadership and commercial-technology mandates. Fully remote, from Valencia.",
+};
 
 export default function Home() {
   return (
@@ -71,7 +79,7 @@ export default function Home() {
           </Link>
           <div className="hidden gap-8 text-sm text-slate sm:flex">
             <a href="#tracks" className="hover:text-ink">What I do</a>
-            <a href="#work" className="hover:text-ink">Work</a>
+            <a href="#work" className="hover:text-ink">Track record</a>
             <a href="#building" className="hover:text-ink">Building</a>
             <a href="#podcast" className="hover:text-ink">Podcast</a>
             <a href="#contact" className="hover:text-ink">Contact</a>
@@ -80,29 +88,52 @@ export default function Home() {
       </header>
 
       {/* Hero */}
-      <section className="mx-auto max-w-content px-6 pb-20 pt-20 sm:pt-28">
-        <p className="eyebrow text-accent">Revenue leader · AI-native builder</p>
-        <h1 className="mt-5 max-w-4xl font-serif text-5xl font-semibold leading-[1.05] tracking-tight sm:text-6xl">
-          I build revenue where technology meets the customer.
-        </h1>
-        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate">
-          T-shaped revenue leader with 18+ years scaling B2B SaaS and infrastructure across EMEA and
-          APAC — deep technical roots, broad commercial range, and the rare habit of shipping the AI
-          systems myself.
-        </p>
-        <div className="mt-9 flex flex-wrap gap-3">
-          <a
-            href="#contact"
-            className="rounded-md bg-accent px-5 py-3 text-sm font-medium text-paper transition-colors hover:bg-accent-strong"
-          >
-            Get in touch
-          </a>
-          <a
-            href="#work"
-            className="rounded-md border border-ink px-5 py-3 text-sm font-medium text-ink transition-colors hover:bg-ink hover:text-paper"
-          >
-            See the work
-          </a>
+      <section className="mx-auto max-w-content px-6 pb-20 pt-16 sm:pt-20">
+        <div className="grid items-center gap-12 lg:grid-cols-[1.45fr_1fr]">
+          <div>
+            <p className="eyebrow text-accent">Strategic partnerships leader · AI-native builder</p>
+            <h1 className="mt-5 max-w-2xl font-serif text-5xl font-semibold leading-[1.05] tracking-tight sm:text-6xl">
+              I build revenue where technology meets the customer.
+            </h1>
+
+            {/* Role / company slot — personalised on per-company pages */}
+            <div className="mt-7 border-l-2 border-accent pl-4">
+              <p className="eyebrow text-accent">{roleContext.label}</p>
+              <p className="mt-1 text-base text-ink">{roleContext.line}</p>
+            </div>
+
+            <p className="mt-7 max-w-xl leading-relaxed text-slate">
+              Strategic partnerships leader with 18+ years scaling B2B SaaS and infrastructure across
+              EMEA and APAC. I bring deep technical roots and broad commercial range, and I build the
+              AI systems myself.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a
+                href="#contact"
+                className="rounded-md bg-accent px-5 py-3 text-sm font-medium text-paper transition-colors hover:bg-accent-strong"
+              >
+                Get in touch
+              </a>
+              <a
+                href="#work"
+                className="rounded-md border border-ink px-5 py-3 text-sm font-medium text-ink transition-colors hover:bg-ink hover:text-paper"
+              >
+                See the track record
+              </a>
+            </div>
+          </div>
+
+          {/* Headshot / intro-video placeholder */}
+          <div className="mx-auto w-full max-w-sm">
+            <div className="flex aspect-[4/5] w-full flex-col items-center justify-center rounded-2xl border border-rule bg-surface text-slate">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-accent" aria-hidden="true">
+                <circle cx="12" cy="8" r="4" />
+                <path d="M4 20c0-3.3 3.6-6 8-6s8 2.7 8 6" />
+              </svg>
+              <p className="mt-3 text-sm font-medium">Headshot or intro video</p>
+              <p className="mt-1 text-xs">Drop a photo or a short clip here</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -122,7 +153,7 @@ export default function Home() {
       <section id="tracks" className="mx-auto max-w-content px-6 py-24">
         <p className="eyebrow text-accent">Two tracks</p>
         <h2 className="mt-3 max-w-3xl font-serif text-4xl font-semibold tracking-tight">
-          A revenue leader who can also build the system.
+          A strategic partnerships leader who can also build the system.
         </h2>
         <div className="mt-12 grid gap-6 md:grid-cols-2">
           {tracks.map((t) => (
@@ -143,50 +174,78 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Selected work */}
-      <section id="work" className="border-y border-rule bg-surface">
-        <div className="mx-auto max-w-content px-6 py-24">
-          <p className="eyebrow text-accent">Selected work</p>
+      {/* Track record — carousels */}
+      <section id="work" className="border-t border-rule py-24">
+        <div className="mx-auto mb-12 max-w-content px-6">
+          <p className="eyebrow text-accent">Track record</p>
           <h2 className="mt-3 max-w-3xl font-serif text-4xl font-semibold tracking-tight">
-            Scaled revenue and signed partnerships for video, SaaS and infrastructure leaders.
+            Two decades signing partnerships and scaling revenue in video, SaaS and infrastructure.
           </h2>
           <p className="mt-5 max-w-2xl leading-relaxed text-slate">
-            VP APAC at Brightcove (NASDAQ). Partnerships and GTM through revenuesystem — the Roche
-            Diagnostics global reseller, Aptos, and a portfolio of B2B SaaS and infrastructure clients.
+            VP for Asia Pacific at Brightcove (NASDAQ), then partnerships and GTM through my
+            consultancy, revenuesystem. The work spans enterprise customers, strategic partners, and
+            the deals that moved pipeline.
           </p>
-          <div className="mt-10 flex flex-wrap gap-x-10 gap-y-4">
-            {work.map((w) => (
-              <span key={w} className="font-serif text-xl font-medium text-ink/80">
-                {w}
-              </span>
-            ))}
+        </div>
+
+        <div className="space-y-10">
+          <div>
+            <p className="mx-auto mb-3 max-w-content px-6 eyebrow text-slate">Who I worked for</p>
+            <Marquee items={workedFor} seconds={38} />
+          </div>
+          <div>
+            <p className="mx-auto mb-3 max-w-content px-6 eyebrow text-slate">A selection of customers</p>
+            <Marquee items={customers} seconds={52} reverse />
+          </div>
+          <div>
+            <p className="mx-auto mb-3 max-w-content px-6 eyebrow text-slate">Who I signed partnerships with</p>
+            <Marquee items={partnerships} seconds={30} />
           </div>
         </div>
       </section>
 
       {/* Building & AI */}
-      <section id="building" className="mx-auto max-w-content px-6 py-24">
-        <p className="eyebrow text-accent">Building &amp; AI</p>
-        <h2 className="mt-3 max-w-3xl font-serif text-4xl font-semibold tracking-tight">
-          I ship the AI systems, not just the strategy.
-        </h2>
-        <p className="mt-5 max-w-2xl leading-relaxed text-slate">
-          Through <span className="text-ink">gofasterwith.ai</span>, I build production AI tooling —
-          agents, MCP servers, billing, enrichment, dashboards. Proof that the technical half of the
-          t-shape is current, not historical.
-        </p>
-        <div className="mt-12 grid gap-6 sm:grid-cols-2">
-          {builds.map((b) => (
-            <div key={b.name} className="rounded-2xl border border-rule bg-surface p-7">
-              <h3 className="font-serif text-xl font-semibold text-accent">{b.name}</h3>
-              <p className="mt-2 leading-relaxed text-slate">{b.what}</p>
-            </div>
-          ))}
+      <section id="building" className="border-t border-rule bg-surface">
+        <div className="mx-auto max-w-content px-6 py-24">
+          <p className="eyebrow text-accent">Building &amp; AI</p>
+          <h2 className="mt-3 max-w-3xl font-serif text-4xl font-semibold tracking-tight">
+            I build the AI systems myself.
+          </h2>
+          <p className="mt-5 max-w-2xl leading-relaxed text-slate">
+            Through <span className="text-ink">gofasterwith.ai</span>, I build production AI tooling:
+            agents, MCP servers, billing, enrichment, dashboards. It keeps the technical half of my
+            background current.
+          </p>
+          <div className="mt-12 grid gap-6 sm:grid-cols-2">
+            {[
+              {
+                name: "gofasterwith.ai",
+                what: "AI product and GTM-automation studio. Claude API, MCP, Stripe billing, auth, lead scoring, open-source CRM, SEO/GEO/AEO.",
+              },
+              {
+                name: "sharedcontext-mcp",
+                what: "A production remote MCP server that gives Claude a shared, GitHub-backed business-context layer across chat and code.",
+              },
+              {
+                name: "vendrpulse",
+                what: "AI vendor due-diligence. A Claude agent fans out across public sources to produce structured reports.",
+              },
+              {
+                name: "quote-kit",
+                what: "A configurable instant-quote engine for rules-based trades, with CRM, email, WhatsApp and Slack outputs.",
+              },
+            ].map((b) => (
+              <div key={b.name} className="rounded-2xl border border-rule bg-paper p-7">
+                <h3 className="font-serif text-xl font-semibold text-accent">{b.name}</h3>
+                <p className="mt-2 leading-relaxed text-slate">{b.what}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* GTM Expertise podcast */}
-      <section id="podcast" className="border-y border-rule bg-accent text-paper">
+      <section id="podcast" className="bg-accent text-paper">
         <div className="mx-auto flex max-w-content flex-col gap-8 px-6 py-20 md:flex-row md:items-center md:justify-between">
           <div className="max-w-2xl">
             <p className="eyebrow text-paper/70">GTM Expertise · Podcast</p>
@@ -194,8 +253,8 @@ export default function Home() {
               Conversations with the people who build revenue.
             </h2>
             <p className="mt-4 leading-relaxed text-paper/85">
-              I host the GTM Expertise podcast — 26+ episodes interviewing enterprise sales and
-              partnerships leaders on how growth actually happens.
+              I host the GTM Expertise podcast, 26+ episodes with enterprise sales and partnerships
+              leaders on how growth actually happens.
             </p>
           </div>
           <a
@@ -218,8 +277,8 @@ export default function Home() {
               Let&apos;s talk.
             </h2>
             <p className="mt-4 max-w-md leading-relaxed text-slate">
-              Open to senior partnerships / GTM roles and commercial-technology (GTM engineering,
-              applied-AI, transformation) roles. Fully remote, from Valencia.
+              Open to senior partnerships and GTM roles, and to commercial-technology roles in GTM
+              engineering, applied AI, or transformation. Fully remote, from Valencia.
             </p>
           </div>
           <div className="flex flex-col justify-center gap-4">
