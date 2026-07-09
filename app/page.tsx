@@ -1,5 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Marquee, type MarqueeItem } from "./components/Marquee";
+import headshot from "@/public/headshot.png";
 
 const metrics = [
   { value: "<$300K → ~$11.5M", label: "ARR grown at Brightcove APAC" },
@@ -123,15 +125,18 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Headshot / intro-video placeholder */}
-          <div className="mx-auto w-full max-w-sm">
-            <div className="flex aspect-[4/5] w-full flex-col items-center justify-center rounded-2xl border border-rule bg-surface text-slate">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-accent" aria-hidden="true">
-                <circle cx="12" cy="8" r="4" />
-                <path d="M4 20c0-3.3 3.6-6 8-6s8 2.7 8 6" />
-              </svg>
-              <p className="mt-3 text-sm font-medium">Headshot or intro video</p>
-              <p className="mt-1 text-xs">Drop a photo or a short clip here</p>
+          {/* Headshot */}
+          <div className="mx-auto w-full max-w-xs">
+            <div className="relative aspect-square overflow-hidden rounded-full border border-rule">
+              <Image
+                src={headshot}
+                alt="Ben Morrell"
+                fill
+                priority
+                sizes="(min-width: 1024px) 320px, 60vw"
+                className="object-cover"
+                placeholder="blur"
+              />
             </div>
           </div>
         </div>
