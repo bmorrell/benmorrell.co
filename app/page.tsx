@@ -4,8 +4,8 @@ import { Marquee, type MarqueeItem } from "./components/Marquee";
 import headshot from "@/public/headshot.png";
 
 const metrics = [
-  { value: "<$300K → ~$11.5M", label: "ARR grown at Brightcove APAC" },
-  { value: "$12M", label: "largest global deal closed" },
+  { value: "~$4M → ~$11.5M", label: "ARR grown at Brightcove APAC" },
+  { value: "$4M ARR", label: "largest global deal closed" },
   { value: "20+", label: "founders advised (150% avg ARR growth)" },
   { value: "15+", label: "countries operated across" },
 ];
@@ -67,7 +67,7 @@ const partnerships: MarqueeItem[] = [
 // Root homepage role context. Per-company pages (/[company]-[role]) override these two lines.
 const roleContext = {
   label: "Open to new roles",
-  line: "Senior strategic-partnerships leadership and commercial-technology mandates. Fully remote, from Valencia.",
+  line: "Senior strategic-partnerships leadership and commercial-technology mandates. Fully remote, from Valencia, Spain.",
 };
 
 export default function Home() {
@@ -217,15 +217,14 @@ export default function Home() {
             I build the AI systems myself.
           </h2>
           <p className="mt-5 max-w-2xl leading-relaxed text-slate">
-            Through <span className="text-ink">gofasterwith.ai</span>, I build production AI tooling:
-            agents, MCP servers, billing, enrichment, dashboards. It keeps the technical half of my
-            background current.
+            Through necessity, I build production AI tooling: agents, MCP servers, billing,
+            enrichment, dashboards. It keeps the technical half of my background current.
           </p>
           <div className="mt-12 grid gap-6 sm:grid-cols-2">
             {[
               {
-                name: "gofasterwith.ai",
-                what: "AI product and GTM-automation studio. Claude API, MCP, Stripe billing, auth, lead scoring, open-source CRM, SEO/GEO/AEO.",
+                name: "AI GTM platform",
+                what: "A full-stack build: Claude API, an MCP server, Stripe billing, auth, lead scoring, an open-source CRM, and SEO/GEO/AEO.",
               },
               {
                 name: "sharedcontext-mcp",
@@ -283,7 +282,7 @@ export default function Home() {
             </h2>
             <p className="mt-4 max-w-md leading-relaxed text-slate">
               Open to senior partnerships and GTM roles, and to commercial-technology roles in GTM
-              engineering, applied AI, or transformation. Fully remote, from Valencia.
+              engineering, applied AI, or transformation. Fully remote, from Valencia, Spain.
             </p>
           </div>
           <div className="flex flex-col justify-center gap-4">
