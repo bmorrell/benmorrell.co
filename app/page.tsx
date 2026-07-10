@@ -42,6 +42,8 @@ const workedFor: MarqueeItem[] = [
   { name: "Encoding.com" },
   { name: "Grass Valley" },
   { name: "BBC" },
+  { name: "Vee24" },
+  { name: "Campus Plus" },
 ];
 
 const customers: MarqueeItem[] = [
