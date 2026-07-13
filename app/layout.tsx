@@ -21,6 +21,19 @@ export const metadata: Metadata = {
   description:
     "Strategic partnerships leader and AI-native builder. 18+ years scaling B2B SaaS and infrastructure across EMEA and APAC: partnerships, GTM, and the systems that power them.",
   metadataBase: new URL("https://benmorrell.co"),
+  robots: {
+    index: false,
+    follow: false,
+    nocache: true,
+    googleBot: {
+      index: false,
+      follow: false,
+      noimageindex: true,
+      "max-snippet": -1,
+      "max-image-preview": "none",
+      "max-video-preview": -1,
+    },
+  },
   openGraph: {
     title: "Ben Morrell — Strategic partnerships leader who builds",
     description:
