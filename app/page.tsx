@@ -11,7 +11,14 @@ const metrics = [
   { value: "15+", label: "countries operated across" },
 ];
 
-const tracks = [
+const tracks: {
+  tag: string;
+  title: string;
+  body: string;
+  points: string[];
+  href?: string;
+  cta?: string;
+}[] = [
   {
     tag: "Track A",
     title: "Partnerships & GTM leadership",
@@ -31,6 +38,18 @@ const tracks = [
       "Applied AI / forward-deployed / field CTO",
       "Digital & business transformation",
     ],
+  },
+  {
+    tag: "Track C",
+    title: "Social sector & mission",
+    body: "The same partnerships, transformation and applied-AI range, put to work for mission-driven organisations: big-tech partnerships and responsible AI turned into things that actually run in the field.",
+    points: [
+      "Technology & corporate partnerships",
+      "Digital transformation that lands",
+      "Applied AI, built responsibly",
+    ],
+    href: "/social-sector",
+    cta: "Explore the social-sector work",
   },
 ];
 
@@ -82,13 +101,14 @@ export default function Home() {
           <Link href="/" className="font-serif text-lg font-semibold tracking-tight">
             Ben Morrell
           </Link>
-          <div className="hidden gap-8 text-sm text-slate sm:flex">
+          <div className="hidden items-center gap-8 text-sm text-slate sm:flex">
             <a href="#tracks" className="hover:text-ink">What I do</a>
             <a href="#work" className="hover:text-ink">Track record</a>
             <a href="#building" className="hover:text-ink">Building</a>
             <a href="#story" className="hover:text-ink">Story</a>
             <a href="#podcast" className="hover:text-ink">Podcast</a>
             <a href="#contact" className="hover:text-ink">Contact</a>
+            <Link href="/social-sector" className="font-medium text-accent hover:text-accent-strong">Social sector</Link>
           </div>
         </nav>
       </header>
@@ -158,28 +178,48 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Two tracks */}
+      {/* Three tracks */}
       <section id="tracks" className="mx-auto max-w-content px-6 py-24">
-        <p className="eyebrow text-accent">Two tracks</p>
+        <p className="eyebrow text-accent">Three tracks</p>
         <h2 className="mt-3 max-w-3xl font-serif text-4xl font-semibold tracking-tight">
           A strategic partnerships leader who can also build the system.
         </h2>
-        <div className="mt-12 grid gap-6 md:grid-cols-2">
-          {tracks.map((t) => (
-            <div key={t.title} className="rounded-2xl border border-rule bg-surface p-8">
-              <p className="eyebrow text-slate">{t.tag}</p>
-              <h3 className="mt-3 font-serif text-2xl font-semibold">{t.title}</h3>
-              <p className="mt-3 leading-relaxed text-slate">{t.body}</p>
-              <ul className="mt-6 space-y-2">
-                {t.points.map((p) => (
-                  <li key={p} className="flex items-start gap-3 text-sm">
-                    <span className="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-accent" />
-                    <span>{p}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {tracks.map((t) => {
+            const inner = (
+              <>
+                <p className="eyebrow text-slate">{t.tag}</p>
+                <h3 className="mt-3 font-serif text-2xl font-semibold">{t.title}</h3>
+                <p className="mt-3 leading-relaxed text-slate">{t.body}</p>
+                <ul className="mt-6 space-y-2">
+                  {t.points.map((p) => (
+                    <li key={p} className="flex items-start gap-3 text-sm">
+                      <span className="mt-2 h-1.5 w-1.5 flex-none rounded-full bg-accent" />
+                      <span>{p}</span>
+                    </li>
+                  ))}
+                </ul>
+                {t.cta ? (
+                  <p className="mt-6 text-sm font-medium text-accent group-hover:text-accent-strong">
+                    {t.cta} &rarr;
+                  </p>
+                ) : null}
+              </>
+            );
+            return t.href ? (
+              <Link
+                key={t.title}
+                href={t.href}
+                className="group rounded-2xl border border-accent/40 bg-surface p-8 transition-colors hover:border-accent hover:bg-paper"
+              >
+                {inner}
+              </Link>
+            ) : (
+              <div key={t.title} className="rounded-2xl border border-rule bg-surface p-8">
+                {inner}
+              </div>
+            );
+          })}
         </div>
       </section>
 
