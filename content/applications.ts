@@ -43,6 +43,35 @@ export const applications: Application[] = [
     ],
     coverLetter: "/letters/vercel-partnerships.pdf",
   },
+  {
+    slug: "crowdstrike-alliances",
+    company: "CrowdStrike",
+    role: "VP, Europe Alliances & Channels",
+    headline: "A partner ecosystem leader who is fluent in the technology.",
+    sub: "18+ years turning ISVs, SIs and resellers into partner-sourced revenue across EMEA and APAC, and I build AI-native GTM tooling myself. I would bring both to Europe's alliances organisation.",
+    why: [
+      {
+        title: "Partner-sourced pipeline at scale",
+        body: "At Brightcove I recruited 15+ strategic ISV and agency partners and ran regional execution of the global partner programs. The channel drove 35% of regional pipeline while I grew the region from ~$4M to ~$11.5M ARR.",
+      },
+      {
+        title: "Strategic alliances closed and operationalised",
+        body: "Through revenuesystem I structured an exclusive global reseller agreement through the Roche Diagnostics channel, plus Tier-1 technology partnerships including Aptos ($500K), and built the forecasting, contracting and CRM cadence behind them.",
+      },
+      {
+        title: "Co-sell with the field, metrics-driven",
+        body: "I turn ISVs, SIs and resellers into real co-sell pipeline with regional sales, on a QBR and pipeline-review cadence, and I have led distributed teams across 15+ countries.",
+      },
+    ],
+    differentiator:
+      "I am genuinely t-shaped and AI-native. An MEng and an engineering start mean I hold my own in a partner's technical review, and I ship my own AI GTM tooling and a production MCP server. On an AI-native platform, I can lead alliances and model the leverage the team is expected to use.",
+    metrics: [
+      { value: "~$4M → ~$11.5M", label: "ARR grown at Brightcove APAC" },
+      { value: "35%", label: "of regional pipeline via partners" },
+      { value: "15+", label: "strategic ISV and agency partners recruited" },
+    ],
+    coverLetter: "/letters/crowdstrike-alliances.pdf",
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
