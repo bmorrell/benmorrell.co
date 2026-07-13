@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { applications, getApplication } from "@/content/applications";
+import headshot from "@/public/headshot.png";
 
 export function generateStaticParams() {
   return applications.map((a) => ({ slug: a.slug }));
@@ -42,29 +44,46 @@ export default function ApplicationPage({ params }: { params: { slug: string } }
 
       {/* Hero */}
       <section className="mx-auto max-w-content px-6 pb-16 pt-16 sm:pt-20">
-        <div className="max-w-3xl">
-          <p className="eyebrow text-accent">
-            For {app.company} · {app.role}
-          </p>
-          <h1 className="mt-4 font-serif text-4xl font-semibold leading-[1.08] tracking-tight sm:text-5xl">
-            {app.headline}
-          </h1>
-          <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate">{app.sub}</p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <a
-              href={mailto}
-              className="rounded-md bg-accent px-5 py-3 text-sm font-medium text-paper transition-colors hover:bg-accent-strong"
-            >
-              Get in touch
-            </a>
-            {app.coverLetter ? (
+        <div className="grid items-center gap-12 lg:grid-cols-[1.5fr_1fr]">
+          <div>
+            <p className="eyebrow text-accent">
+              For {app.company} · {app.role}
+            </p>
+            <h1 className="mt-4 font-serif text-4xl font-semibold leading-[1.08] tracking-tight sm:text-5xl">
+              {app.headline}
+            </h1>
+            <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate">{app.sub}</p>
+            <div className="mt-8 flex flex-wrap gap-3">
               <a
-                href={app.coverLetter}
-                className="rounded-md border border-ink px-5 py-3 text-sm font-medium text-ink transition-colors hover:bg-ink hover:text-paper"
+                href={mailto}
+                className="rounded-md bg-accent px-5 py-3 text-sm font-medium text-paper transition-colors hover:bg-accent-strong"
               >
-                Download cover letter — written for {app.company}
+                Get in touch
               </a>
-            ) : null}
+              {app.coverLetter ? (
+                <a
+                  href={app.coverLetter}
+                  className="rounded-md border border-ink px-5 py-3 text-sm font-medium text-ink transition-colors hover:bg-ink hover:text-paper"
+                >
+                  Download Cover Letter
+                </a>
+              ) : null}
+            </div>
+          </div>
+
+          {/* Headshot */}
+          <div className="mx-auto w-full max-w-xs">
+            <div className="relative aspect-square overflow-hidden rounded-full border border-rule">
+              <Image
+                src={headshot}
+                alt="Ben Morrell"
+                fill
+                priority
+                sizes="(min-width: 1024px) 320px, 60vw"
+                className="object-cover"
+                placeholder="blur"
+              />
+            </div>
           </div>
         </div>
       </section>

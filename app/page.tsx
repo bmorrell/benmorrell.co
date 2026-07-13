@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Marquee, type MarqueeItem } from "./components/Marquee";
 import headshot from "@/public/headshot.png";
+import gtmLogo from "@/public/gtmexpertise-logo.jpg";
 
 const metrics = [
   { value: "~$4M → ~$11.5M", label: "ARR grown at Brightcove APAC" },
@@ -302,15 +303,24 @@ export default function Home() {
       {/* GTM Expertise podcast */}
       <section id="podcast" className="bg-accent text-paper">
         <div className="mx-auto flex max-w-content flex-col gap-8 px-6 py-20 md:flex-row md:items-center md:justify-between">
-          <div className="max-w-2xl">
-            <p className="eyebrow text-paper/70">GTM Expertise · Podcast</p>
-            <h2 className="mt-3 font-serif text-4xl font-semibold tracking-tight">
-              Conversations with the people who build revenue.
-            </h2>
-            <p className="mt-4 leading-relaxed text-paper/85">
-              I host the GTM Expertise podcast, 26+ episodes with enterprise sales and partnerships
-              leaders on how growth actually happens.
-            </p>
+          <div className="flex items-start gap-6 md:items-center">
+            <Image
+              src={gtmLogo}
+              alt="GTM Expertise podcast logo"
+              width={96}
+              height={96}
+              className="hidden h-24 w-24 flex-none rounded-2xl border border-paper/20 shadow-sm sm:block"
+            />
+            <div className="max-w-2xl">
+              <p className="eyebrow text-paper/70">GTM Expertise · Podcast</p>
+              <h2 className="mt-3 font-serif text-4xl font-semibold tracking-tight">
+                Conversations with the people who build revenue.
+              </h2>
+              <p className="mt-4 leading-relaxed text-paper/85">
+                I host the GTM Expertise podcast, 26+ episodes with enterprise sales and partnerships
+                leaders on how growth actually happens.
+              </p>
+            </div>
           </div>
           <a
             href="https://gtmexpertise.com"

@@ -64,13 +64,42 @@ export const applications: Application[] = [
       },
     ],
     differentiator:
-      "I am genuinely t-shaped and AI-native. An MEng and an engineering start mean I hold my own in a partner's technical review, and I ship my own AI GTM tooling and a production MCP server. On an AI-native platform, I can lead alliances and model the leverage the team is expected to use.",
+      "Most alliances leaders can brief the technology but can't build it. An MEng and an engineering start mean I hold my own in a partner's technical review, and I don't just talk about AI: I ship my own GTM tooling and a production MCP server. For an AI-native platform, that is an alliances leader who already works the way the company does.",
     metrics: [
       { value: "~$4M → ~$11.5M", label: "ARR grown at Brightcove APAC" },
       { value: "35%", label: "of regional pipeline via partners" },
       { value: "15+", label: "strategic ISV and agency partners recruited" },
     ],
     coverLetter: "/letters/crowdstrike-alliances.pdf",
+  },
+  {
+    slug: "enode-partnerships",
+    company: "Enode",
+    role: "Partnerships Manager",
+    headline: "A partnerships closer who can talk to the OEM's engineers, not just its buyer.",
+    sub: "18+ years sourcing, negotiating and closing OEM and technology partnerships end-to-end, and I build API and AI tooling myself. I would bring both to Enode's OEM ecosystem.",
+    why: [
+      {
+        title: "OEM partnerships closed end-to-end",
+        body: "For an IoT hardware company I sourced, negotiated and closed an exclusive global reseller agreement through the Roche Diagnostics channel, a seven-figure, three-year deal I ran from cold outreach to signed contract, which drove NHS sales and a ten-year deal in the Netherlands.",
+      },
+      {
+        title: "Partner channels grown into real pipeline",
+        body: "At Brightcove I recruited 15+ strategic technology partners that grew to 35% of regional pipeline, and led the team that closed the company's largest global deal at ~$4M ARR while growing the region from ~$4M to ~$11.5M ARR.",
+      },
+      {
+        title: "The playbook built, not just worked",
+        body: "At Livepeer I built the partnerships operating system from scratch, sourcing, contracting cadence, forecasting and CRM, and signed Tier-1 partners including a $500K deal with Aptos.",
+      },
+    ],
+    differentiator:
+      "Enode wants someone who can redesign the partnerships playbook with AI. I don't just use AI tools, I build them: my own AI agents, MCP servers and GTM automation, and I advise API-first founders. That means I can rebuild the process with AI and hold a credible conversation with an OEM's API team, not only its commercial one.",
+    metrics: [
+      { value: "7-figure", label: "OEM channel deal closed end-to-end" },
+      { value: "35%", label: "of regional pipeline via partners" },
+      { value: "~$4M → ~$11.5M", label: "ARR grown at Brightcove APAC" },
+    ],
+    coverLetter: "/letters/enode-partnerships.pdf",
   },
 ];
 
