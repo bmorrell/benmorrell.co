@@ -5,7 +5,7 @@ import headshot from "@/public/headshot.png";
 import gtmLogo from "@/public/gtmexpertise-logo.jpg";
 
 const metrics = [
-  { value: "~$4M → ~$11.5M", label: "ARR grown at Brightcove APAC" },
+  { value: "~$4M → ~$11.5M", label: "ARR grown at Brightcove Asia" },
   { value: "$4M ARR", label: "largest global deal closed" },
   { value: "20+", label: "founders advised (150% avg ARR growth)" },
   { value: "15+", label: "countries operated across" },
@@ -191,7 +191,7 @@ export default function Home() {
             Two decades signing partnerships and scaling revenue in video, SaaS and infrastructure.
           </h2>
           <p className="mt-5 max-w-2xl leading-relaxed text-slate">
-            VP for Asia Pacific at Brightcove (NASDAQ), then partnerships and GTM through my
+            VP for Asia at Brightcove (NASDAQ), then partnerships and GTM through my
             consultancy, revenuesystem. The work spans enterprise customers, strategic partners, and
             the deals that moved pipeline.
           </p>

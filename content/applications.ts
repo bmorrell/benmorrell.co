@@ -37,7 +37,7 @@ export const applications: Application[] = [
     differentiator:
       "I build on Vercel. This site runs on it, I ship with Next.js and the AI SDK, and I build LLM agents and MCP servers of my own. That means I can hold my own with your product team and, more importantly, with the technical partners deploying on your platform.",
     metrics: [
-      { value: "~$4M → ~$11.5M", label: "ARR grown at Brightcove APAC" },
+      { value: "~$4M → ~$11.5M", label: "ARR grown at Brightcove Asia" },
       { value: "35%", label: "of regional pipeline via partners" },
       { value: "15+", label: "countries operated across" },
     ],
@@ -66,7 +66,7 @@ export const applications: Application[] = [
     differentiator:
       "Most alliances leaders can brief the technology but can't build it. An MEng and an engineering start mean I hold my own in a partner's technical review, and I don't just talk about AI: I ship my own GTM tooling and a production MCP server. For an AI-native platform, that is an alliances leader who already works the way the company does.",
     metrics: [
-      { value: "~$4M → ~$11.5M", label: "ARR grown at Brightcove APAC" },
+      { value: "~$4M → ~$11.5M", label: "ARR grown at Brightcove Asia" },
       { value: "35%", label: "of regional pipeline via partners" },
       { value: "15+", label: "strategic ISV and agency partners recruited" },
     ],
@@ -97,7 +97,7 @@ export const applications: Application[] = [
     metrics: [
       { value: "7-figure", label: "OEM channel deal closed end-to-end" },
       { value: "35%", label: "of regional pipeline via partners" },
-      { value: "~$4M → ~$11.5M", label: "ARR grown at Brightcove APAC" },
+      { value: "~$4M → ~$11.5M", label: "ARR grown at Brightcove Asia" },
     ],
     coverLetter: "/letters/enode-partnerships.pdf",
   },
