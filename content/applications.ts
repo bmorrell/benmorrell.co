@@ -101,6 +101,64 @@ export const applications: Application[] = [
     ],
     coverLetter: "/letters/enode-partnerships.pdf",
   },
+  {
+    slug: "elevenlabs-partnerships",
+    company: "ElevenLabs",
+    role: "Revenue Partnerships, Southern Europe",
+    headline: "A partner programme built from zero, by someone fluent in the API.",
+    sub: "18+ years standing up reseller, integrator and consulting-partner programmes from 0 to 1 across EMEA and APAC, and I build on AI APIs myself. I am based in Valencia and would build your Southern Europe partner programme.",
+    why: [
+      {
+        title: "Partner programmes built from scratch",
+        body: "At Watching That I built the partnerships function from nothing and signed Brightcove, a partner the company had chased for three to four years, plus resellers and technology partners across Europe, the US and APAC. Standing up a programme 0 to 1 is the part of the job I like most.",
+      },
+      {
+        title: "Systems integrators and resellers closed",
+        body: "Opening APAC for Encoding.com from a written thesis, I signed the region's largest systems integrator and grew qualified pipeline 1200%. Through revenuesystem I structured an exclusive global reseller agreement through the Roche Diagnostics channel.",
+      },
+      {
+        title: "Partner-sourced pipeline at scale, with co-sell",
+        body: "At Brightcove I recruited 15+ ISV and agency partners that drove 35% of regional pipeline, ran regional execution of the global partner programme, and grew the region from ~$4M to ~$11.5M ARR.",
+      },
+    ],
+    differentiator:
+      "You are enabling integrators and resellers to build on a voice-AI API. My background is an MEng and a presales-to-VP path, and today I build production AI tooling myself, LLM and API applications and a production MCP server among them. Comfortable with technical, API-first products is not a box I tick, it is how I work.",
+    metrics: [
+      { value: "0 → 1", label: "partnerships function built from scratch" },
+      { value: "35%", label: "of regional pipeline via partners" },
+      { value: "~$4M → ~$11.5M", label: "ARR grown at Brightcove Asia" },
+    ],
+    coverLetter: "/letters/elevenlabs-partnerships.pdf",
+  },
+  {
+    slug: "metabase-partnerships",
+    company: "Metabase",
+    role: "Head of Partnerships",
+    headline: "A partner function built from zero, by someone fluent in the AI and data stack.",
+    sub: "18+ years building partner-led GTM across B2B SaaS, AI and data infrastructure, and I ship LLM agents and MCP servers myself. I would build Metabase's partner function from the ground up.",
+    why: [
+      {
+        title: "A partnerships function built from scratch",
+        body: "At Watching That I built the partnerships function from nothing and signed Brightcove, a partner the company had chased for three to four years, plus more across Europe, the US and APAC. Standing up the function 0 to 1 is the part of the job I like most.",
+      },
+      {
+        title: "Partners turned into measurable pipeline",
+        body: "At Brightcove I recruited 15+ ISV and agency partners and ran regional execution of the global partner program. The channel drove 35% of regional pipeline while I grew the region from ~$4M to ~$11.5M ARR. Pipeline, not logos on a slide.",
+      },
+      {
+        title: "The systems and cadences behind the relationships",
+        body: "At Livepeer I built the commercial operating system from scratch, forecasting, contracting cadence, CRM and partner reporting, and signed Tier-1 partners including a $500K deal with Aptos. That is what turns partnerships into a repeatable, measurable function.",
+      },
+    ],
+    differentiator:
+      "Metabase's most important partners are AI vendors and data warehouse providers, and I build the same class of technology myself: LLM agents, MCP servers and GTM automation. That means I can hold my own with the solutions engineers who influence deals in the field, not just the execs who sign them. You want someone credible at every altitude. I have been the solutions engineer and the VP, and I am still hands-on in the stack today.",
+    metrics: [
+      { value: "0 → 1", label: "partnerships function built from scratch" },
+      { value: "35%", label: "of regional pipeline via partners" },
+      { value: "~$4M → ~$11.5M", label: "ARR grown at Brightcove Asia" },
+    ],
+    coverLetter: "/letters/metabase-partnerships.pdf",
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
