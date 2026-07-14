@@ -48,7 +48,7 @@ const tracks: {
       "Digital transformation that lands",
       "Applied AI, built responsibly",
     ],
-    href: "/social-sector",
+    href: "/mission",
     cta: "Explore the social-sector work",
   },
 ];
@@ -108,7 +108,7 @@ export default function Home() {
             <a href="#story" className="hover:text-ink">Story</a>
             <a href="#podcast" className="hover:text-ink">Podcast</a>
             <a href="#contact" className="hover:text-ink">Contact</a>
-            <Link href="/social-sector" className="font-medium text-accent hover:text-accent-strong">Social sector</Link>
+            <Link href="/mission" className="font-medium text-accent hover:text-accent-strong">Social sector</Link>
           </div>
         </nav>
       </header>
