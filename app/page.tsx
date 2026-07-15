@@ -5,10 +5,10 @@ import headshot from "@/public/headshot.png";
 import gtmLogo from "@/public/gtmexpertise-logo.jpg";
 
 const metrics = [
-  { value: "~$4M → ~$11.5M", label: "ARR grown at Brightcove Asia" },
-  { value: "$4M ARR", label: "largest global deal closed" },
-  { value: "20+", label: "founders advised (150% avg ARR growth)" },
-  { value: "15+", label: "countries operated across" },
+  { value: "~$4M → ~$11.5M", label: "ARR led at Brightcove Asia" },
+  { value: "35%", label: "of regional pipeline partner-sourced" },
+  { value: "Roche ($80B)", label: "enterprise channel partnership secured" },
+  { value: "Beijing 2008", label: "Olympics broadcast, sole delivery" },
 ];
 
 const tracks: {
