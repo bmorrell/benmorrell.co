@@ -159,6 +159,64 @@ export const applications: Application[] = [
     ],
     coverLetter: "/letters/metabase-partnerships.pdf",
   },
+  {
+    slug: "sales-decision-tools-partnerships",
+    company: "Early-stage decision-intelligence company",
+    role: "Director, Strategy & Partnerships (Fractional)",
+    headline: "I find the market for something new, then prove it with paid traction.",
+    sub: "18+ years taking early, complex products to market from a thesis, building the first partnerships, and turning what works into a repeatable commercial playbook. Fractional and fully remote is how I already work.",
+    why: [
+      {
+        title: "Early and complex, taken to paid traction",
+        body: "Opening APAC for Encoding.com, I started from a written market-entry thesis, chose the markets, ran the roadshow and developed the pipeline myself. Qualified pipeline grew 1200%, I signed the region's largest systems integrator, and I closed multiple six-figure ARR contracts.",
+      },
+      {
+        title: "The first partnerships, built from nothing",
+        body: "At Watching That I stood up the partnerships function from scratch and signed a partner the company had chased for years. For an IoT company I mapped an ecosystem and landed an exclusive global reseller agreement through the Roche Diagnostics channel.",
+      },
+      {
+        title: "What works, turned into a repeatable playbook",
+        body: "At Livepeer I built the commercial operating system, the packaging, pricing, forecasting and contracting cadence that made an early motion repeatable, and I have advised 20+ founders on go-to-market and product-market fit.",
+      },
+    ],
+    differentiator:
+      "This role needs someone who can make a new category legible to serious buyers in plain sentences. My background is an engineering degree and a presales-to-VP path, and I build AI tooling myself, so I translate complex, technical products into something a buyer understands and pays for. And I already work exactly the way this seat is structured, fractional and fully remote.",
+    metrics: [
+      { value: "1200%", label: "qualified pipeline grown, from a market-entry thesis" },
+      { value: "20+", label: "founders advised on GTM and product-market fit" },
+      { value: "0 → 1", label: "partnership functions built from scratch" },
+    ],
+    coverLetter: "/letters/sales-decision-tools-partnerships.pdf",
+  },
+  {
+    slug: "linnworks-partnerships",
+    company: "Linnworks",
+    role: "Global Partnerships Director",
+    headline: "A global partner ecosystem, owned end to end.",
+    sub: "18+ years building and leading partner ecosystems across EMEA, NORAM and APAC, from ISVs and resellers to marketplace and platform alliances. I would own Linnworks' global partner ecosystem and the distributed team behind it.",
+    why: [
+      {
+        title: "Partner-sourced pipeline at scale",
+        body: "At Brightcove I recruited 15+ ISV and agency partners and ran regional execution of the global partner program. The channel drove 35% of regional pipeline while I grew the region from ~$4M to ~$11.5M ARR. Pipeline contribution, reported to the executive team, not logos on a slide.",
+      },
+      {
+        title: "High-value partnerships closed and operationalised",
+        body: "Through revenuesystem I structured and closed an exclusive global reseller agreement through the Roche Diagnostics channel, a seven-figure, three-year deal that drove NHS sales and a ten-year contract in the Netherlands. Turning a target platform into signed, revenue-producing partnership is a motion I have run repeatedly.",
+      },
+      {
+        title: "Distributed, multi-regional teams led",
+        body: "At Brightcove I built and led a 20+ person team across sales, partnerships, solutions and customer success, spanning 15+ countries, with under 10% annual turnover and 80% of promotions grown internally. Leading a partnerships function across EMEA and NORAM is ground I have covered.",
+      },
+    ],
+    differentiator:
+      "Linnworks lives or dies by its marketplace and platform integrations, and I can sit with the partner's API and integration team, not just its commercial one. An MEng and a presales-to-VP path mean the technical conversation is native to me, and I still build AI and API tooling myself today. That is a partnerships leader who is credible at every altitude of a technical ecosystem.",
+    metrics: [
+      { value: "35%", label: "of regional pipeline via partners" },
+      { value: "~$4M → ~$11.5M", label: "ARR grown at Brightcove Asia" },
+      { value: "7-figure", label: "global reseller channel deal closed" },
+    ],
+    coverLetter: "/letters/linnworks-partnerships.pdf",
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
