@@ -225,7 +225,7 @@ export const applications: Application[] = [
     company: "World Central Kitchen",
     role: "Director, Response Technology Operations",
     headline: "I make technology work in the places it usually doesn't.",
-    sub: "For 18 years I have designed, built, deployed and supported technology in the field, on deadlines that do not move. Satellite newsgathering kits in Cameroon and Gaza, the Beijing Olympics, a national digital transition in Papua New Guinea. I would like to bring that to WCK's Response Technology and Data teams.",
+    sub: "For 18 years I have designed, built, deployed and supported technology in the field, on deadlines that do not move. Satellite newsgathering kits in Cameroon and Gallipoli, the Beijing Olympics, a national digital transition in Papua New Guinea. I would like to bring that to WCK's Response Technology and Data teams.",
     why: [
       {
         title: "Kit that anyone can deploy",
@@ -233,7 +233,7 @@ export const applications: Application[] = [
       },
       {
         title: "Being the escalation point",
-        body: "As VP at Brightcove I was the escalation point for the region, covering hundreds of customers across 15+ countries on a platform where availability was the product. When a data centre fire in Boston took out one of our critical APIs, I ran the regional response to our emergency protocol. That meant a global bridge call every 30 minutes, and fielding customers in between as their video started to fail.",
+        body: "As VP at Brightcove I was the escalation point for the region, covering hundreds of customers across 15+ countries on a platform where availability was the product. When a data centre fire in Boston took out one of our critical APIs, I ran the regional response to our emergency protocol. That meant a global bridge call every 30 minutes, and fielding customers in between to reassure them we would maintain availability and service.",
       },
       {
         title: "Building a team and then trusting it",
@@ -272,9 +272,9 @@ export const applications: Application[] = [
         detail: "I designed and delivered a national broadcaster's entire digital presence for the Games on my own. Eight weeks on the ground with a crew of 24, and the first time they had filed live and on demand over fibre.",
       },
       {
-        place: "Gaza, Israel and wildfire zones",
+        place: "Gallipoli, Bali and wildfire zones",
         meta: "Field deployments",
-        detail: "The same kits went wherever the story was, including conflict zones, fire grounds and remote locations. That was the point of building them to be picked up and carried.",
+        detail: "The same kits went wherever the story was, including remote locations, fire grounds and commemorations on the other side of the world. That was the point of building them to be picked up and carried.",
       },
     ],
     approach: [
