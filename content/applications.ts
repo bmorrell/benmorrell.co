@@ -233,7 +233,7 @@ export const applications: Application[] = [
       },
       {
         title: "Being the escalation point",
-        body: "As VP at Brightcove I was the escalation point for the region, covering hundreds of customers across 15+ countries on a platform where availability was the product. When a data centre fire in Boston took out one of our critical APIs, I ran the regional response to our emergency protocol. That meant a global bridge call every 30 minutes, and fielding customers in between as their video started to fail. It took six hours.",
+        body: "As VP at Brightcove I was the escalation point for the region, covering hundreds of customers across 15+ countries on a platform where availability was the product. When a data centre fire in Boston took out one of our critical APIs, I ran the regional response to our emergency protocol. That meant a global bridge call every 30 minutes, and fielding customers in between as their video started to fail.",
       },
       {
         title: "Building a team and then trusting it",
