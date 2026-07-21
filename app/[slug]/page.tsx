@@ -14,10 +14,24 @@ export const dynamicParams = false;
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const app = getApplication(params.slug);
   if (!app) return {};
+  // Each application page carries its own share card. Without this the page
+  // inherits the root layout's partnerships positioning, which is wrong for
+  // any role that is not a partnerships role.
+  const title = `Ben Morrell for ${app.company}`;
+  const description = app.headline;
   return {
-    title: `Ben Morrell for ${app.company}`,
-    description: `A note for ${app.company} on the ${app.role} role.`,
+    title,
+    description,
     robots: { index: false, follow: false },
+    openGraph: {
+      title,
+      description,
+      url: `https://benmorrell.co/${app.slug}`,
+      siteName: "Ben Morrell",
+      type: "website",
+      images: ["/headshot.png"],
+    },
+    twitter: { card: "summary", title, description, images: ["/headshot.png"] },
   };
 }
 

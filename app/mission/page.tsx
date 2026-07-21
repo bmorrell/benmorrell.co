@@ -4,7 +4,7 @@ import Link from "next/link";
 import headshot from "@/public/headshot.png";
 
 export const metadata: Metadata = {
-  title: "Ben Morrell — Technology & partnerships for the mission",
+  title: "Ben Morrell · Technology & partnerships for the mission",
   description:
     "Technology, partnerships and applied AI put to work for mission-driven organisations. Big-tech partnerships, digital transformation, and responsible AI, built and shipped hands-on.",
 };

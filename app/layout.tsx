@@ -17,7 +17,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Ben Morrell — Strategic partnerships leader who builds",
+  title: "Ben Morrell · Strategic partnerships leader who builds",
   description:
     "Strategic partnerships leader and AI-native builder. 18+ years scaling B2B SaaS and infrastructure across EMEA and APAC: partnerships, GTM, and the systems that power them.",
   metadataBase: new URL("https://benmorrell.co"),
@@ -35,12 +35,20 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Ben Morrell — Strategic partnerships leader who builds",
+    title: "Ben Morrell · Strategic partnerships leader who builds",
     description:
       "Strategic partnerships leader and AI-native builder. Partnerships, GTM, and the AI systems that power them.",
     url: "https://benmorrell.co",
     siteName: "Ben Morrell",
     type: "website",
+    images: ["/headshot.png"],
+  },
+  twitter: {
+    card: "summary",
+    title: "Ben Morrell · Strategic partnerships leader who builds",
+    description:
+      "Strategic partnerships leader and AI-native builder. Partnerships, GTM, and the AI systems that power them.",
+    images: ["/headshot.png"],
   },
 };
 

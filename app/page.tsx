@@ -122,7 +122,7 @@ export default function Home() {
               I build the partnerships that turn technology into revenue.
             </h1>
 
-            {/* Role / company slot — personalised on per-company pages */}
+            {/* Role / company slot, personalised on per-company pages */}
             <div className="mt-7 border-l-2 border-accent pl-4">
               <p className="eyebrow text-accent">{roleContext.label}</p>
               <p className="mt-1 text-base text-ink">{roleContext.line}</p>
@@ -223,7 +223,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Track record — carousels */}
+      {/* Track record carousels */}
       <section id="work" className="border-t border-rule py-24">
         <div className="mx-auto mb-12 max-w-content px-6">
           <p className="eyebrow text-accent">Track record</p>
