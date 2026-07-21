@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { applications, getApplication } from "@/content/applications";
+import LongWayRound from "../components/LongWayRound";
 import headshot from "@/public/headshot.png";
 
 export function generateStaticParams() {
@@ -172,6 +173,9 @@ export default function ApplicationPage({ params }: { params: { slug: string } }
           </div>
         </section>
       ) : null}
+
+      {/* The long way round, on pages that opt in */}
+      {app.longWayRound ? <LongWayRound /> : null}
 
       {/* Differentiator */}
       <section className="border-t border-rule">

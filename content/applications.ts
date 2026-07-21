@@ -14,6 +14,7 @@ export type Application = {
   // --- Optional expansive sections. Omit them and the page renders the standard template. ---
   deployments?: { place: string; meta: string; detail: string }[]; // field-deployment map
   approach?: { title: string; body: string }[]; // forward-looking: how I'd attack the role
+  longWayRound?: boolean; // show the canonical sailing-years section (remote / self-directed roles)
 };
 
 export const applications: Application[] = [
@@ -298,6 +299,7 @@ export const applications: Application[] = [
       { value: "2-3 min", label: "from landing on site to filing live" },
       { value: "100%", label: "the minimum delivery level, live and in the field" },
     ],
+    longWayRound: true,
   },
 ];
 
