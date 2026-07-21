@@ -15,7 +15,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const app = getApplication(params.slug);
   if (!app) return {};
   return {
-    title: `Ben Morrell — for ${app.company}`,
+    title: `Ben Morrell for ${app.company}`,
     description: `A note for ${app.company} on the ${app.role} role.`,
     robots: { index: false, follow: false },
   };
@@ -26,7 +26,7 @@ export default function ApplicationPage({ params }: { params: { slug: string } }
   if (!app) notFound();
 
   const mailto = `mailto:hello@benmorrell.co?subject=${encodeURIComponent(
-    `${app.role} — ${app.company}`,
+    `${app.role} at ${app.company}`,
   )}`;
 
   return (
@@ -113,7 +113,7 @@ export default function ApplicationPage({ params }: { params: { slug: string } }
         </div>
       </section>
 
-      {/* Field deployments — only on pages that define them */}
+      {/* Field deployments, only on pages that define them */}
       {app.deployments?.length ? (
         <section className="border-t border-rule bg-surface">
           <div className="mx-auto max-w-content px-6 py-20">
@@ -139,7 +139,7 @@ export default function ApplicationPage({ params }: { params: { slug: string } }
         </section>
       ) : null}
 
-      {/* How I'd approach the role — only on pages that define it */}
+      {/* How I would approach the role, only on pages that define it */}
       {app.approach?.length ? (
         <section className="border-t border-rule">
           <div className="mx-auto max-w-content px-6 py-20">
@@ -176,9 +176,7 @@ export default function ApplicationPage({ params }: { params: { slug: string } }
         <div className="mx-auto flex max-w-content flex-col gap-6 px-6 py-16 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <h2 className="font-serif text-3xl font-semibold tracking-tight">Let&apos;s talk.</h2>
-            <p className="mt-2 text-sm text-slate">
-              This page was made for {app.company}. The full picture is at benmorrell.co.
-            </p>
+            <p className="mt-2 text-sm text-slate">This page was made for {app.company}.</p>
           </div>
           <a
             href={mailto}

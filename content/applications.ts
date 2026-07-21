@@ -224,74 +224,79 @@ export const applications: Application[] = [
     slug: "wck-role",
     company: "World Central Kitchen",
     role: "Director, Response Technology Operations",
-    headline: "Technology that works where the infrastructure doesn't.",
-    sub: "18+ years putting technology into the field under deadlines that cannot move — satellite newsgathering kits from Cameroon to Gaza, the Beijing Olympics, a national digital transition in Papua New Guinea. I would bring that to WCK's Response Technology and Data teams.",
+    headline: "I make technology work in the places it usually doesn't.",
+    sub: "For 18 years I have designed, built, deployed and supported technology in the field, on deadlines that do not move. Satellite newsgathering kits in Cameroon and Gaza, the Beijing Olympics, a national digital transition in Papua New Guinea. I would like to bring that to WCK's Response Technology and Data teams.",
     why: [
       {
-        title: "Deployable kit, and the SOPs behind it",
-        body: "At Nine Network I designed and built 20 ruggedised satellite newsgathering kits — BGAN uplink, a broadcast camera compressed to 256 kbps — and wrote the field SOPs so any camera crew could be live within 2–3 minutes of arriving on site. Every component asset-tagged, inventory-managed and kept deployment-ready. That is the same problem as keeping response kit ready to move.",
+        title: "Kit that anyone can deploy",
+        body: "At Nine Network I designed and built 20 ruggedised satellite newsgathering kits. Each one paired a laptop with a BGAN satellite terminal and an encoder that got a full broadcast camera down to 256 kbps. I wrote the procedures that went with them, so a camera crew could land somewhere and be live in two or three minutes. I asset tagged every component, kept the inventory accurate, and made sure the kits were tested and ready before anyone needed them. Keeping response kit ready to move is the same job.",
       },
       {
-        title: "The escalation point when it breaks",
-        body: "As VP at Brightcove I was the regional escalation point for hundreds of customers across 15+ countries on a platform where availability was the product. When a Boston data-centre fire took out a critical API, I ran the regional response to emergency protocol — a global bridge every 30 minutes, customers managed through it, six hours until resolved. Earlier, on-call for 24/7 live news; and when stadium power failed mid-match, back on air in 15 seconds.",
+        title: "Being the escalation point",
+        body: "As VP at Brightcove I was the escalation point for the region, covering hundreds of customers across 15+ countries on a platform where availability was the product. When a data centre fire in Boston took out one of our critical APIs, I ran the regional response to our emergency protocol. That meant a global bridge call every 30 minutes, and fielding customers in between as their video started to fail. It took six hours. Earlier in my career I was on call for 24/7 live news, and when stadium power died mid match we were back on air in 15 seconds.",
       },
       {
-        title: "Teams that don't need me in the room",
-        body: "I built and led a 20+ person team across Singapore, Mumbai and New Delhi, managing managers, at under 10% annual turnover with 80% of promotions grown internally. In Papua New Guinea I trained a local station through its analogue-to-digital switch, then deliberately left the building so they could run their first digital bulletin alone.",
+        title: "Building a team and then trusting it",
+        body: "I built and led a team of 20+ across Singapore, Mumbai and New Delhi, managing managers as well as individual contributors, with under 10% annual turnover and 80% of promotions grown internally. In Papua New Guinea I trained a station through its analogue to digital switch, then went back to the accommodation so they could run their first digital bulletin without me standing over them. They lost audio for 15 minutes. They also fixed it themselves, and they were better for it.",
       },
     ],
     deployments: [
       {
         place: "Cameroon",
         meta: "Satellite newsgathering",
-        detail: "No mobile signal reached the site. The BGAN did. Ours was the only Australian network able to cover the story, and the newsroom trusted the kit enough to take it live at primetime — then promoted the technology on air.",
+        detail: "There was no mobile signal at the site, but the BGAN got through. We were the only Australian network able to cover the story, because of the kit. The newsroom trusted it enough to run it live on the 6pm news, and then started promoting the technology on air.",
+      },
+      {
+        place: "Australia",
+        meta: "Outside broadcasts, twice a week",
+        detail: "Twice a week I was out at sports matches running the truck. Every one of them needed testing and support beforehand, and the equipment had to stay up once we were live. That is where I learnt operational resilience, in conditions that tested it properly.",
       },
       {
         place: "Papua New Guinea",
-        meta: "Analogue-to-digital transition",
-        detail: "Weeks in Port Moresby delivering training, handover and on-site support as a national broadcaster moved to digital. Security escorts to and from the station. The handover mattered more than the hardware.",
+        meta: "Analogue to digital transition",
+        detail: "I spent a few weeks in Port Moresby delivering training, handover and support as a national broadcaster moved to digital. Security was a real concern and we had escorts to and from the station. The people there were welcoming and I learnt a lot about working with a team I had only just met.",
       },
       {
         place: "Myanmar",
         meta: "South-East Asia Games, 2013",
-        detail: "Weeks on site in the country's new capital delivering the Games broadcast, against infrastructure that was difficult for a lot of reasons at once.",
+        detail: "Weeks on site in the country's new capital delivering the Games broadcast. The infrastructure was difficult for a lot of reasons at once, and most of the job was working around it.",
       },
       {
         place: "Malaysia",
         meta: "National IPTV build",
-        detail: "A large, multi-week on-site build of an IPTV system for a national telco — systems integration delivered in-country, to a fixed handover date.",
+        detail: "A large project and weeks on site building an IPTV system for a national telco. Systems integration delivered in country, to a handover date that did not move.",
       },
       {
         place: "Beijing",
         meta: "Olympic Games, 2008",
-        detail: "Sole design and delivery of a national broadcaster's entire digital presence for the Games. Eight weeks on the ground with a 24-person crew, and its first ever live and on-demand filing over fibre.",
+        detail: "I designed and delivered a national broadcaster's entire digital presence for the Games on my own. Eight weeks on the ground with a crew of 24, and the first time they had filed live and on demand over fibre.",
       },
       {
-        place: "Gaza, Israel & wildfire zones",
+        place: "Gaza, Israel and wildfire zones",
         meta: "Field deployments",
-        detail: "The same kits went wherever the story was — conflict zones, fire grounds, remote locations — which is the point of building them to be picked up and carried.",
+        detail: "The same kits went wherever the story was, including conflict zones, fire grounds and remote locations. That was the point of building them to be picked up and carried.",
       },
     ],
     approach: [
       {
         title: "Standardise so anyone can deploy",
-        body: "The reason 20 kits worked is that none of them needed me. Consistent build, labelled parts, a written procedure a non-engineer could follow under pressure. Scaling activations is the same exercise: make the capable thing repeatable, then make it teachable.",
+        body: "The reason 20 kits worked is that none of them needed me. Same build every time, labelled parts, and a written procedure someone could follow under pressure without an engineering background. If WCK is centralising in order to scale activations, that is the same exercise. Make the thing repeatable first, then make it teachable.",
       },
       {
-        title: "Make readiness boring",
-        body: "Accurate inventory, equipment tested before it is needed, on-call that people actually understand, and clear escalation. None of it is glamorous and all of it decides whether a team is operational on day one or day four.",
+        title: "Get readiness right before it matters",
+        body: "Accurate inventory, equipment tested before anyone needs it, on call that people actually understand, and a clear escalation path. None of it is interesting and all of it decides whether a team is working on day one or day four.",
       },
       {
         title: "Close the loop after every activation",
-        body: "Field teams already know what failed; the work is capturing it before it evaporates and turning it into the next playbook. At Livepeer I built the operating system underneath a global team — forecasting, cadence, all documentation and training — where there had been none.",
+        body: "Field teams already know what went wrong. The job is capturing it while it is still fresh and turning it into the next playbook. At Livepeer I built the operating system underneath a global team, including forecasting, cadence, all of the documentation and the training, where there had been none before.",
       },
     ],
     differentiator:
-      "In October 2024 the DANA floods hit Valencia, where I live. I watched thousands of people get up and go without waiting for permission — and saw how much of that willingness arrived too late to help. I pointed my family and friends at WCK specifically, because the model put money into local farmers and restaurants, not just meals. The gap between people willing to show up and the systems that make showing up count is the work I want to do.",
+      "In October 2024 the DANA floods hit Valencia, where I live. Valencia lost many lives and what I saw moved me. Thousands of people got up and went without waiting for permission or for government, and I volunteered and went out to the affected zones myself. What I took from it was that organisation alone is not enough, you need a system. I had already directed my family and friends to donate to WCK, because the model put money into local farmers and restaurants and not just meals. Closing the gap between people willing to show up and the systems that make showing up count is the work I want to do.",
     metrics: [
-      { value: "20", label: "deployable satellite kits built, maintained and sent worldwide" },
-      { value: "2–3 min", label: "from arriving on site to filing live, anywhere" },
-      { value: "100%", label: "the minimum delivery level — live, in the field, no second takes" },
+      { value: "20", label: "satellite newsgathering kits I built, maintained and sent worldwide" },
+      { value: "2-3 min", label: "from landing on site to filing live" },
+      { value: "100%", label: "the minimum delivery level, live and in the field" },
     ],
   },
 ];
