@@ -11,6 +11,9 @@ export type Application = {
   differentiator: string; // the one rare thing for this company
   metrics: { value: string; label: string }[]; // focused proof strip
   coverLetter?: string; // path under /public, e.g. "/letters/vercel-partnerships.pdf"
+  // --- Optional expansive sections. Omit them and the page renders the standard template. ---
+  deployments?: { place: string; meta: string; detail: string }[]; // field-deployment map
+  approach?: { title: string; body: string }[]; // forward-looking: how I'd attack the role
 };
 
 export const applications: Application[] = [
@@ -216,6 +219,80 @@ export const applications: Application[] = [
       { value: "7-figure", label: "global reseller channel deal closed" },
     ],
     coverLetter: "/letters/linnworks-partnerships.pdf",
+  },
+  {
+    slug: "wck-role",
+    company: "World Central Kitchen",
+    role: "Director, Response Technology Operations",
+    headline: "Technology that works where the infrastructure doesn't.",
+    sub: "18+ years putting technology into the field under deadlines that cannot move — satellite newsgathering kits from Cameroon to Gaza, the Beijing Olympics, a national digital transition in Papua New Guinea. I would bring that to WCK's Response Technology and Data teams.",
+    why: [
+      {
+        title: "Deployable kit, and the SOPs behind it",
+        body: "At Nine Network I designed and built 20 ruggedised satellite newsgathering kits — BGAN uplink, a broadcast camera compressed to 256 kbps — and wrote the field SOPs so any camera crew could be live within 2–3 minutes of arriving on site. Every component asset-tagged, inventory-managed and kept deployment-ready. That is the same problem as keeping response kit ready to move.",
+      },
+      {
+        title: "The escalation point when it breaks",
+        body: "As VP at Brightcove I was the regional escalation point for hundreds of customers across 15+ countries on a platform where availability was the product. When a Boston data-centre fire took out a critical API, I ran the regional response to emergency protocol — a global bridge every 30 minutes, customers managed through it, six hours until resolved. Earlier, on-call for 24/7 live news; and when stadium power failed mid-match, back on air in 15 seconds.",
+      },
+      {
+        title: "Teams that don't need me in the room",
+        body: "I built and led a 20+ person team across Singapore, Mumbai and New Delhi, managing managers, at under 10% annual turnover with 80% of promotions grown internally. In Papua New Guinea I trained a local station through its analogue-to-digital switch, then deliberately left the building so they could run their first digital bulletin alone.",
+      },
+    ],
+    deployments: [
+      {
+        place: "Cameroon",
+        meta: "Satellite newsgathering",
+        detail: "No mobile signal reached the site. The BGAN did. Ours was the only Australian network able to cover the story, and the newsroom trusted the kit enough to take it live at primetime — then promoted the technology on air.",
+      },
+      {
+        place: "Papua New Guinea",
+        meta: "Analogue-to-digital transition",
+        detail: "Weeks in Port Moresby delivering training, handover and on-site support as a national broadcaster moved to digital. Security escorts to and from the station. The handover mattered more than the hardware.",
+      },
+      {
+        place: "Myanmar",
+        meta: "South-East Asia Games, 2013",
+        detail: "Weeks on site in the country's new capital delivering the Games broadcast, against infrastructure that was difficult for a lot of reasons at once.",
+      },
+      {
+        place: "Malaysia",
+        meta: "National IPTV build",
+        detail: "A large, multi-week on-site build of an IPTV system for a national telco — systems integration delivered in-country, to a fixed handover date.",
+      },
+      {
+        place: "Beijing",
+        meta: "Olympic Games, 2008",
+        detail: "Sole design and delivery of a national broadcaster's entire digital presence for the Games. Eight weeks on the ground with a 24-person crew, and its first ever live and on-demand filing over fibre.",
+      },
+      {
+        place: "Gaza, Israel & wildfire zones",
+        meta: "Field deployments",
+        detail: "The same kits went wherever the story was — conflict zones, fire grounds, remote locations — which is the point of building them to be picked up and carried.",
+      },
+    ],
+    approach: [
+      {
+        title: "Standardise so anyone can deploy",
+        body: "The reason 20 kits worked is that none of them needed me. Consistent build, labelled parts, a written procedure a non-engineer could follow under pressure. Scaling activations is the same exercise: make the capable thing repeatable, then make it teachable.",
+      },
+      {
+        title: "Make readiness boring",
+        body: "Accurate inventory, equipment tested before it is needed, on-call that people actually understand, and clear escalation. None of it is glamorous and all of it decides whether a team is operational on day one or day four.",
+      },
+      {
+        title: "Close the loop after every activation",
+        body: "Field teams already know what failed; the work is capturing it before it evaporates and turning it into the next playbook. At Livepeer I built the operating system underneath a global team — forecasting, cadence, all documentation and training — where there had been none.",
+      },
+    ],
+    differentiator:
+      "In October 2024 the DANA floods hit Valencia, where I live. I watched thousands of people get up and go without waiting for permission — and saw how much of that willingness arrived too late to help. I pointed my family and friends at WCK specifically, because the model put money into local farmers and restaurants, not just meals. The gap between people willing to show up and the systems that make showing up count is the work I want to do.",
+    metrics: [
+      { value: "20", label: "deployable satellite kits built, maintained and sent worldwide" },
+      { value: "2–3 min", label: "from arriving on site to filing live, anywhere" },
+      { value: "100%", label: "the minimum delivery level — live, in the field, no second takes" },
+    ],
   },
 ];
 

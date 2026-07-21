@@ -113,6 +113,52 @@ export default function ApplicationPage({ params }: { params: { slug: string } }
         </div>
       </section>
 
+      {/* Field deployments — only on pages that define them */}
+      {app.deployments?.length ? (
+        <section className="border-t border-rule bg-surface">
+          <div className="mx-auto max-w-content px-6 py-20">
+            <p className="eyebrow text-accent">Where the work happened</p>
+            <h2 className="mt-3 font-serif text-3xl font-semibold leading-tight tracking-tight">
+              Deployments
+            </h2>
+            <ul className="mt-10 divide-y divide-rule border-t border-rule">
+              {app.deployments.map((d) => (
+                <li
+                  key={d.place}
+                  className="grid gap-2 py-6 sm:grid-cols-[minmax(0,14rem)_1fr] sm:gap-8"
+                >
+                  <div>
+                    <h3 className="font-serif text-xl font-semibold leading-snug">{d.place}</h3>
+                    <p className="mt-1 text-xs uppercase tracking-[0.12em] text-accent">{d.meta}</p>
+                  </div>
+                  <p className="text-sm leading-relaxed text-slate">{d.detail}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      ) : null}
+
+      {/* How I'd approach the role — only on pages that define it */}
+      {app.approach?.length ? (
+        <section className="border-t border-rule">
+          <div className="mx-auto max-w-content px-6 py-20">
+            <p className="eyebrow text-accent">How I would approach it</p>
+            <div className="mt-8 grid gap-10 md:grid-cols-3">
+              {app.approach.map((a, i) => (
+                <div key={a.title}>
+                  <p className="font-serif text-3xl font-semibold leading-none text-accent/30">
+                    {String(i + 1).padStart(2, "0")}
+                  </p>
+                  <h3 className="mt-3 font-serif text-lg font-semibold leading-snug">{a.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-slate">{a.body}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
+
       {/* Differentiator */}
       <section className="border-t border-rule">
         <div className="mx-auto max-w-content px-6 py-20">
