@@ -2,11 +2,30 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import headshot from "@/public/headshot.png";
+import LongWayRound from "../components/LongWayRound";
+
+const MISSION_TITLE = "Ben Morrell · Technology & partnerships for the mission";
+const MISSION_DESC =
+  "Technology, partnerships and applied AI put to work for mission-driven organisations. Big-tech partnerships, digital transformation, and responsible AI, built and shipped hands-on.";
 
 export const metadata: Metadata = {
-  title: "Ben Morrell · Technology & partnerships for the mission",
-  description:
-    "Technology, partnerships and applied AI put to work for mission-driven organisations. Big-tech partnerships, digital transformation, and responsible AI, built and shipped hands-on.",
+  title: MISSION_TITLE,
+  description: MISSION_DESC,
+  robots: { index: false, follow: false },
+  openGraph: {
+    title: MISSION_TITLE,
+    description: MISSION_DESC,
+    url: "https://benmorrell.co/mission",
+    siteName: "Ben Morrell",
+    type: "website",
+    images: ["/headshot.png"],
+  },
+  twitter: {
+    card: "summary",
+    title: MISSION_TITLE,
+    description: MISSION_DESC,
+    images: ["/headshot.png"],
+  },
 };
 
 const mailto = `mailto:hello@benmorrell.co?subject=${encodeURIComponent(
@@ -200,7 +219,9 @@ export default function SocialSectorPage() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-rule">
+<LongWayRound />
+
+            <footer className="border-t border-rule">
         <div className="mx-auto flex max-w-content items-center justify-between px-6 py-8 text-sm text-slate">
           <Link href="/" className="font-serif text-base text-ink">
             Ben Morrell

@@ -16,10 +16,12 @@ const inter = Inter({
   display: "swap",
 });
 
+// Site-wide default. Deliberately track-neutral: the root is a router, and each
+// track page (commercial, building, mission) sets its own title and share card.
 export const metadata: Metadata = {
-  title: "Ben Morrell · Strategic partnerships leader who builds",
+  title: "Ben Morrell",
   description:
-    "Strategic partnerships leader and AI-native builder. 18+ years scaling B2B SaaS and infrastructure across EMEA and APAC: partnerships, GTM, and the systems that power them.",
+    "Technology and commercial leader. 18+ years across engineering, delivery and commercial leadership in 15+ countries, and I still build production software myself.",
   metadataBase: new URL("https://benmorrell.co"),
   robots: {
     index: false,
@@ -35,9 +37,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Ben Morrell · Strategic partnerships leader who builds",
+    title: "Ben Morrell",
     description:
-      "Strategic partnerships leader and AI-native builder. Partnerships, GTM, and the AI systems that power them.",
+      "Technology and commercial leader. Engineer by training, and still building.",
     url: "https://benmorrell.co",
     siteName: "Ben Morrell",
     type: "website",
@@ -45,9 +47,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Ben Morrell · Strategic partnerships leader who builds",
+    title: "Ben Morrell",
     description:
-      "Strategic partnerships leader and AI-native builder. Partnerships, GTM, and the AI systems that power them.",
+      "Technology and commercial leader. Engineer by training, and still building.",
     images: ["/headshot.png"],
   },
 };
