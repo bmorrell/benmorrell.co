@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Fraunces, Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -16,10 +17,12 @@ const inter = Inter({
   display: "swap",
 });
 
+// Site-wide default. Deliberately track-neutral: the root is a router, and each
+// track page (commercial, building, mission) sets its own title and share card.
 export const metadata: Metadata = {
-  title: "Ben Morrell · Strategic partnerships leader who builds",
+  title: "Ben Morrell",
   description:
-    "Strategic partnerships leader and AI-native builder. 18+ years scaling B2B SaaS and infrastructure across EMEA and APAC: partnerships, GTM, and the systems that power them.",
+    "Technology and commercial leader. 18+ years across engineering, delivery and commercial leadership in 15+ countries, and I still build production software myself.",
   metadataBase: new URL("https://benmorrell.co"),
   robots: {
     index: false,
@@ -35,9 +38,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Ben Morrell · Strategic partnerships leader who builds",
+    title: "Ben Morrell",
     description:
-      "Strategic partnerships leader and AI-native builder. Partnerships, GTM, and the AI systems that power them.",
+      "Technology and commercial leader. Engineer by training, and still building.",
     url: "https://benmorrell.co",
     siteName: "Ben Morrell",
     type: "website",
@@ -45,12 +48,16 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Ben Morrell · Strategic partnerships leader who builds",
+    title: "Ben Morrell",
     description:
-      "Strategic partnerships leader and AI-native builder. Partnerships, GTM, and the AI systems that power them.",
+      "Technology and commercial leader. Engineer by training, and still building.",
     images: ["/headshot.png"],
   },
 };
+
+// Microsoft Clarity. Lives in the root layout so it covers every route:
+// the router, all three track pages, and every per-application page.
+const CLARITY_PROJECT_ID = "xpwrgf749e";
 
 export default function RootLayout({
   children,
@@ -59,7 +66,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${fraunces.variable} ${inter.variable}`}>
-      <body className="font-sans">{children}</body>
+      <body className="font-sans">
+        {children}
+        <Script id="ms-clarity" strategy="afterInteractive">
+          {`(function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "${CLARITY_PROJECT_ID}");`}
+        </Script>
+      </body>
     </html>
   );
 }
