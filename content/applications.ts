@@ -301,6 +301,36 @@ export const applications: Application[] = [
     ],
     longWayRound: true,
   },
+  {
+    slug: "spire-climate",
+    company: "Spire Global",
+    role: "Sales Manager, Weather & Climate (EMEA & APAC)",
+    headline: "I have bet my family's safety on a weather forecast.",
+    sub: "18+ years selling data platforms and APIs across EMEA and APAC, and four and a half years reading the forecast every morning before deciding whether we moved. I would bring both to Spire's weather and climate territory.",
+    why: [
+      {
+        title: "A territory owned, and beaten",
+        body: "At Brightcove I owned Asia across 15+ countries and grew it from ~$4M to ~$11.5M ARR as VP, exceeding quota every year at 120%+ attainment. I led the team that closed the company's largest global deal at ~$4M ARR, and grew average account value from $40K to $250K+.",
+      },
+      {
+        title: "Built one of these from nothing before",
+        body: "For Encoding.com, an API-first video SaaS, I wrote the APAC market-entry thesis, ran an executive roadshow across Singapore, India, Malaysia and Thailand, grew qualified pipeline 1200%, signed the largest systems integrator in APAC and closed multiple six-figure ARR contracts. All while expanding European accounts including Sky, BBC and ITV. Running EMEA and APAC from one desk is not theoretical for me.",
+      },
+      {
+        title: "Partner ecosystem as leverage, not decoration",
+        body: "I recruited 15+ ISV and agency partners at Brightcove and the channel grew to 35% of regional pipeline. Through revenuesystem I negotiated an exclusive global reseller agreement through the Roche Diagnostics channel, which drove NHS sales and a 10-year deal with a Netherlands hospital group.",
+      },
+    ],
+    differentiator:
+      "In 2019 we sold up and sailed ~6,000 nautical miles across nine countries with two children under four. Forecast data was not a product to me then. It was the thing I read every morning before deciding whether we moved, and getting it wrong had a cost my family would pay. I know exactly what that data is worth when the decision is operational and the downside is real, which is the case Spire's customers are making every day. I do not come from meteorology or earth observation, and I would rather say so than oversell it. What I bring is a seller who has taken complex technical data products to regulated and public-sector buyers through formal tenders, and who gets technical fast with an MEng behind it.",
+    metrics: [
+      { value: "~$4M → ~$11.5M", label: "ARR grown at Brightcove Asia" },
+      { value: "120%+", label: "quota attainment, every year as VP" },
+      { value: "1200%", label: "qualified pipeline growth opening APAC from scratch" },
+    ],
+    coverLetter: "/letters/spire-climate.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
