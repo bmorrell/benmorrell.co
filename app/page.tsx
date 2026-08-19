@@ -62,7 +62,8 @@ export default function StartPage() {
           <div>
             <p className="eyebrow text-accent">Ben Morrell</p>
             <h1 className="mt-4 font-serif text-4xl font-semibold leading-[1.08] tracking-tight sm:text-5xl">
-              Engineer who learned to sell. Commercial leader who never stopped building.
+              <span className="block text-balance">Engineer who learned to sell.</span>
+              <span className="block text-balance">Commercial leader who never stopped building.</span>
             </h1>
             <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate">
               The first half of my career was building infrastructure that could not fail. The
