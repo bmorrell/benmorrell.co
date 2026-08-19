@@ -31,7 +31,7 @@ export const applications: Application[] = [
       },
       {
         title: "Strategic partner deals closed",
-        body: "Through revenuesystem I structured and closed an exclusive global reseller agreement through the Roche Diagnostics channel, plus Tier-1 technology partnerships including Aptos ($500K).",
+        body: "Through Ziplake I structured and closed an exclusive global reseller agreement through the Roche Diagnostics channel, plus Tier-1 technology partnerships including Aptos ($500K).",
       },
       {
         title: "Co-sell with the field, across EMEA",
@@ -60,7 +60,7 @@ export const applications: Application[] = [
       },
       {
         title: "Strategic alliances closed and operationalised",
-        body: "Through revenuesystem I structured an exclusive global reseller agreement through the Roche Diagnostics channel, plus Tier-1 technology partnerships including Aptos ($500K), and built the forecasting, contracting and CRM cadence behind them.",
+        body: "Through Ziplake I structured an exclusive global reseller agreement through the Roche Diagnostics channel, plus Tier-1 technology partnerships including Aptos ($500K), and built the forecasting, contracting and CRM cadence behind them.",
       },
       {
         title: "Co-sell with the field, metrics-driven",
@@ -118,7 +118,7 @@ export const applications: Application[] = [
       },
       {
         title: "Systems integrators and resellers closed",
-        body: "Opening APAC for Encoding.com from a written thesis, I signed the region's largest systems integrator and grew qualified pipeline 1200%. Through revenuesystem I structured an exclusive global reseller agreement through the Roche Diagnostics channel.",
+        body: "Opening APAC for Encoding.com from a written thesis, I signed the region's largest systems integrator and grew qualified pipeline 1200%. Through Ziplake I structured an exclusive global reseller agreement through the Roche Diagnostics channel.",
       },
       {
         title: "Partner-sourced pipeline at scale, with co-sell",
@@ -205,7 +205,7 @@ export const applications: Application[] = [
       },
       {
         title: "High-value partnerships closed and operationalised",
-        body: "Through revenuesystem I structured and closed an exclusive global reseller agreement through the Roche Diagnostics channel, a seven-figure, three-year deal that drove NHS sales and a ten-year contract in the Netherlands. Turning a target platform into signed, revenue-producing partnership is a motion I have run repeatedly.",
+        body: "Through Ziplake I structured and closed an exclusive global reseller agreement through the Roche Diagnostics channel, a seven-figure, three-year deal that drove NHS sales and a ten-year contract in the Netherlands. Turning a target platform into signed, revenue-producing partnership is a motion I have run repeatedly.",
       },
       {
         title: "Distributed, multi-regional teams led",
@@ -318,7 +318,7 @@ export const applications: Application[] = [
       },
       {
         title: "Partner ecosystem as leverage, not decoration",
-        body: "I recruited 15+ ISV and agency partners at Brightcove and the channel grew to 35% of regional pipeline. Through revenuesystem I negotiated an exclusive global reseller agreement through the Roche Diagnostics channel, which drove NHS sales and a 10-year deal with a Netherlands hospital group.",
+        body: "I recruited 15+ ISV and agency partners at Brightcove and the channel grew to 35% of regional pipeline. Through Ziplake I negotiated an exclusive global reseller agreement through the Roche Diagnostics channel, which drove NHS sales and a 10-year deal with a Netherlands hospital group.",
       },
     ],
     differentiator:
@@ -329,6 +329,36 @@ export const applications: Application[] = [
       { value: "1200%", label: "qualified pipeline growth opening APAC from scratch" },
     ],
     coverLetter: "/letters/spire-climate.pdf",
+    longWayRound: true,
+  },
+  {
+    slug: "supercritical-partnerships",
+    company: "Supercritical",
+    role: "Head of Partnerships (supply side)",
+    headline: "A marketplace is only as good as the supply side.",
+    sub: "18+ years recruiting, qualifying and contracting partners for B2B technology companies, and signing the long-dated agreements that make a market liquid. I would bring that to your carbon removal supply.",
+    why: [
+      {
+        title: "Long-dated agreements, signed",
+        body: "Offtake is forward commitment with a serious counterparty, and that is the deal I have done repeatedly. I landed an exclusive global reseller agreement through the Roche Diagnostics channel, an $80B counterparty, on a three-year minimum and from no existing channel. It drove multiple NHS sales and a ten-year contract with OLVG in the Netherlands. At Brightcove I led the team that closed the company's largest deal globally, $12M over three years.",
+      },
+      {
+        title: "Supply side built from nothing",
+        body: "At Brightcove I recruited 15+ ISV and agency partners into a channel that ended up sourcing 35% of regional pipeline, while I grew the region from ~$4M to ~$11.5M ARR. At Watching That I built the partnerships function from scratch and signed a partner the company had chased for four years. Recruiting at volume, then keeping the good ones productive, is the motion I know best.",
+      },
+      {
+        title: "A qualification bar worth defending",
+        body: "Listing 12% of what you vet is the discipline that makes the marketplace mean something. I have spent my career on the commercial side of that tension, where the pressure is always to loosen the bar to make the number. I would rather protect it, and I would rather say that out loud before I join than discover we disagree afterwards.",
+      },
+    ],
+    differentiator:
+      "I am new to carbon removal and I would rather tell you that than oversell it. What I am not new to is building a supply side from nothing and holding multi-year commercial agreements together with counterparties who take a long time to say yes. On why climate, and why now: I live in Valencia, and I was here for the DANA floods in October 2024. Watching your own city go under concentrates the mind on what you spend the next decade doing. I have eighteen years of partner-led revenue behind me and I would like to point it at something that matters.",
+    metrics: [
+      { value: "~$4M → ~$11.5M", label: "ARR grown at Brightcove Asia" },
+      { value: "35%", label: "of regional pipeline sourced through partners" },
+      { value: "$12M", label: "largest global deal, committed over three years" },
+    ],
+    coverLetter: "/letters/supercritical-partnerships.pdf",
     longWayRound: true,
   },
 ];

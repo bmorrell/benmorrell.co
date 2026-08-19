@@ -24,7 +24,7 @@ export default function LongWayRound({ id }: { id?: string }) {
             <p>
               We wanted to be together every day and show the kids a full life up close, so we went. I kept
               working the entire time: leading Encoding.com&apos;s Europe and Asia expansion and building my
-              consultancy, revenuesystem, from the boat. Local SIMs, patchy 4G, a stack of routers, and once a
+              consultancy, Ziplake, from the boat. Local SIMs, patchy 4G, a stack of routers, and once a
               router hoisted up the mast to take a call. Clients never really knew. Everyone was working from
               home anyway, so for me it was business as usual with a better view.
             </p>

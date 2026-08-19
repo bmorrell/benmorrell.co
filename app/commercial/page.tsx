@@ -258,7 +258,7 @@ export default function Home() {
           </h2>
           <p className="mt-5 max-w-2xl leading-relaxed text-slate">
             VP for Asia at Brightcove (NASDAQ), then partnerships and GTM through my
-            consultancy, revenuesystem. The work spans enterprise customers, strategic partners, and
+            consultancy, Ziplake. The work spans enterprise customers, strategic partners, and
             the deals that moved pipeline.
           </p>
         </div>
