@@ -44,14 +44,23 @@ export const metadata: Metadata = {
     url: "https://benmorrell.co",
     siteName: "Ben Morrell",
     type: "website",
-    images: ["/headshot.png"],
+    // 1.91:1 share card in the brand system. The old square headshot unfurled as a
+    // thumbnail rather than a card, which is what LinkedIn Featured renders.
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Ben Morrell — engineer who learned to sell, commercial leader who never stopped building.",
+      },
+    ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Ben Morrell",
     description:
       "Technology and commercial leader. Engineer by training, and still building.",
-    images: ["/headshot.png"],
+    images: ["/og.png"],
   },
 };
 

@@ -5,6 +5,19 @@ import type { MetadataRoute } from "next";
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
+      // Social link unfurlers are allowed so a shared or Featured link renders its
+      // card. These are not search indexes: nothing here reaches Google, and the
+      // site-wide `noindex, nofollow` meta tag still applies to every route.
+      {
+        userAgent: [
+          "LinkedInBot",
+          "Twitterbot",
+          "facebookexternalhit",
+          "Slackbot-LinkExpanding",
+          "WhatsApp",
+        ],
+        allow: "/",
+      },
       {
         userAgent: "*",
         disallow: "/",
