@@ -39,7 +39,7 @@ const DOORS = [
 const PROOF = [
   { value: "18+ yrs", label: "engineering, delivery and commercial leadership" },
   { value: "15+", label: "countries lived in, worked in and delivered across" },
-  { value: "Beijing 2008", label: "Olympics broadcast, sole design and delivery" },
+  { value: "Shipping now", label: "LLM agents, MCP servers and GTM automation, in production" },
 ];
 
 export default function StartPage() {
