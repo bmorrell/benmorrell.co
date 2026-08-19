@@ -62,11 +62,11 @@ export default function StartPage() {
           <div>
             <p className="eyebrow text-accent">Ben Morrell</p>
             <h1 className="mt-4 font-serif text-4xl font-semibold leading-[1.08] tracking-tight sm:text-5xl">
-              I have spent 18 years making technology work, and I still build it myself.
+              Engineer who learned to sell. Commercial leader who never stopped building.
             </h1>
             <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate">
-              Engineer by training, commercial leader by trade. I have run field deployments in hard
-              places, led teams across three continents, and I ship production software today.
+              The first half of my career was building infrastructure that could not fail. The
+              second has been selling and leading it. The technical half never went away.
             </p>
             <p className="mt-4 text-sm text-slate">
               Open to new roles. Fully remote, from Valencia, Spain.
