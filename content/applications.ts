@@ -361,6 +361,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/supercritical-partnerships.pdf",
     longWayRound: true,
   },
+  {
+    slug: "revenuecat-partnerships",
+    company: "RevenueCat",
+    role: "Senior Partnerships Manager, Technology Ecosystem",
+    headline: "A partnerships leader who reads the SDK.",
+    sub: "18+ years building technology partner ecosystems for API-first developer companies, and I ship production software myself. Your posting says this is not about collecting the largest possible portfolio of partners. I have spent my career arguing exactly that.",
+    why: [
+      {
+        title: "Depth over breadth, and the receipts",
+        body: "Through Ziplake I went after one partnership: Roche Diagnostics, an $80B counterparty, no existing channel, cold outreach. I built the internal case, ran the engagement and negotiated an exclusive global reseller agreement on a three-year minimum. Signing it was the easy half. What made it matter was multiple NHS sales and a ten-year contract with OLVG in the Netherlands. One relationship, chosen deliberately, beat any portfolio I could have assembled in the same time.",
+      },
+      {
+        title: "An ecosystem that produced a number",
+        body: "At Brightcove I recruited 15+ ISV and agency partners into a curated ecosystem, not the biggest one I could build, and the channel grew to source 35% of regional pipeline. Over the same period I grew the region from ~$4M to ~$11.5M ARR as VP, exceeding quota every year at 120%+ attainment.",
+      },
+      {
+        title: "Ecosystems nobody can measure do not stay funded",
+        body: "At Livepeer I signed Tier-1 technology partnerships including Aptos at $500K, then built the commercial operating system underneath them: forecasting, contracting cadence, CRM and partner training. That is your six-month and twelve-month success criterion, and it is the part most partnerships people skip.",
+      },
+    ],
+    differentiator:
+      "Your technical bar is the one most applicants will fail, and it is the reason I am writing. I do not need an integration translated for me. I have an MEng in Electronic Engineering, I went Senior Solutions Engineer to Technical Director to Vice President at Brightcove in three years, and I build now: LLM agents, an MCP server, a Next.js platform on Vercel with Stripe billing and a configurable pricing engine behind it. I have wired up a subscription stack as the developer, which is a useful seat from which to judge which integrations are worth your engineering time and which are not. What I will not oversell: I have not worked in the mobile app ecosystem. Eighteen years in API-first developer SaaS is adjacent, not identical, and I would rather tell you that now than have you find it in week three.",
+    metrics: [
+      { value: "35%", label: "of regional pipeline sourced through partners" },
+      { value: "~$4M → ~$11.5M", label: "ARR grown at Brightcove Asia" },
+      { value: "10 years", label: "the contract one deliberate partnership produced" },
+    ],
+    coverLetter: "/letters/revenuecat-partnerships.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
