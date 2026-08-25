@@ -391,6 +391,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/revenuecat-partnerships.pdf",
     longWayRound: true,
   },
+  {
+    slug: "remote-partner-sales",
+    company: "Remote",
+    role: "Director, Strategic Partner Sales",
+    headline: "I have carried the partner-sold number, from both sides of the motion.",
+    sub: "18+ years owning bookings and ARR through partners across EMEA and APAC, including a motion where every dollar depended on another company's sellers choosing to sell our product. That is embedded partner sales, in mirror image.",
+    why: [
+      {
+        title: "Partner-sold revenue from the partner's side",
+        body: "Advising BinaryTech, I landed and ran an exclusive global reseller agreement through the Roche Diagnostics channel. Our revenue existed only if Roche's sellers sold: so I built the enablement, cadence, incentives and executive engagement that made them independent at it. Result: multiple NHS wins and a 10-year contract with OLVG in the Netherlands.",
+      },
+      {
+        title: "Partner-sourced pipeline at scale, while owning the number",
+        body: "At Brightcove I recruited 15+ strategic ISV and agency partners and ran regional execution of the global partner programs. The channel drove 35% of regional pipeline while I grew Asia from ~$4M to ~$11.5M ARR, beating quota every year.",
+      },
+      {
+        title: "A real team, run properly",
+        body: "I built and led a 20+ person org across Singapore, Mumbai and New Delhi: managed managers, under 10% turnover, 80% of promotions home-grown. Setting operating rhythm for account managers and embedded sales leads is familiar ground.",
+      },
+    ],
+    differentiator:
+      "Remote requires AI and automation capability in every role. For me that is not a checkbox: I build my own LLM agents, MCP servers and GTM automation, and I have worked fully remote and async since 2019. I will not oversell the gap either: I have not sold HR tech. I have made a $80B partner's channel sell a product that was not theirs, which I believe is the harder half of this job.",
+    metrics: [
+      { value: "~$4M → ~$11.5M", label: "ARR grown at Brightcove Asia, 120%+ quota every year" },
+      { value: "35%", label: "of regional pipeline via partners" },
+      { value: "10 years", label: "the contract the Roche channel motion produced" },
+    ],
+    coverLetter: "/letters/remote-partner-sales.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
