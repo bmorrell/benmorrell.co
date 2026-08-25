@@ -465,6 +465,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/climate-europe-lead.pdf",
     longWayRound: true,
   },
+  {
+    slug: "vc-partnerships",
+    company: "Confidential (via Go Fractional)",
+    role: "Fractional Head of Startup & VC Partnerships",
+    headline: "A partnerships leader who is native in your world: video, startups and the people who fund them.",
+    sub: "18+ years building partner ecosystems for video and B2B tech companies, seven of them fractionally. I turn relationships across founders, investors and agencies into qualified pipeline and paid engagements.",
+    why: [
+      {
+        title: "Partnerships functions built from zero",
+        body: "At Watching That I stood up the partnerships function from nothing and signed Brightcove, a partner they had pursued for 3 to 4 years, plus 3 to 4 more across Europe, the US and APAC. At Brightcove I recruited 15+ ISV and agency partners whose channel drove 35% of regional pipeline.",
+      },
+      {
+        title: "Partner and retainer models that stick",
+        body: "Through my consultancy I structured an exclusive global reseller agreement through the Roche Diagnostics channel: 7 figures, 3-year minimum. I design partner models that complement a firm's own services rather than compete with them.",
+      },
+      {
+        title: "A live startup and VC network, built on content",
+        body: "I have advised 20+ B2B SaaS and AI founders on GTM, and I host the GTM Expertise podcast: 26+ episodes interviewing sales and partnerships leaders. Building relationships through useful content is already how I operate.",
+      },
+    ],
+    differentiator:
+      "Video is my native territory, not an adjacency. I started in broadcast production and post-production at Nine Network, delivered the Beijing 2008 Olympics digital presence solo, and spent a decade selling video SaaS at Brightcove and Encoding.com. I can talk founder-story content with a VC platform team in the morning and production workflow with your post team in the afternoon. And the mechanics come built-in: I run my own CRM, outbound sequencing and lead-scoring stack, built with AI, myself.",
+    metrics: [
+      { value: "15+", label: "ISV and agency partners recruited at Brightcove" },
+      { value: "35%", label: "of regional pipeline sourced through partners" },
+      { value: "20+", label: "startup founders advised on GTM" },
+    ],
+    coverLetter: "/letters/vc-partnerships.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
