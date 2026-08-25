@@ -421,6 +421,50 @@ export const applications: Application[] = [
     coverLetter: "/letters/remote-partner-sales.pdf",
     longWayRound: true,
   },
+  {
+    slug: "climate-europe-lead",
+    company: "Confidential climate technology company",
+    role: "European Commercial Lead",
+    headline: "I build markets. Europe, for a climate company, is the one I want next.",
+    sub: "18+ years launching and growing regions for technical B2B platforms. Two full market builds on the record, both from a standing start, both to revenue. This role asks for exactly that motion.",
+    why: [
+      {
+        title: "A region built, from ~$4M to ~$11.5M ARR",
+        body: "At Brightcove I owned Asia as VP: sales, partnerships, solutions engineering and customer success across 15+ countries. I grew the region from ~$4M to ~$11.5M ARR, opened four new country markets worth $2M+ in new ARR, exceeded quota every year at 120%+ attainment, and led the team that closed the company's largest global deal at ~$4M ARR.",
+      },
+      {
+        title: "A market opened from a written thesis",
+        body: "Encoding.com had no Asia-Pacific presence. I wrote the market-entry thesis, ran the executive roadshow, grew qualified pipeline 1200%, signed the region's largest systems integrator as a partner, and personally closed multiple 6-figure ARR contracts. Strategy through to revenue, hands-on, as one continuous job.",
+      },
+      {
+        title: "Regulation-led, technical value propositions",
+        body: "My most recent channel win was an exclusive global reseller agreement through Roche Diagnostics: a standards-driven, regulation-led sale that produced multiple NHS wins and a 10-year hospital contract in the Netherlands. Complex operational data, reporting obligations and technical buyers are home ground, not a stretch.",
+      },
+    ],
+    approach: [
+      {
+        title: "Convert the momentum first",
+        body: "You have early European traction and live opportunities. The first quarter is spent closing what exists and mining those customers for the repeatable story: who buys, why now, what the deal really hinges on.",
+      },
+      {
+        title: "Partnerships as the multiplier",
+        body: "One person cannot cover a continent. I have made partner channels source 35% of regional pipeline, and I would map the influential organisations in renewable energy and decarbonisation early, so the market builds while I sleep.",
+      },
+      {
+        title: "Earn the hiring plan",
+        body: "The future team should be designed from evidence: which segments closed, which motion worked. I have built a 20+ person regional org before. I know what the first three hires look like once the data says it is time.",
+      },
+    ],
+    differentiator:
+      "I will name the gap before you do: I have not sold in the climate market. What I bring is the thing the posting leads with, a proven ability to create a market rather than inherit one, plus an engineer's fluency (MEng, solutions engineer to VP) with exactly the kind of technical, regulation-led product this is. The move into climate is deliberate. I want the next decade of my work to compound somewhere that matters, and I am bringing a market-building record earned in high-growth tech with me.",
+    metrics: [
+      { value: "~$4M → ~$11.5M", label: "ARR grown at Brightcove Asia as VP" },
+      { value: "1200%", label: "qualified pipeline growth opening APAC for Encoding.com" },
+      { value: "35%", label: "of regional pipeline sourced through partners" },
+    ],
+    coverLetter: "/letters/climate-europe-lead.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
