@@ -495,6 +495,35 @@ export const applications: Application[] = [
     coverLetter: "/letters/vc-partnerships.pdf",
     longWayRound: true,
   },
+  {
+    slug: "south-pole-bd",
+    company: "South Pole",
+    role: "Director, Business Development, Global (CORSIA & Long-Term Offtake)",
+    headline: "A commercial leader who closes flagship deals, now pointed at climate.",
+    sub: "18+ years originating and closing complex, high-value deals for global technology companies, including a $12M flagship transaction. I want to bring that muscle to the CORSIA market while the window to define it is open.",
+    why: [
+      {
+        title: "The deal shape CORSIA demands",
+        body: "At Brightcove my team closed the company's largest deal globally: $12M over three years, a long-cycle, multi-stakeholder, consultative negotiation. Flagship-transaction origination with buyers new to contracting at scale is exactly the work of building compliance demand.",
+      },
+      {
+        title: "Global revenue ownership in a matrixed org",
+        body: "As VP Asia I grew the region from ~$4M to ~$11.5M ARR inside a NASDAQ-listed global organisation, exceeding quota every year at 120%+ while holding margin discipline, and led a 20+ person commercial team across three countries with under 10% turnover.",
+      },
+      {
+        title: "Regulated markets entered cold, long-term contracts signed",
+        body: "I took an IoT firm into European medical diagnostics from a standing start: an exclusive global reseller agreement through the Roche Diagnostics channel (7 figures, 3-year minimum), NHS wins, and a 10-year contract in the Netherlands. New domain, long-term contracting, delivered.",
+      },
+    ],
+    differentiator:
+      "I have not spent a decade in carbon markets, and I will not pretend otherwise. What I bring is the rarer half: proven flagship-deal firepower, global commercial leadership, and an engineering degree that lets me get credibly fluent in registry, MRV and Article 6 mechanics fast. Climate is where I have deliberately chosen to point that experience next, and a lean, hands-on organisation is where I work best.",
+    metrics: [
+      { value: "$12M", label: "largest global deal closed (3-year)" },
+      { value: "~$4M → ~$11.5M", label: "ARR grown as VP Asia, Brightcove" },
+      { value: "120%+", label: "quota attainment, every year" },
+    ],
+    coverLetter: "/letters/south-pole-bd.pdf",
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
