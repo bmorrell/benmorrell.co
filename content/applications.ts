@@ -524,6 +524,35 @@ export const applications: Application[] = [
     ],
     coverLetter: "/letters/south-pole-bd.pdf",
   },
+  {
+    slug: "instructure-partnerships",
+    company: "Instructure",
+    role: "VP, Partner Ecosystem",
+    headline: "A partner ecosystem leader who has built the reseller channel, not just run it.",
+    sub: "18+ years turning resellers, ISVs and services partners into partner-sourced revenue across EMEA and APAC — including a global reseller agreement through the Roche Diagnostics channel. I would bring that build-and-scale muscle to Instructure's partner ecosystem.",
+    why: [
+      {
+        title: "Multinational reseller programs, end to end",
+        body: "Through Ziplake I negotiated an exclusive global agreement to resell through the Roche Diagnostics channel — 7 figures, 3-year minimum — then made it produce: multiple NHS wins and a 10-year deal with OLVG in the Netherlands. Sourcing, C-suite negotiation, onboarding, enablement and measurement, all mine.",
+      },
+      {
+        title: "Partner-sourced pipeline at scale",
+        body: "At Brightcove I recruited 15+ strategic ISV and agency partners and ran regional execution of the global partner programs. The channel drove 35% of regional pipeline while I grew Asia from ~$4M to ~$11.5M ARR and led a 20+ person team across three countries.",
+      },
+      {
+        title: "Education, sold into — not just admired",
+        body: "I led UK market entry for Campus Plus, an Australian edtech: opened the office, ran a 20-part webinar series as the acquisition channel, and signed a UK university. I know how institutions buy.",
+      },
+    ],
+    differentiator:
+      "Most partner ecosystem leaders can run a program; fewer have negotiated the >$1M partnerships themselves and built the operating cadence behind them. I have done both — and I am technical enough to sit credibly with your Integration and ISV partners: an engineer by training who still builds with APIs and AI tooling today.",
+    metrics: [
+      { value: "35%", label: "of regional pipeline via partners" },
+      { value: "~$4M → ~$11.5M", label: "ARR grown at Brightcove Asia" },
+      { value: "7-figure", label: "global Roche Diagnostics reseller deal" },
+    ],
+    coverLetter: "/letters/instructure-partnerships.pdf",
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
