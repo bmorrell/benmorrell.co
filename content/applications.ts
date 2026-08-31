@@ -583,6 +583,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/evergreen-sales.pdf",
     longWayRound: true,
   },
+  {
+    slug: "kallipr-partnerships",
+    company: "Kallipr",
+    role: "Partner Manager / Head of Partnerships, Europe",
+    headline: "A partnerships leader who has built an IoT channel in Europe from zero.",
+    sub: "18+ years of partner-led growth across EMEA and APAC, a 7-figure IoT reseller agreement through the Roche Diagnostics channel, and an Australian engineering start in rugged field hardware. I would bring all three to Kallipr's European build.",
+    why: [
+      {
+        title: "An IoT channel built from zero in Europe",
+        body: "As commercial lead for BinaryTech, an IoT hardware company with no European presence, I closed an exclusive global agreement to resell through the Roche Diagnostics channel: 7 figures, 3-year minimum. It produced multiple NHS tender wins and a 10-year deal with OLVG in the Netherlands.",
+      },
+      {
+        title: "Distributors and resellers at scale",
+        body: "At Brightcove I recruited 15+ ISV, agency and reseller partners and ran regional execution of the global partner program: recruitment, onboarding, enablement and joint go-to-market. The channel drove 35% of regional pipeline while I grew the region from ~$4M to ~$11.5M ARR.",
+      },
+      {
+        title: "Australia is home ground",
+        body: "I am an Australian citizen who started his engineering career in Sydney, at Nine Network and at systems integrator Gencom. I have also already been the European end of an Australian company: I led UK market entry for Campus Plus, opening the office and signing their first UK university.",
+      },
+    ],
+    differentiator:
+      "An engineer by training (MEng) who has lived the rugged-hardware world your partners sell into: at Nine Network I designed, built and supported ~20 rapid-deployment flyaway kits, live within minutes of landing, deployed to disaster zones on every continent. Add a Bid Manager background running complex tenders, and you get a channel leader your distributors, and your Brisbane leadership team, do not have to translate for.",
+    metrics: [
+      { value: "7-figure", label: "Roche Diagnostics channel agreement, 3-year minimum" },
+      { value: "35%", label: "of regional pipeline via partners at Brightcove" },
+      { value: "~$4M → ~$11.5M", label: "ARR grown as VP Asia, Brightcove" },
+    ],
+    coverLetter: "/letters/kallipr-partnerships.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
