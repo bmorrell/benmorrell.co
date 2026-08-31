@@ -613,6 +613,35 @@ export const applications: Application[] = [
     coverLetter: "/letters/kallipr-partnerships.pdf",
     longWayRound: true,
   },
+  {
+    slug: "roche-gtm-lead",
+    company: "Roche Diagnostics",
+    role: "GTM Lead (Digital Infrastructure), Roche Information Solutions",
+    headline: "I have already built a go-to-market motion through Roche Diagnostics. From the outside.",
+    sub: "18+ years of go-to-market and partner-led growth across B2B SaaS and technology platforms. The part that matters here: an exclusive global agreement to resell a cloud-connected medical platform through the Roche Diagnostics channel, built with more than 30 Roche people.",
+    why: [
+      {
+        title: "The Roche channel, already navigated",
+        body: "As commercial lead for the medical IoT company BinaryTech, I sourced and closed an exclusive global agreement to resell its BinaryMed platform through the Roche Diagnostics channel: 7 figures, 3-year minimum, signed with Roche Diagnostics HQ. It produced multiple NHS sales and a 10-year deal with OLVG in the Netherlands.",
+      },
+      {
+        title: "Built with 30+ Roche employees",
+        body: "That agreement took direct work with more than 30 people across Roche commercial, product and affiliate teams, from first outreach at trade shows through contracting, channel enablement and joint account work. I know how a technical product becomes commercially real inside this matrix, and what an affiliate needs before it will carry something.",
+      },
+      {
+        title: "Affiliate enablement at scale",
+        body: "At Brightcove I accelerated adoption of a digital platform across priority geographies by enabling a distributed seller network. I recruited 15+ ISV and agency partners and ran regional execution of the global partner programs. The channel drove 35% of regional pipeline while I grew the region from ~$4M to ~$11.5M ARR.",
+      },
+    ],
+    differentiator:
+      "Most candidates for this seat will have to learn Roche. I have already sold through it. I have also sat on the technical side of the table for 18 years: MEng Electronic Engineering, a Senior Solutions Engineer to VP progression, and a current hands-on practice building AI agents and MCP servers. Inside a Product Core Team I can hold the roadmap conversation as well as the revenue one.",
+    metrics: [
+      { value: "7-figure", label: "exclusive Roche Diagnostics reseller agreement, 3-year minimum" },
+      { value: "30+", label: "Roche employees worked with to build it" },
+      { value: "~$4M → ~$11.5M", label: "ARR grown as VP Asia, Brightcove" },
+    ],
+    coverLetter: "/letters/roche-gtm-lead.pdf",
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
