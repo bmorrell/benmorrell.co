@@ -553,6 +553,36 @@ export const applications: Application[] = [
     ],
     coverLetter: "/letters/instructure-partnerships.pdf",
   },
+  {
+    slug: "evergreen-sales",
+    company: "Evergreen Services Group",
+    role: "Head of Sales (UK)",
+    headline: "A sales leader who has run this exact mandate, and built the engine himself.",
+    sub: "18+ years leading B2B SaaS and recurring-revenue sales organisations. At Brightcove I took a region from reactive account management and marketing-dependent pipeline to a data-driven, 20+ person sales org at ~$11.5M ARR.",
+    why: [
+      {
+        title: "The mandate, already delivered once",
+        body: "As VP Asia at Brightcove I led new business, account management and pre-sales as one organisation: 20+ people, managers managed, under 10% turnover, 80% of AE promotions home-grown. The region grew from ~$4M to ~$11.5M ARR and I beat quota every year at 120%+.",
+      },
+      {
+        title: "Account management, reactive to proactive",
+        body: "I professionalized the account base through segmentation and strategic account planning, pairing top performers with the highest-potential accounts. Average account value grew from $40K to $250K+ ACV, and my team closed the company's largest global deal at $12M over three years.",
+      },
+      {
+        title: "Rev-ops built from the inside",
+        body: "At Livepeer I stood up the commercial operating system myself: forecasting, deal and contracting cadence, and the CRM as the single frame of reference. A HubSpot implementation is not a project I would sponsor from a distance; it is work I know first-hand.",
+      },
+    ],
+    differentiator:
+      "Your nice-to-have list asks for experience integrating AI tools into sales processes. I build them: outbound automation, lead scoring, AI agents and MCP servers, shipped and in use. Combined with hands-on partner economics, including a 7-figure exclusive reseller agreement through the Roche Diagnostics channel, that is a rare pairing for a Head of Sales.",
+    metrics: [
+      { value: "~$4M → ~$11.5M", label: "ARR grown as VP Asia, Brightcove" },
+      { value: "$40K → $250K+", label: "average ACV through proactive AM" },
+      { value: "120%+", label: "quota attainment, every year" },
+    ],
+    coverLetter: "/letters/evergreen-sales.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
