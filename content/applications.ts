@@ -588,7 +588,7 @@ export const applications: Application[] = [
     company: "Kallipr",
     role: "Partner Manager / Head of Partnerships, Europe",
     headline: "A partnerships leader who has built an IoT channel in Europe from zero.",
-    sub: "18+ years of partner-led growth across EMEA and APAC, a 7-figure IoT reseller agreement through the Roche Diagnostics channel, and an Australian engineering start in rugged field hardware. I would bring all three to Kallipr's European build.",
+    sub: "18+ years of partner-led growth across EMEA and APAC, including a 7-figure IoT reseller agreement through the Roche Diagnostics channel. I started as an engineer in Australia, in rugged field hardware, and I would bring both halves to Kallipr's European build.",
     why: [
       {
         title: "An IoT channel built from zero in Europe",
@@ -600,11 +600,11 @@ export const applications: Application[] = [
       },
       {
         title: "Australia is home ground",
-        body: "I am an Australian citizen who started his engineering career in Sydney, at Nine Network and at systems integrator Gencom. I have also already been the European end of an Australian company: I led UK market entry for Campus Plus, opening the office and signing their first UK university.",
+        body: "I am an Australian citizen and my engineering career started in Sydney, at Nine Network and at systems integrator Gencom. I have also been the European end of an Australian company before: I led UK market entry for Campus Plus, where I opened the office and signed their first UK university.",
       },
     ],
     differentiator:
-      "An engineer by training (MEng) who has lived the rugged-hardware world your partners sell into: at Nine Network I designed, built and supported ~20 rapid-deployment flyaway kits, live within minutes of landing, deployed to disaster zones on every continent. Add a Bid Manager background running complex tenders, and you get a channel leader your distributors, and your Brisbane leadership team, do not have to translate for.",
+      "An engineer by training (MEng) who has lived the rugged-hardware world your partners sell into: at Nine Network I designed, built and supported ~20 rapid-deployment flyaway kits that were live within minutes of landing, in disaster zones on every continent. I also spent years as a Bid Manager on complex tenders. Your distributors and your Brisbane leadership team would not need to translate for me.",
     metrics: [
       { value: "7-figure", label: "Roche Diagnostics channel agreement, 3-year minimum" },
       { value: "35%", label: "of regional pipeline via partners at Brightcove" },
