@@ -642,6 +642,36 @@ export const applications: Application[] = [
     ],
     coverLetter: "/letters/roche-gtm-lead.pdf",
   },
+  {
+    slug: "block-square-partnerships",
+    company: "Block",
+    role: "Head of Square Partnerships, EMEA",
+    headline: "Your EMEA partnership remit runs through Spain. I already live in it.",
+    sub: "18+ years of partner-led growth in B2B SaaS, across the United Kingdom, Europe and Asia. A partner channel that grew to source 35% of regional pipeline, and an exclusive global reseller agreement negotiated with an $80B counterparty.",
+    why: [
+      {
+        title: "Partners measured as pipeline, not as logos",
+        body: "At Brightcove I recruited 15+ ISV, agency and reseller partners into a deliberately curated ecosystem and ran regional execution of the global partner programs. The channel grew to source 35% of regional pipeline, a partner-sourced number the business reported on, while I took the region from ~$4M to ~$11.5M ARR as VP.",
+      },
+      {
+        title: "Sourced cold, negotiated at headquarters",
+        body: "Representing a medical IoT company with no European channel, I went after Roche Diagnostics from a standing start, built the internal case and negotiated an exclusive global reseller agreement through their channel: 7 figures on a 3-year minimum. The revenue came after signature, with multiple NHS sales and a 10-year contract with OLVG in the Netherlands.",
+      },
+      {
+        title: "A team that executed in local markets",
+        body: "I built and led a 20+ person team over Singapore, Mumbai and New Delhi that collaborated with US headquarters and executed locally. I managed managers, held turnover under 10% in a competitive market, and grew 80% of account executive promotions internally.",
+      },
+    ],
+    differentiator:
+      "Most candidates for this seat will cover Spain from London. I live in Valencia, hold UK citizenship, and have spent 18 years doing business across borders in 15+ countries. I am also an engineer by training who still ships production software, including AI agents and GTM automation, so the product partnership conversation needs no translator.",
+    metrics: [
+      { value: "35%", label: "of regional pipeline sourced by partners at Brightcove" },
+      { value: "~$4M → ~$11.5M", label: "ARR grown as VP Asia, Brightcove" },
+      { value: "7-figure", label: "exclusive Roche Diagnostics reseller agreement, 3-year minimum" },
+    ],
+    coverLetter: "/letters/block-square-partnerships.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
