@@ -672,6 +672,66 @@ export const applications: Application[] = [
     coverLetter: "/letters/block-square-partnerships.pdf",
     longWayRound: true,
   },
+  {
+    slug: "unifyr-partnerships",
+    company: "Unifyr",
+    role: "Head of Partnerships & Alliances",
+    headline: "I have already been the buyer for a product like yours.",
+    sub: "18+ years building indirect channels in B2B SaaS, and a partner channel that grew to source 35% of regional pipeline. Unifyr sells the software that runs other companies' ecosystems. I have run the motion it automates.",
+    why: [
+      {
+        title: "Partner-sourced revenue, measured",
+        body: "Your posting makes partner-sourced and partner-influenced ARR the primary success metric, which is the right way to run the function. At Brightcove I recruited 15+ ISV and agency partners and built the program behind them. The channel grew to source 35% of regional pipeline, a number the business forecast against, while I took the region from ~$4M to ~$11.5M ARR.",
+      },
+      {
+        title: "Built from nothing, more than once",
+        body: "Your posting is honest that structure, process and ecosystem all get built from the ground up. At Watching That I stood up the partnerships function from scratch and signed Brightcove, a partner they had chased for three or four years. At Encoding.com I opened APAC from a written thesis and signed the region's largest systems integrator.",
+      },
+      {
+        title: "Consultancies and SIs, from both sides",
+        body: "Representing a medical IoT company with no European channel, I went after Roche Diagnostics cold and negotiated an exclusive global reseller agreement through their channel: 7 figures on a three-year minimum, built across more than 30 people. I also spent two years inside a systems integrator, so I know what a partner needs before it will carry a vendor.",
+      },
+    ],
+    differentiator:
+      "Unifyr raised to build an AI-driven partner experience platform, and the role asks for partner offerings around AI-enabled commerce. I build that software myself: LLM agents, an MCP server, and GTM automation running in production, on top of an MEng in Electronic Engineering and a Senior Solutions Engineer to VP progression. So I can sit with a partner's technical leadership and talk about what the platform does, then go and sell it. A partnerships leader who is also the buyer persona for your product is not a common combination.",
+    metrics: [
+      { value: "35%", label: "of regional pipeline sourced by partners at Brightcove" },
+      { value: "~$4M → ~$11.5M", label: "ARR grown as VP Asia, Brightcove" },
+      { value: "7-figure", label: "exclusive Roche Diagnostics reseller agreement, 3-year minimum" },
+    ],
+    coverLetter: "/letters/unifyr-partnerships.pdf",
+    longWayRound: true,
+  },
+  {
+    slug: "wikimedia-partnerships",
+    company: "Wikimedia Foundation",
+    role: "Lead Product Partnerships Manager",
+    headline: "Partnerships without a price lever, argued inside the product review.",
+    sub: "18+ years forming multi-stakeholder partnerships across technology and media, and I build LLM applications and MCP servers myself. Both halves matter for attribution and content reuse.",
+    why: [
+      {
+        title: "Partnerships won with no money on the table",
+        body: "At Watching That I built the partnerships function from nothing and signed Brightcove, a partner the company had chased for three or four years. The value exchange was integration and distribution rather than fees. A zero-dollar LOI works the same way.",
+      },
+      {
+        title: "Ecosystem built at scale",
+        body: "At Brightcove I recruited 15+ strategic ISV and agency partners and ran regional execution of the global partner programs. That channel drove 35% of regional pipeline while I grew the region from ~$4M to ~$11.5M ARR as VP.",
+      },
+      {
+        title: "Patience with a very large counterparty",
+        body: "Through Ziplake I negotiated an exclusive global reseller agreement through the Roche Diagnostics channel, an $80B counterparty. Most of that work was internal alignment on their side, not commercial leverage.",
+      },
+    ],
+    differentiator:
+      "Whether attribution survives into a reuser's product is settled upstream, by a product team, long before anyone sees the answer. I came up through engineering, went Senior Solutions Engineer to Technical Director to VP, and I now build LLM applications and author a production MCP server. So I meet the reuse question from the builder's side as well as the platform's, and I can hold the data-format and reliability conversation rather than translate it for someone else.",
+    metrics: [
+      { value: "35%", label: "of regional pipeline via partners" },
+      { value: "15+", label: "ISV and agency partners recruited" },
+      { value: "~$4M \u2192 ~$11.5M", label: "ARR grown at Brightcove Asia" },
+    ],
+    coverLetter: "/letters/wikimedia-partnerships.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
