@@ -792,6 +792,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/supabase-partnerships.pdf",
     longWayRound: true,
   },
+  {
+    slug: "canonical-alliances",
+    company: "Canonical",
+    role: "Software Alliances Director, EMEA",
+    headline: "An alliances leader who gets partners to build on the platform, and still builds himself.",
+    sub: "18+ years of ISV and software alliances across EMEA and APAC, an engineer by training, and I ship production software today. I would bring both halves to Canonical's software alliances in EMEA.",
+    why: [
+      {
+        title: "Getting a bigger platform to build my product into theirs",
+        body: "At Watching That I signed Brightcove as an integration partner after the company had chased them for three to four years. The work was persuading their product and engineering teams to put our data into their roadmap, then building the joint go-to-market behind it. That is the shape of a software alliance, and it is the deal I have done most often.",
+      },
+      {
+        title: "A partner ecosystem that carried the region",
+        body: "At Brightcove I recruited 15+ ISV and agency partners into a regional ecosystem that did not exist when I arrived. The channel grew to source 35% of regional pipeline while I took Asia from ~$4M to ~$11.5M ARR as VP, and I ran regional execution of the global partner programs: enablement, co-selling, joint plans and commercial terms adapted to each market.",
+      },
+      {
+        title: "The alliance that stalled in legal, and got signed",
+        body: "For an Australian IoT company with no European channel I went after Roche Diagnostics cold and negotiated an exclusive global reseller agreement: seven figures, three-year minimum, an $80B counterparty. It stalled in Roche's compliance machinery and got signed because I kept the sponsors inside Roche visible while holding the founder firm on the economics. The channel produced NHS sales and a ten-year OLVG contract.",
+      },
+    ],
+    differentiator:
+      "Your must-haves ask for software development and system architecture alongside business development. I trained as an engineer (MEng), designed the all-IP broadcast system for Nine Network's Beijing 2008 Olympics solo, and I still ship: this site runs on Vercel, I have a Cloudflare Worker in production, and I build LLM applications and a production MCP server on top of an open-source CRM. When a partner's engineering lead asks what an integration should actually do, I can hold that conversation myself.",
+    metrics: [
+      { value: "15+", label: "ISV and agency partners recruited at Brightcove Asia" },
+      { value: "35%", label: "of regional pipeline sourced by the partner channel" },
+      { value: "~$4M \u2192 ~$11.5M", label: "ARR grown at Brightcove Asia" },
+    ],
+    coverLetter: "/letters/canonical-alliances.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
