@@ -732,6 +732,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/wikimedia-partnerships.pdf",
     longWayRound: true,
   },
+  {
+    slug: "tremendous-partnerships",
+    company: "Tremendous",
+    role: "Director of Partnerships",
+    headline: "A partner program built from a blank page and measured in pipeline.",
+    sub: "18+ years in B2B SaaS partnerships. At Brightcove the partners I recruited came to source 35% of regional pipeline. I build the missing tooling myself, and I already work the way Tremendous does: in writing, with few meetings.",
+    why: [
+      {
+        title: "A referral motion the business forecast against",
+        body: "Your posting wants a partner-led growth motion built from the ground up, starting with a referral program. At Brightcove I recruited 15+ ISV and agency partners and ran the program that taught them when, how and why to bring us into a deal. Partner-sourced pipeline reached 35% of the region, a number we forecast against every quarter, while I grew the region from ~$4M to ~$11.5M ARR.",
+      },
+      {
+        title: "Started from zero more than once",
+        body: "At Watching That I stood up the partnerships function from scratch and signed Brightcove, a partner they had chased for three or four years. At Encoding.com I opened APAC from a written thesis, grew qualified pipeline 1200% and signed the region's largest systems integrator. A blank page is the normal starting condition in my work.",
+      },
+      {
+        title: "Partner economics that hold",
+        body: "For a medical IoT company with no European channel I negotiated an exclusive global reseller agreement through the Roche Diagnostics channel: seven figures on a three-year minimum, inside an $80B organisation. I held the exclusivity and minimum-commitment terms that kept the partner referring, and the channel produced multiple NHS sales and a ten-year OLVG contract.",
+      },
+    ],
+    differentiator:
+      "The posting asks for someone who notices where structure, tooling or process is missing and creates it. I do that literally. When my consultancy needed GTM tooling that did not exist I wrote it: LLM agents, a production MCP server, outbound automation and lead scoring. I also sit on CET, the same time zone as the founding European sales team you are hiring, so a partnerships lead here could open referral partners for that team while running the US motion on the afternoon overlap.",
+    metrics: [
+      { value: "35%", label: "of regional pipeline sourced by partners at Brightcove" },
+      { value: "~$4M \u2192 ~$11.5M", label: "ARR grown as VP Asia, Brightcove" },
+      { value: "15+", label: "ISV and agency partners recruited into one program" },
+    ],
+    coverLetter: "/letters/tremendous-partnerships.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
