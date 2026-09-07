@@ -762,6 +762,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/tremendous-partnerships.pdf",
     longWayRound: true,
   },
+  {
+    slug: "supabase-partnerships",
+    company: "Supabase",
+    role: "Partnerships Lead (EMEA)",
+    headline: "A region builder for a partner team based somewhere else.",
+    sub: "Three times a company headquartered elsewhere has sent me to build its partner function in a new region. I build on the stack your integration partners use, and a timezone gap is my normal working condition.",
+    why: [
+      {
+        title: "Regional partner functions built three times",
+        body: "Brightcove, a Boston company, put me in a four-person Asia office. I recruited 15+ ISV and agency partners and the channel grew to source 35% of regional pipeline while I took the region from ~$4M to ~$11.5M ARR. For Encoding.com I opened APAC from a written thesis and signed the region's largest systems integrator. For an Australian IoT company with no European channel I negotiated an exclusive global reseller agreement through Roche Diagnostics.",
+      },
+      {
+        title: "Every partner motion, no single playbook",
+        body: "Integration partners and agencies at Brightcove. A systems integrator for Encoding.com. A reseller channel through an $80B counterparty for BinaryTech, which produced NHS and OLVG contracts. Twenty-odd startup founders through Ziplake. Each of those needed different commercial terms and a different kind of enablement, and I set them myself.",
+      },
+      {
+        title: "Global programs, localised for the region",
+        body: "At Brightcove I ran regional execution of the global partner programs and translated enablement, co-selling and commercial terms to local partners and market conditions. Multi-year agreements with regional technology leaders followed, each with a joint GTM plan and co-marketing behind it, negotiated half a day ahead of head office.",
+      },
+    ],
+    differentiator:
+      "I build on the stack Supabase's integration partners live on. This site runs on Vercel, I have a Cloudflare Worker in production, and I ship LLM applications and a production MCP server. So the conversation with a partner's engineering lead about what an integration should do is one I can hold myself, and I can tell a real integration from a logo swap.",
+    metrics: [
+      { value: "35%", label: "of regional pipeline via partners at Brightcove Asia" },
+      { value: "3", label: "regional partner functions built for companies based elsewhere" },
+      { value: "~$4M \u2192 ~$11.5M", label: "ARR grown at Brightcove Asia" },
+    ],
+    coverLetter: "/letters/supabase-partnerships.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
