@@ -822,6 +822,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/canonical-alliances.pdf",
     longWayRound: true,
   },
+  {
+    slug: "envelio-partnerships",
+    company: "envelio",
+    role: "International Strategic Partner Manager",
+    headline: "A partnerships leader who builds the function from zero, then makes it scale.",
+    sub: "18+ years of partner-led growth in B2B software across 15+ countries, twice as the first partnerships hire. Based in Valencia, fully remote, and ready to put that behind the energy transition.",
+    why: [
+      {
+        title: "The function built from nothing",
+        body: "At Watching That I set up partnerships from scratch and signed Brightcove, their largest partner, after the company had chased them for 3-4 years. At Livepeer I built the commercial operating system behind the deals: forecasting, contracting cadence, CRM and team training.",
+      },
+      {
+        title: "Implementation and delivery partners that source pipeline",
+        body: "At Brightcove I recruited 15+ ISV and agency partners across Asia and ran the regional execution of the global partner programme. The channel grew to 35% of regional pipeline while the region went from ~$4M to ~$11.5M ARR. For Encoding.com I signed the largest systems integrator in APAC as a delivery partner.",
+      },
+      {
+        title: "Commercial models that hold up with a large counterparty",
+        body: "For a small IoT company I negotiated an exclusive global reseller agreement through Roche Diagnostics, seven figures on a three-year minimum, and got it through Roche's legal and compliance process. That channel produced NHS sales and a ten-year contract with OLVG in the Netherlands.",
+      },
+    ],
+    differentiator:
+      "I trained as an engineer (MEng Electronic Engineering) and I still build my own tooling, AI agents and GTM automation included. The repeatable processes and playbooks your posting asks for are things I make rather than request. Energy is new ground for me, and I would rather say that plainly than pretend otherwise.",
+    metrics: [
+      { value: "35%", label: "of regional pipeline via partners at Brightcove Asia" },
+      { value: "7-figure", label: "exclusive global reseller agreement via Roche Diagnostics" },
+      { value: "15+", label: "countries operated across, EMEA and APAC" },
+    ],
+    coverLetter: "/letters/envelio-partnerships.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
