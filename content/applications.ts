@@ -852,6 +852,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/envelio-partnerships.pdf",
     longWayRound: true,
   },
+  {
+    slug: "remotepass-partnerships",
+    company: "RemotePass",
+    role: "Channel Partnerships Manager",
+    headline: "A channel builder who has done the hands-on version twice.",
+    sub: "18 years of partner-led pipeline in B2B SaaS: built from zero at Watching That and Livepeer, scaled to 35% of regional pipeline at Brightcove Asia. I have also been your product's end user since 2019, contracting across borders from Spain.",
+    why: [
+      {
+        title: "Built, not maintained",
+        body: "At Watching That I set up partnerships from nothing: the target lists, the outreach, the meetings, the agreements. I signed Brightcove, their largest partner, after the company had chased them for 3-4 years, then three more across Europe, the US and APAC.",
+      },
+      {
+        title: "The commercial model, end to end",
+        body: "For a small IoT company I negotiated an exclusive global reseller agreement through Roche Diagnostics, seven figures on a three-year minimum: the reseller terms, the exclusivity, the minimum commitment and the activation plan. Roche's people were advisers to their customers, not buyers, the same conversation you will have with accountants, law firms and VCs.",
+      },
+      {
+        title: "Measured and defended",
+        body: "At Brightcove I recruited 15+ ISV and agency partners and ran the global partner programme regionally, tiers and rules of engagement with direct sales included. The channel grew to 35% of regional pipeline, tracked as partner-sourced pipeline in the CRM, while the region went from ~$4M to ~$11.5M ARR. At Livepeer I built the forecasting and contracting cadence that made partner contribution defensible.",
+      },
+    ],
+    differentiator:
+      "I was a VP with a 20-person team and I am choosing a hands-on build seat on purpose, because building the channel is the part I am best at. I trained as an engineer and build my own GTM tooling, AI agents and CRM integrations included, so the traceability work with your go-to-market engineer is something I make rather than ask for. And I have been your customer's worker for seven years, so I know what the product has to get right.",
+    metrics: [
+      { value: "35%", label: "of regional pipeline via partners at Brightcove Asia" },
+      { value: "7-figure", label: "exclusive global reseller agreement via Roche Diagnostics" },
+      { value: "2×", label: "partner functions built from zero" },
+    ],
+    coverLetter: "/letters/remotepass-partnerships.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
