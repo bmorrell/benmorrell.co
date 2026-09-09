@@ -882,6 +882,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/remotepass-partnerships.pdf",
     longWayRound: true,
   },
+  {
+    slug: "holafly-partnerships",
+    company: "Holafly",
+    role: "Strategic Partnerships Manager (EMEA)",
+    headline: "A partnerships operator who builds the network before he needs it.",
+    sub: "18 years running the full partnership lifecycle in B2B tech across EMEA and APAC: sourcing, negotiation, contract, launch and growth. Twice I have walked into a vertical with no address book and left with the anchor partner.",
+    why: [
+      {
+        title: "The full lifecycle, end to end",
+        body: "For a small IoT company with no EU channel I ran the outreach to Roche Diagnostics, negotiated an exclusive global reseller agreement (seven figures on a three-year minimum) with an $80B counterparty, and got it through their legal and compliance process. That channel then produced the NHS sales and a ten-year contract with OLVG in the Netherlands.",
+      },
+      {
+        title: "Partners as a real share of pipeline",
+        body: "At Brightcove I recruited 15+ ISV and agency partners across Asia and ran the global partner programme regionally, joint business plans with each. The channel grew to 35% of regional pipeline whilst the region went from ~$4M to ~$11.5M ARR, on a monthly forecast to the global CRO.",
+      },
+      {
+        title: "Pipeline in a market with no network",
+        body: "The EU medical channel above started with no contacts at all. I opened Vietnam, Taiwan, Thailand and the Philippines for Brightcove the same way, and for Encoding.com a four-country executive roadshow grew qualified pipeline 1200% and signed the largest systems integrator in APAC.",
+      },
+    ],
+    differentiator:
+      "I do not have a European travel network and I would rather say so than pretend. What I have is the habit of building one: a target list, an outreach cadence and the events calendar, then partner meetings until the anchor deal lands. I also trained as an engineer and build my own GTM tooling (AI agents, CRM integrations, lead scoring), so partnership performance analysis is something I make rather than wait for. Fully remote from Valencia, seven years contracting across borders.",
+    metrics: [
+      { value: "7-figure", label: "exclusive global reseller agreement via Roche Diagnostics" },
+      { value: "35%", label: "of regional pipeline via partners at Brightcove Asia" },
+      { value: "4", label: "new APAC markets opened, $2M+ new ARR" },
+    ],
+    coverLetter: "/letters/holafly-partnerships.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
