@@ -912,6 +912,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/holafly-partnerships.pdf",
     longWayRound: true,
   },
+  {
+    slug: "hydrosat-international-bd",
+    company: "Hydrosat",
+    role: "Director of International Business Development & Sales",
+    headline: "I build reseller channels and open countries. Twice over, from nothing.",
+    sub: "18 years of international business development across EMEA and APAC: reseller agreements, partner programmes and written market-entry strategies, executed in-market. I want the next decade on water and crop intelligence.",
+    why: [
+      {
+        title: "A reseller agreement with an $80B counterparty",
+        body: "For a small IoT vendor with no EU channel I ran the outreach to Roche Diagnostics and negotiated an exclusive global reseller agreement, seven figures on a three-year minimum. It stalled in their legal and compliance process and got signed because I kept the commercial sponsors visible. That channel then produced the NHS sales and a ten-year contract with OLVG in the Netherlands.",
+      },
+      {
+        title: "A partner programme run as a programme",
+        body: "At Brightcove I recruited 15+ ISV and agency partners across Asia and ran the global partner programme regionally: onboarding, enablement, pricing guidance, tiers and performance reviews, and replacing the partners that did not perform. The channel grew to 35% of regional pipeline whilst the region went from ~$4M to ~$11.5M ARR.",
+      },
+      {
+        title: "Countries opened from a written strategy",
+        body: "For Encoding.com I wrote the APAC market-entry thesis, ran a four-country executive roadshow as Covid landed and grew qualified pipeline 1200%. At Brightcove I opened Vietnam, Taiwan, Thailand and the Philippines through local partners ($2M+ new ARR) and formally opened the India office.",
+      },
+    ],
+    differentiator:
+      "I have not sold Earth observation data and I have not run a government capture function, and I would rather say so than pretend. What I have is bid management from Grass Valley, 18 years of qualifying deals on a forecast, and an engineering habit: I build AI research agents that crawl public sources and score what they find, so the tender and funding-programme monitoring in the posting is something I would build rather than buy. I also live in Valencia, in one of the most water-stressed farming regions in Europe, and saw the 2024 DANA floods first-hand. Fully remote, seven years contracting across borders.",
+    metrics: [
+      { value: "7-figure", label: "exclusive global reseller agreement via Roche Diagnostics" },
+      { value: "35%", label: "of regional pipeline via partners at Brightcove Asia" },
+      { value: "4", label: "new APAC markets opened through local partners, $2M+ new ARR" },
+    ],
+    coverLetter: "/letters/hydrosat-international-bd.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
