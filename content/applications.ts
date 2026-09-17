@@ -942,6 +942,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/hydrosat-international-bd.pdf",
     longWayRound: true,
   },
+  {
+    slug: "givedirectly-revops",
+    company: "GiveDirectly",
+    role: "Director, Revenue Operations (Fundraising)",
+    headline: "I build the operating backbone under commercial teams. I would rather build it under yours.",
+    sub: "Eighteen years putting pipeline systems, forecasting and operating cadence under sales and partnerships teams, and I ship the tooling myself. Fully remote from Valencia.",
+    why: [
+      {
+        title: "A commercial operating system built from nothing",
+        body: "At Livepeer I led global sales and built the operating system underneath it: revenue forecasting, the contracting cadence, documentation, team training and the CRM as the single frame of reference. Tier-1 partnerships including Aptos ($500K) were signed on that cadence.",
+      },
+      {
+        title: "A 15-country region run on cadence",
+        body: "At Brightcove I ran Asia as VP, so the pipeline reviews, the QBRs, the forecast to US headquarters and the workforce planning sat with me, with Salesforce as the system of record. I built the team to 20+ across Singapore, Mumbai and New Delhi, managed managers and opened the India office, which was mostly a legal/finance/people project. The region went from ~$4M to ~$11.5M ARR whilst I ran it.",
+      },
+      {
+        title: "Influence where I had no authority",
+        body: "A seven-figure exclusive reseller agreement I negotiated through Roche Diagnostics stalled in their legal and compliance machinery. It got signed because I kept the sponsors inside Roche visible and answered every compliance question fast and complete. That is the Finance/Compliance/Grants liaison job, seen from the other side.",
+      },
+    ],
+    differentiator:
+      "I have not run a fundraising function and nonprofit fund accounting is new to me, and I would rather say so than pretend. What I bring that most RevOps candidates do not: I build the systems myself. CRM integrations, lead scoring, dashboards, a pricing engine, AI agents on the Claude API. The fundraising tech and data workstream is one I can do as well as run. And the mission is personal. When the DANA floods hit Valencia in October 2024 I went out on the volunteer drives, and by the time we reached the worst-hit towns it was too late for many people there. Money in people's hands first, and fast, is the argument I saw made the hard way.",
+    metrics: [
+      { value: "20+", label: "person team built across Singapore, Mumbai and New Delhi" },
+      { value: "1200%", label: "qualified pipeline growth from a written APAC market-entry thesis" },
+      { value: "7-figure", label: "reseller agreement unblocked through Roche legal and compliance" },
+    ],
+    coverLetter: "/letters/givedirectly-revops.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
