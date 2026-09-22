@@ -1092,6 +1092,35 @@ export const applications: Application[] = [
     coverLetter: "/letters/coder-partnerships.pdf",
     longWayRound: true,
   },
+  {
+    slug: "omilia-partnerships",
+    company: "Omilia",
+    role: "Partner Manager, UK",
+    headline: "A partner manager who has built the channel before, and builds the AI too.",
+    sub: "15+ partners recruited at Brightcove and a channel at 35% of regional pipeline. An exclusive Roche Diagnostics reseller agreement negotiated from zero. UK citizen, fully remote from Valencia on UK hours, and I ship LLM agents and MCP servers myself.",
+    why: [
+      {
+        title: "The partner programme, run regionally",
+        body: "At Brightcove I recruited 15+ ISV and agency partners across Asia and ran the global partner programme in the region: onboarding and enablement, joint business plans, partner business reviews against KPIs, co-sell with the direct team on registered deals. Partner-sourced pipeline sat in Salesforce and went to the CRO monthly. The channel reached 35% of regional pipeline whilst the region grew from ~$4M to ~$11.5M ARR.",
+      },
+      {
+        title: "One agreement, end to end",
+        body: "For a small IoT company with no channel I ran the recruitment and negotiated an exclusive global reseller agreement through Roche Diagnostics, seven figures on a three-year minimum. It got through Roche's legal and compliance process because I kept the commercial sponsors visible and answered every question fast. That channel then produced the NHS sales and a ten-year contract with OLVG in the Netherlands.",
+      },
+      {
+        title: "UK grounding, gaps named",
+        body: "Ziplake is a UK company. NHS, BBC, Sky, ITV and Heineken UK are customers I have sold to or expanded, and Vee24 (a customer-communications platform) is the nearest CX proof, including an enterprise POC with Honda's Middle East operation. The gaps: I have not run a partner programme inside a CCaaS vendor, and my UK network is healthcare/media rather than banking and insurance. I would rather say both than pretend.",
+      },
+    ],
+    differentiator:
+      "The spec asks the partner manager to work with Solutions Consulting on technical enablement. I am an engineer by training and I build LLM agents and a production MCP server myself, so that piece is work I do with them rather than hand off, and an SI's architects get a partner manager who has built on this class of platform. Why now: a founder-led company that has just raised $67M at $60M+ ARR, with a CRO who owns channel strategy and partner seats opening in the UK and DACH at the same time, is at the point where a partner programme either becomes a channel or stays a logo page. Bell Integration/Sabio/TTEC Digital on the partner page say the UK ecosystem already has the right shape. I think the job is making it produce pipeline.",
+    metrics: [
+      { value: "35%", label: "of regional pipeline from the partner channel I built at Brightcove" },
+      { value: "15+", label: "ISV and agency partners recruited, onboarded and reviewed" },
+      { value: "7-figure", label: "Roche Diagnostics reseller agreement, then NHS sales and a 10-year OLVG contract" },
+    ],
+    coverLetter: "/letters/omilia-partnerships.pdf",
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
