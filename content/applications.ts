@@ -972,6 +972,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/givedirectly-revops.pdf",
     longWayRound: true,
   },
+  {
+    slug: "alpaca-corporate-ops",
+    company: "Alpaca",
+    role: "Corporate Operations Lead",
+    headline: "Zero context to a working operating system. I have done it from the outside for seven years.",
+    sub: "Eighteen years in technology companies, most of it landing in a company or a region with no context, finding what limits scale and building the fix. I ship the automation myself. Fully remote from Valencia.",
+    why: [
+      {
+        title: "A commercial operating system built from nothing, then handed over",
+        body: "At Livepeer there was traction and no repeatable commercial motion. I mapped the workflow and built the operating system underneath it: revenue forecasting, the contracting cadence, documentation/training and the CRM as the single frame of reference. Tier-1 partnerships including Aptos ($500K) closed on that cadence, and I ran it until the team could run it without me.",
+      },
+      {
+        title: "Unfamiliar domains, cross-functional delivery",
+        body: "At Brightcove I ran a 15-country region as VP and formally opened the India office, which was mostly a legal/finance/people project run with headquarters functions that did not report to me. The region's pipeline reviews, forecast to US headquarters and workforce planning sat with me. It went from ~$4M to ~$11.5M ARR whilst I ran it.",
+      },
+      {
+        title: "Influence where I had no authority",
+        body: "A seven-figure exclusive reseller agreement I negotiated through Roche Diagnostics stalled in their legal and compliance machinery. It got signed because I kept the sponsors inside Roche visible and answered every compliance question fast and complete. That channel then produced the NHS sales and a ten-year contract with OLVG.",
+      },
+    ],
+    differentiator:
+      "The posting asks for fluency in AI and automation as a lever for operating leverage. I do not talk about it, I build it: AI agents and a production MCP server on the Claude API, a configurable pricing engine, CRM integrations, an observability dashboard. When the right lever is automation I can ship it rather than queue for Engineering. The gaps, said plainly: I have not worked in brokerage, HR or Finance close, and this is an IC seat when I last held a VP title. That is deliberate. Six years wide, and now I want depth: one company, and outcomes I own long enough to compound.",
+    metrics: [
+      { value: "20+", label: "technology companies entered with zero context" },
+      { value: "15", label: "countries run as one region, India office opened from zero" },
+      { value: "7-figure", label: "reseller agreement unblocked through Roche legal and compliance" },
+    ],
+    coverLetter: "/letters/alpaca-corporate-ops.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
