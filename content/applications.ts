@@ -1032,6 +1032,66 @@ export const applications: Application[] = [
     coverLetter: "/letters/betterstack-operations.pdf",
     longWayRound: true,
   },
+  {
+    slug: "cyara-partnerships",
+    company: "Cyara",
+    role: "EMEA Partner Manager",
+    headline: "A partner manager who has signed the contract, run the programme and builds the AI himself.",
+    sub: "18+ years recruiting and running ISV, reseller, SI and agency partners across EMEA and APAC, and I build AI agents and MCP servers on the Claude API. Fully remote from Valencia, on EMEA hours.",
+    why: [
+      {
+        title: "Identify, negotiate, get it through compliance, then the revenue",
+        body: "For a small IoT company with no EU channel I identified Roche Diagnostics, negotiated an exclusive global reseller agreement (seven figures, three-year minimum) and took it through Roche's legal and compliance process by keeping the commercial sponsors visible. That channel produced the NHS sales and a ten-year contract with OLVG in the Netherlands.",
+      },
+      {
+        title: "A partner programme run at scale",
+        body: "At Brightcove I recruited 15+ ISV and agency partners across Asia and ran the global partner programme regionally: onboarding, enablement, joint business plans and performance reviews. The channel reached 35% of regional pipeline whilst the region grew from ~$4M to ~$11.5M ARR.",
+      },
+      {
+        title: "Cross-functional, from a seat that owned all of it",
+        body: "As VP Asia I owned sales, partnerships, solutions engineering and customer success across 15+ countries, ran cross-timezone operations with Product, Marketing, Legal and Finance at US HQ, and opened the India office. I have negotiated with an $80B counterparty's legal team and with a founder who wanted to hold every point. Both signed.",
+      },
+    ],
+    differentiator:
+      "Cyara tests AI agents with AI agents. I build them: agents, a production MCP server and my own GTM automation on the Claude API. So the AI-provider partners in the job description are platforms I already build on, and that conversation happens as a builder rather than as a partner manager with a deck. The gaps, said plainly: I have not onboarded partners inside a CCaaS vendor (Vee24, a CX platform I sold across EMEA/APAC, is the nearest), and the SIs I have signed were regional rather than Accenture-scale. I would rather say both than pretend.",
+    metrics: [
+      { value: "7-figure", label: "Roche reseller agreement, taken through legal and compliance" },
+      { value: "35%", label: "of regional pipeline via partners at Brightcove" },
+      { value: "15+", label: "strategic ISV and agency partners recruited" },
+    ],
+    coverLetter: "/letters/cyara-partnerships.pdf",
+    longWayRound: true,
+  },
+  {
+    slug: "coder-partnerships",
+    company: "Coder",
+    role: "Senior Strategic Partner Development Manager (UK)",
+    headline: "A partner lead who has signed resellers and SIs, and spent two years inside one.",
+    sub: "Eighteen years of partner-led growth across EMEA and APAC: an exclusive global reseller agreement through Roche Diagnostics, APAC's largest SI signed for Encoding.com, 15+ partners at Brightcove. I use Claude Code daily and build my own agents, so I am probably closer to a Coder user than most applicants. Fully remote from Valencia, UK citizen.",
+    why: [
+      {
+        title: "Resellers: an exclusive global agreement, pushed through legal",
+        body: "For a small IoT company with no EU channel I ran the outreach to Roche Diagnostics, Siemens and Beckman Coulter and negotiated an exclusive global reseller agreement through the Roche channel, seven figures on a three-year minimum. It stalled in their legal and compliance process and got signed because I kept the commercial sponsors visible. That channel then produced the NHS sales and a ten-year contract with OLVG.",
+      },
+      {
+        title: "System integrators, from both sides of the table",
+        body: "At Encoding.com I opened APAC from a written thesis, grew qualified pipeline 1200% and signed the region's largest SI as a partner. Early in my career I spent two years inside an SI (Gencom, Sydney) specifying and delivering other vendors' kit, so I know how an integrator makes money on a vendor and what makes them lean in.",
+      },
+      {
+        title: "A partner programme run at scale",
+        body: "At Brightcove I recruited 15+ ISV, agency and reseller partners across Asia and ran the global partner programme regionally: joint business plans, executive QBRs, technical enablement, co-marketing with partner sales. The channel reached 35% of regional pipeline whilst the region grew from ~$4M to ~$11.5M ARR with me as VP, and I led the team on the company's largest global deal.",
+      },
+    ],
+    differentiator:
+      "Coder's product is the governed environment for tools like Claude Code, and I use Claude Code every day. I build my own agents and a production MCP server on the Claude API, so when a partner's platform team asks how governed workspaces hold up with agentic workflows I can answer from use rather than the deck. The gap, said plainly: I have not worked at a DevOps tooling vendor. My platforms have been developer-facing API businesses (video infrastructure, encoding, streaming data). I would rather say that than pretend. Fully remote from Valencia, UK citizen with a UK number, fine with the travel.",
+    metrics: [
+      { value: "35%", label: "of regional pipeline via partners at Brightcove Asia" },
+      { value: "7-figure", label: "exclusive global reseller agreement through Roche Diagnostics" },
+      { value: "~$4M → ~$11.5M", label: "ARR grown at Brightcove Asia as VP" },
+    ],
+    coverLetter: "/letters/coder-partnerships.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
