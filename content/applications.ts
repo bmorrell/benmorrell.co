@@ -1002,6 +1002,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/alpaca-corporate-ops.pdf",
     longWayRound: true,
   },
+  {
+    slug: "betterstack-operations",
+    company: "Better Stack",
+    role: "Operations Executive",
+    headline: "An operator who has run the business, opened the entity, hired the team and builds the tooling himself.",
+    sub: "Seven years running my own company and five running Brightcove's Asia region as VP, on Boston hours. I started in infrastructure, on call for live output, and I use Claude Code daily. Fully remote from Valencia, Prague a short flight.",
+    why: [
+      {
+        title: "Operated a business, hired and let people go",
+        body: "I ran Ziplake, a UK company, for seven years: 20+ client engagements, every contract and invoice mine. Before that I owned hiring and performance management for a 20-person team across Singapore, Mumbai and New Delhi at Brightcove, with under 10% turnover and 80% of promotions home-grown. And I formally opened the India office, which was mostly a legal/finance/people project run with headquarters functions that did not report to me.",
+      },
+      {
+        title: "Contracts, entities and a regulated counterparty",
+        body: "A seven-figure exclusive reseller agreement I negotiated through Roche Diagnostics stalled in their legal and compliance process. It got signed because I kept the sponsors inside Roche visible and answered every compliance question fast and complete. At Livepeer I built the contracting cadence and forecasting from nothing and led M&A due diligence, a domain I had not worked in before.",
+      },
+      {
+        title: "Infrastructure is where I started",
+        body: "Broadcast IT engineer at Nine Network: on call for 24/7 live output, incident process and root cause analysis against transmission deadlines that could not move. At a systems integrator I specified, procured and stood up the kit on site. Data centre operations is a return rather than a leap, and I run my own uptime/latency dashboard across a portfolio of production apps.",
+      },
+    ],
+    differentiator:
+      "The posting wants AI as part of how you work. I build it: agents and a production MCP server on the Claude API, a pricing engine, CRM integrations, and a Cloudflare Worker that watches every production app in my portfolio for health, deploy state, p50/p95 latency and uptime. So I am probably closer to a Better Stack customer than most people applying. The gaps, said plainly: I have worked events and spoken at them rather than organised a customer conference, and I have not run a formal compliance programme. I would rather say both than pretend.",
+    metrics: [
+      { value: "7 years", label: "running my own company, every contract and invoice mine" },
+      { value: "20+", label: "people hired and managed across three offices, one entity opened from zero" },
+      { value: "7-figure", label: "reseller agreement signed through Roche legal and compliance" },
+    ],
+    coverLetter: "/letters/betterstack-operations.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
