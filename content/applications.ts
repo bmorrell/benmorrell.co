@@ -1121,6 +1121,36 @@ export const applications: Application[] = [
     ],
     coverLetter: "/letters/omilia-partnerships.pdf",
   },
+  {
+    slug: "supabase-solutions",
+    company: "Supabase",
+    role: "Pre-Sales Solutions Architect (SA) Leader",
+    headline: "An SA leader who did the SA job first, then owned the number.",
+    sub: "Senior Solutions Engineer to Technical Director to VP at Brightcove in three years. A 20+ person team, ~$4M to ~$11.5M ARR at 120%+ of quota every year, and I still ship production software on the stack your SfP/OAuth partners run on.",
+    why: [
+      {
+        title: "The arc, in the order your posting describes it",
+        body: "I came up through pre-sales: Grass Valley across 12+ Asian countries, then Senior Solutions Engineer at Brightcove. Within three years I was Technical Director, technically responsible for every deal and customer in the region, and then Vice President. The individual SA job, then the oversight job, then the number. I have the formal title for the middle step, which most SE-turned-leaders skip.",
+      },
+      {
+        title: "Player-coach, with the numbers to show for it",
+        body: "As VP I built and led a 20+ person team across sales, solutions engineering, channel and customer success in Singapore, Mumbai and New Delhi, and managed managers. The region grew from ~$4M to ~$11.5M ARR at 120%+ of quota every year. Turnover stayed under 10% and 80% of AE promotions were home-grown. I stepped in on the largest evaluations, including the company's biggest global deal (~$4M ARR), and spent the rest of the week in 1:1s, deal reviews and PoC scoping. I owned customer success in the same region, so handoff quality was my own problem.",
+      },
+      {
+        title: "Coverage and playbooks, gaps named",
+        body: "Four of your five channels are ground I have worked: direct sales across APAC, systems integrators/solution providers (APAC's largest SI for Encoding.com, two years inside an SI at Gencom, a Roche Diagnostics reseller channel), 15+ ISV and integration partners, and 20+ startup founders through Ziplake. At Livepeer I built the commercial operating system from scratch - forecasting, contracting cadence, CRM, team training - so quality did not depend on tenure. The gaps: I have not run Postgres at scale and I have not carried a hyperscaler alliance. I would rather say both here than in a PoC.",
+      },
+    ],
+    differentiator:
+      "Your SfP/OAuth channel (Lovable, Bolt, Anthropic) is a stack I ship on rather than one I read about. I build LLM applications on the Claude API, run a production remote MCP server, and this site runs on Vercel next to a Cloudflare Worker I wrote. So when an SA needs an escalation on how an AI-builder partner's users actually hit the database, I have been that user. Why now: the SA Leader and TAM Leader postings went up the same week, which reads as a Success organisation being built out properly rather than a backfill. I think that is the moment a function either gets playbooks or gets tenure-dependent, and I have done the playbook version before.",
+    metrics: [
+      { value: "~$4M → ~$11.5M", label: "ARR grown at Brightcove Asia as VP, 120%+ of quota every year" },
+      { value: "SE → VP", label: "in three years, via Technical Director for every deal in the region" },
+      { value: "<10% / 80%", label: "team turnover / AE promotions developed internally" },
+    ],
+    coverLetter: "/letters/supabase-solutions.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
