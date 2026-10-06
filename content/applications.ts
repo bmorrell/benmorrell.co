@@ -1151,6 +1151,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/supabase-solutions.pdf",
     longWayRound: true,
   },
+  {
+    slug: "truenas-channels",
+    company: "TrueNAS",
+    role: "Sr. Director / VP, Global Channel Sales",
+    headline: "A channel leader who started as an infrastructure engineer.",
+    sub: "A partner channel at 35% of regional pipeline at Brightcove, an exclusive global reseller agreement through Roche Diagnostics, and two years inside a systems integrator before any of it. Fully remote from Valencia, on CET with good overlap into US hours.",
+    why: [
+      {
+        title: "Partner-attached revenue, forecast every quarter",
+        body: "At Brightcove I recruited 15+ ISV and agency partners across Asia and ran the global partner programme in the region: joint business plans, partner business reviews, enablement, co-sell with the direct team. The channel reached 35% of regional pipeline and the business forecast against it, whilst I took the region from ~$4M to ~$11.5M ARR at 120%+ of quota every year.",
+      },
+      {
+        title: "Resellers and integrators, signed and producing",
+        body: "For a small medical IoT company with no European channel I negotiated an exclusive global reseller agreement through Roche Diagnostics, seven figures on a three-year minimum, and got it through the legal and compliance process of an $80B organisation. That channel produced NHS sales and a ten-year contract with OLVG. At Encoding.com I signed APAC's largest systems integrator as a partner and grew qualified pipeline 1200%.",
+      },
+      {
+        title: "A team across countries, gaps named",
+        body: "As VP I led 20+ people across Singapore, Mumbai and New Delhi, channel included, and managed managers, with turnover under 10%. The gaps, said plainly: I have not sold storage, I have not run a Federal/SLED motion, and I ran a global partner programme regionally rather than designing the tiers myself. I would rather say that here than in an interview.",
+      },
+    ],
+    differentiator:
+      "I am an engineer by training. Before the commercial roles I built broadcast infrastructure for Nine Network, including its first all-IP Olympics in Beijing, and spent two years at a systems integrator specifying and delivering other vendors' kit. Media workloads are among the heaviest storage users there are, so the conversation a VAR or integrator has with its own engineers is one I have been on both sides of. I also build my own GTM tooling (AI agents, CRM automation), which I think matters when a global partner team has to scale programmes and enablement without waiting on engineering. Why now: a new CEO and a new CRO, both announced on partner-led growth, and a global channels seat opening under them. That is the moment a channel either gets a programme or stays a list of resellers.",
+    metrics: [
+      { value: "35%", label: "of regional pipeline from the partner channel at Brightcove Asia" },
+      { value: "7-figure", label: "exclusive global reseller agreement through Roche Diagnostics" },
+      { value: "~$4M → ~$11.5M", label: "ARR grown at Brightcove Asia as VP, 120%+ of quota every year" },
+    ],
+    coverLetter: "/letters/truenas-channels.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
