@@ -1181,6 +1181,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/truenas-channels.pdf",
     longWayRound: true,
   },
+  {
+    slug: "jove-international-sales",
+    company: "JoVE",
+    role: "Senior Director of International Sales",
+    headline: "I ran a video SaaS region across 15+ countries, with managers under me.",
+    sub: "As VP Asia at Brightcove I took the region from ~$4M to ~$11.5M ARR at 120%+ of quota every year, with sales, solutions, sales ops, channel and customer success in one team. Fully remote from Valencia, on CET between APAC mornings and US afternoons.",
+    why: [
+      {
+        title: "A multi-country number, owned every quarter",
+        body: "The team spanned Singapore, Mumbai and New Delhi and sold across 15+ countries. When pipeline alone would not make the number I went after the large deals above run-rate, and the team closed Brightcove's largest global deal, $12M over three years. Cove Club in 2017, 2018 and 2019.",
+      },
+      {
+        title: "Coaching that kept people",
+        body: "80% of AE promotions came from inside the team and annual turnover stayed under 10% in a hard hiring market. Customer success sat in the same team, and average account value went from $40K to $250K+ through renewals and expansion.",
+      },
+      {
+        title: "Process, CRM and the gap named",
+        body: "At Livepeer I built the commercial operating system with the CRM at the centre: forecasting, contracting cadence, documentation, team training. I have sold into universities (UK market entry for an edtech) and life sciences (Roche Diagnostics, NHS, OLVG). To be clear, I managed managers for about two years, not eight. I would rather say that here than in an interview.",
+      },
+    ],
+    differentiator:
+      "I am an engineer by training. Before the commercial roles I built broadcast infrastructure for Nine Network, including its first all-IP Olympics in Beijing, and I spent most of my career selling video platforms. JoVE sells video to institutions, so the product conversation is one I already know. I also build my own pipeline and GTM tooling (AI agents, lead scoring, CRM integrations), which means the KPI layer a two-region sales org needs is something I would probably instrument in the first month rather than wait for.",
+    metrics: [
+      { value: "~$4M → ~$11.5M", label: "ARR grown at Brightcove Asia as VP, 120%+ of quota every year" },
+      { value: "$40K → $250K+", label: "average account value, through renewals and expansion" },
+      { value: "80%", label: "of AE promotions home-grown, with turnover under 10%" },
+    ],
+    coverLetter: "/letters/jove-international-sales.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
