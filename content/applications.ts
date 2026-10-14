@@ -1270,6 +1270,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/axle-international-expansion.pdf",
     longWayRound: true,
   },
+  {
+    slug: "tether-ai-expansion",
+    company: "Tether",
+    role: "Head of AI Expansion",
+    headline: "I close big technology partnerships, and I build with AI myself.",
+    sub: "18+ years selling enterprise technology across EMEA and APAC, an engineer by training, and keen to take QVAC to organisations where privacy and control decide the purchase.",
+    why: [
+      {
+        title: "Large partnerships, personally closed",
+        body: "I originated an exclusive global reseller agreement through the Roche Diagnostics channel, seven figures on a three-year minimum, and took it through Roche's legal and compliance process. The channel produced NHS sales and a ten-year contract with OLVG. At Brightcove I led the team that closed the company's largest global deal, $12M over 3 years.",
+      },
+      {
+        title: "A region and a team built from a small base",
+        body: "As VP Asia at Brightcove I built a 20+ person team across Singapore, Mumbai and New Delhi (sales, solutions engineering, channel, customer success) and grew the region from ~$4M to ~$11.5M ARR. Turnover stayed under 10% and 80% of AE promotions came from inside.",
+      },
+      {
+        title: "Infrastructure partners, not just customers",
+        body: "At Livepeer, a decentralized video infrastructure network, I led global GTM and signed Tier-1 partnerships including Aptos ($500K), then built the forecasting/contracting/CRM cadence behind them. At Brightcove 15+ ISV and agency partners drove 35% of regional pipeline.",
+      },
+    ],
+    differentiator:
+      "I build AI myself. I ship LLM agents, a production MCP server and GTM automation on the Claude API, and I started as an electronic engineer in broadcast infrastructure. So I can work through a use case with your AI engineers in the morning and take it to a CIO as a business case in the afternoon.",
+    metrics: [
+      { value: "$12M", label: "largest global deal at Brightcove, over 3 years" },
+      { value: "7-figure", label: "exclusive global reseller agreement via Roche Diagnostics" },
+      { value: "~$4M → ~$11.5M", label: "ARR at Brightcove Asia as VP" },
+    ],
+    coverLetter: "/letters/tether-ai-expansion.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
