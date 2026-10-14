@@ -1240,6 +1240,36 @@ export const applications: Application[] = [
     ],
     coverLetter: "/letters/axle-partnerships.pdf",
   },
+  {
+    slug: "axle-international-expansion",
+    company: "Axle Energy",
+    role: "International Expansion",
+    headline: "I open the next market, then do the deals that prove it.",
+    sub: "18+ years in B2B software across 15+ countries, mostly as the first commercial person in a new region. Engineer by training, based in Valencia, and keen to put that behind energy flexibility.",
+    why: [
+      {
+        title: "New markets from a written thesis",
+        body: "For Encoding.com I opened APAC from a standing start: a market-entry thesis, an executive roadshow across Singapore, India, Malaysia and Thailand, then the region's largest systems integrator signed as a partner. Qualified pipeline grew 1200%.",
+      },
+      {
+        title: "Large, regulated counterparties",
+        body: "For an Australian IoT company with no EU channel I negotiated an exclusive global reseller agreement through Roche Diagnostics, seven figures on a three-year minimum, and took it through Roche's legal and compliance process. That channel produced NHS sales and a ten-year contract with OLVG in the Netherlands.",
+      },
+      {
+        title: "Country launches that turned into revenue",
+        body: "As VP Asia at Brightcove we opened Vietnam, Taiwan, Thailand and the Philippines with local partners for $2M+ new ARR, and I formally opened the India office. The region grew from ~$4M to ~$11.5M ARR over that time.",
+      },
+    ],
+    differentiator:
+      "I trained as an engineer (MEng Electronic Engineering) and I still build my own tooling, AI agents and API integrations included, so I can talk through a developer-first platform like yours with an OEM's engineers myself. Energy markets are new ground for me, and I would rather say that plainly. Regulation is learnable at speed. Getting a big organisation to take the next call is the part I have done many times.",
+    metrics: [
+      { value: "1200%", label: "qualified pipeline growth opening APAC for Encoding.com" },
+      { value: "7-figure", label: "exclusive global reseller agreement via Roche Diagnostics" },
+      { value: "~$4M → ~$11.5M", label: "ARR at Brightcove Asia as VP" },
+    ],
+    coverLetter: "/letters/axle-international-expansion.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
