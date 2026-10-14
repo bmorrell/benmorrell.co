@@ -1300,6 +1300,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/tether-ai-expansion.pdf",
     longWayRound: true,
   },
+  {
+    slug: "arenko-partnerships",
+    company: "Arenko",
+    role: "Partnerships & International Growth",
+    headline: "Nimbus is proven in the UK. I take products like that into the next market.",
+    sub: "18+ years in B2B software across 15+ countries, usually as the first commercial person in a new region. Engineer by training, based in Valencia, two hours from Blackfriars, and keen to put that behind grid-scale storage.",
+    why: [
+      {
+        title: "The next market after home-market success",
+        body: "As VP Asia at Brightcove we opened Vietnam, Taiwan, Thailand and the Philippines with local partners for $2M+ new ARR, and I formally opened the India office. The region grew from ~$4M to ~$11.5M ARR whilst I led it. Germany, Ireland and the US are the same kind of problem.",
+      },
+      {
+        title: "Large, careful counterparties",
+        body: "For a small Australian IoT company I negotiated an exclusive global reseller agreement through Roche Diagnostics, seven figures on a three-year minimum, and took it through Roche's legal and compliance process. I'd guess RWE, Vattenfall and the infrastructure funds buy in a similar way.",
+      },
+      {
+        title: "A written thesis, then the partners",
+        body: "For Encoding.com I opened APAC from a market-entry thesis and an executive roadshow across Singapore, India, Malaysia and Thailand, then signed the region's largest systems integrator. Qualified pipeline grew 1200%.",
+      },
+    ],
+    differentiator:
+      "I started as an engineer in live broadcast, where I was the sole designer of Nine Network's digital delivery for the Beijing 2008 Olympics and 100% uptime was the minimum. Today I build my own AI agents and integrations. So I can take an AI-enabled control and trading platform into a customer's engineering review myself. Energy markets are new ground for me, and I would rather say that plainly.",
+    metrics: [
+      { value: "~$4M → ~$11.5M", label: "ARR at Brightcove Asia as VP" },
+      { value: "4 + India", label: "new Asian markets opened with partners, plus the India office" },
+      { value: "7-figure", label: "exclusive global reseller agreement via Roche Diagnostics" },
+    ],
+    coverLetter: "/letters/arenko-partnerships.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
