@@ -1211,6 +1211,35 @@ export const applications: Application[] = [
     coverLetter: "/letters/jove-international-sales.pdf",
     longWayRound: true,
   },
+  {
+    slug: "axle-partnerships",
+    company: "Axle Energy",
+    role: "Partnerships",
+    headline: "I get partners live, then I grow the account.",
+    sub: "18+ years in client-facing B2B SaaS and technology, from solutions engineer to VP. I would bring that to the suppliers and OEMs rolling out flexibility on Axle.",
+    why: [
+      {
+        title: "Onboarding a big partner's channel",
+        body: "I negotiated an exclusive global agreement for a medical IoT company to resell through the Roche Diagnostics channel, then worked with 30+ Roche people on enablement and account work so their teams could sell it. That produced multiple NHS sales and a ten-year contract with OLVG in the Netherlands.",
+      },
+      {
+        title: "Account growth after go-live",
+        body: "At Brightcove I ran Asia with sales, partnerships, solutions and customer success in one team. Average account value went from $40K to $250K+ ACV through expansion, and the region grew from ~$4M to ~$11.5M ARR whilst I was VP.",
+      },
+      {
+        title: "Field feedback into product",
+        body: "On the Roche rollout a lot of the value was getting what we heard in the field back to the product team quickly. At Livepeer I built the processes behind the partnerships (forecasting, contracting cadence, CRM, team training) so they scaled past me.",
+      },
+    ],
+    differentiator:
+      "I'm an engineer by training. I started in broadcast infrastructure, building flyaway kits that had to go live within minutes of landing, and moved through solutions engineering to Technical Director before running a region. These days I build my own tooling (AI agents, an MCP server, lead scoring and dashboards), so I can work directly with your engineers and turn partner data into product decisions.",
+    metrics: [
+      { value: "$40K → $250K+", label: "average account value, through expansion" },
+      { value: "~$4M → ~$11.5M", label: "ARR grown at Brightcove Asia as VP" },
+      { value: "30+", label: "Roche people worked with to get the channel selling" },
+    ],
+    coverLetter: "/letters/axle-partnerships.pdf",
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
