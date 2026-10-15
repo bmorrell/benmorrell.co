@@ -1330,6 +1330,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/arenko-partnerships.pdf",
     longWayRound: true,
   },
+  {
+    slug: "severalnines-partnerships",
+    company: "Severalnines",
+    role: "Partner Development Manager",
+    headline: "Partner programmes taken from a first meeting to partner-sourced ARR.",
+    sub: "18+ years in infrastructure and SaaS, an engineer by training, and keen to build the ClusterControl and CCX partner programme with hosting providers, cloud providers, resellers and integrators.",
+    why: [
+      {
+        title: "A partner channel sales could forecast against",
+        body: "At Brightcove I recruited 15+ ISV and agency partners across Asia. The channel grew to drive 35% of regional pipeline, and sales forecast against that number every quarter. Over the same years I led the region from ~$4M to ~$11.5M ARR.",
+      },
+      {
+        title: "First deals through a partner, from zero",
+        body: "A small medical IoT company had no European channel. I went after Roche Diagnostics and got to an exclusive global reseller agreement, seven figures over a three-year minimum, through Roche's legal and compliance process. Revenue followed through the partner: NHS sales and a ten-year contract with OLVG.",
+      },
+      {
+        title: "Partner functions built from scratch",
+        body: "At Watching That I built the partnerships function and signed four partners across Europe, the US and APAC, including Brightcove, which they had chased for 3-4 years. At Livepeer I put in the forecasting, contracting cadence and CRM behind the partnerships, including Aptos ($500K).",
+      },
+    ],
+    differentiator:
+      "I started as an engineer. MEng, then 24/7 live broadcast operations at Nine Network, then presales through to Technical Director at Brightcove. I am not a DBA, but I have run infrastructure in production and been the one on call, so I can sit with a hosting provider's engineers and talk about failover and backups in their terms. I also build my own GTM tooling (AI agents, HubSpot/CRM automation), which helps when one person owns the whole partner pipeline.",
+    metrics: [
+      { value: "35%", label: "of regional pipeline from partners at Brightcove Asia" },
+      { value: "7-figure", label: "exclusive global reseller agreement via Roche Diagnostics" },
+      { value: "~$4M → ~$11.5M", label: "ARR at Brightcove Asia as VP" },
+    ],
+    coverLetter: "/letters/severalnines-partnerships.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
