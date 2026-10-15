@@ -1360,6 +1360,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/severalnines-partnerships.pdf",
     longWayRound: true,
   },
+  {
+    slug: "nebius-solutions",
+    company: "Nebius",
+    role: "Director, Solutions Architecture EMEA",
+    headline: "An SA leader who has built a multi-country technical org once already.",
+    sub: "Senior Solutions Engineer to Technical Director to VP at Brightcove in three years. A 20+ person team over three offices and 15+ countries, ~$4M to ~$11.5M ARR, and I still build AI applications myself. Fully remote from Valencia.",
+    why: [
+      {
+        title: "A regional technical org, built from a 4-person office",
+        body: "I joined Brightcove Asia as a Senior Solutions Engineer when the office was four people. Within three years I was Technical Director, technically responsible for every deal and customer in the region, and then VP. I built and led a 20+ person organisation across solutions engineering, sales, channel and customer success in Singapore, Mumbai and New Delhi, with managers reporting to me. Turnover stayed under 10% and 80% of AE promotions were home-grown.",
+      },
+      {
+        title: "Player-coach on the deals that matter",
+        body: "The region grew from ~$4M to ~$11.5M ARR at 120%+ of quota every year. I stepped in on the largest opportunities, including the company's biggest global deal (~$4M ARR, $12M over three years), and spent the rest of the week in 1:1s, deal reviews, hiring and PoC scoping. Customers sat in 15+ countries at very different levels of maturity, from established broadcasters to first-time buyers in markets we had just opened.",
+      },
+      {
+        title: "European enterprise work since 2019",
+        body: "For a small Australian IoT company I took an exclusive global reseller agreement through Roche Diagnostics' legal and compliance process, seven figures on a three-year minimum. It produced NHS sales and a 10-year contract with OLVG in the Netherlands. For Encoding.com I expanded accounts at Sky, BBC and ITV and opened APAC from a written thesis.",
+      },
+    ],
+    differentiator:
+      "I build AI applications myself: LLM apps on the Claude API, a production remote MCP server, Next.js on Vercel and a Cloudflare Worker that monitors latency and uptime across a portfolio of apps. So I know the inference customer's side of the table. To be clear - I have not run GPU clusters, Kubernetes platforms or a hyperscaler team. Early on I would lean on your senior SAs for the deep infrastructure whilst I sort out coverage/hiring and the operating rhythm with Sales.",
+    metrics: [
+      { value: "~$4M → ~$11.5M", label: "ARR grown at Brightcove Asia as VP, 120%+ of quota every year" },
+      { value: "SE → VP", label: "in three years, via Technical Director for every deal in the region" },
+      { value: "20+ / 3 offices", label: "people led over Singapore, Mumbai and New Delhi, managers included" },
+    ],
+    coverLetter: "/letters/nebius-solutions.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
