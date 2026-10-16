@@ -1390,6 +1390,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/nebius-solutions.pdf",
     longWayRound: true,
   },
+  {
+    slug: "cactos-sales",
+    company: "Cactos",
+    role: "VP International Sales (incl. Interim CSO)",
+    headline: "A sales leader who has run a multi-country team and still closed the biggest deal.",
+    sub: "VP Asia at Brightcove: a 20+ person team over three offices and 15+ countries, ~$4M to ~$11.5M ARR at 120%+ of quota. New markets opened in Asia, APAC and Europe since. Fully remote from Valencia, in Helsinki whenever the work needs it.",
+    why: [
+      {
+        title: "Manage the team, close the deals",
+        body: "As VP Asia I led a 20+ person team across sales, solutions engineering, channel and customer success over Singapore, Mumbai and New Delhi. The region grew from ~$4M to ~$11.5M ARR at 120%+ of quota every year. I stayed in the largest deals, including the company's biggest global deal (~$4M ARR, $12M over three years).",
+      },
+      {
+        title: "New markets, more than once",
+        body: "At Brightcove we opened Vietnam, Taiwan, Thailand and the Philippines ($2M+ new ARR) and I opened the India office. Since then I have opened APAC for Encoding.com from a written thesis (pipeline up 1200%, the region's largest systems integrator signed) and Europe for an Australian IoT hardware company through Roche Diagnostics.",
+      },
+      {
+        title: "Long cycles and capital purchases",
+        body: "Before Brightcove I sold broadcast playout systems across 12+ Asian countries at Grass Valley, and specified and procured equipment for a systems integrator. The Roche channel for BinaryTech produced NHS sales and a 10-year contract with OLVG in the Netherlands.",
+      },
+    ],
+    differentiator:
+      "I'm an engineer by training (MEng) and I still build software myself - AI agents, API integrations, CRM automation. To be clear - Nordic electricity markets are new ground for me. I think the engineering habit is what gets me to grips with spot/intraday/balancing and how Spine trades them quickly, with your trading team as the sounding board, whilst I keep deal flow and the forecast steady through the interim period.",
+    metrics: [
+      { value: "~$4M → ~$11.5M", label: "ARR grown at Brightcove Asia as VP, 120%+ of quota every year" },
+      { value: "4 + India", label: "new markets opened at Brightcove ($2M+ new ARR), plus the India office" },
+      { value: "10-year", label: "OLVG contract through the Roche Diagnostics channel I built for BinaryTech" },
+    ],
+    coverLetter: "/letters/cactos-sales.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
