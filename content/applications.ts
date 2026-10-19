@@ -1420,6 +1420,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/cactos-sales.pdf",
     longWayRound: true,
   },
+  {
+    slug: "weflow-partnerships",
+    company: "Weflow",
+    role: "Head of Partnerships",
+    headline: "A partner channel built for the CRO who has to forecast against it.",
+    sub: "18+ years building partner channels in B2B SaaS, a VP who ran the regional number, and someone who builds his own CRM and GTM automation. Fully remote from Valencia, two hours from London.",
+    why: [
+      {
+        title: "Agency and integrator partners that carried pipeline",
+        body: "At Brightcove I recruited 15+ ISV and agency partners across Asia. The channel grew to drive 35% of regional pipeline, and sales forecast against that number every quarter. Over the same years I led the region from ~$4M to ~$11.5M ARR as VP.",
+      },
+      {
+        title: "Partnership deals structured between unequal parties",
+        body: "A small medical IoT company had no European channel. I got to an exclusive global reseller agreement through Roche Diagnostics, seven figures over a three-year minimum, and held firm on exclusivity and the minimum through Roche's legal and compliance process. Revenue came through the partner: NHS sales and a ten-year contract with OLVG.",
+      },
+      {
+        title: "Partner functions built from the ground up",
+        body: "At Watching That I built the partnerships function from scratch and signed four partners across Europe, the US and APAC, including Brightcove. For Encoding.com I signed APAC's largest systems integrator. Before Brightcove I spent two years inside an integrator, so I have sat on that side of the table.",
+      },
+    ],
+    differentiator:
+      "I have been the VP whose forecast depended on what reps put into the CRM, which is the problem Weflow sells into. I also build my own GTM tooling (AI agents, CRM integration, lead scoring), so I can talk to RevOps agencies and implementation partners in their terms. To be clear - I have not worked in private equity. Advising 20+ B2B SaaS founders and running M&A due diligence at Livepeer is the nearest I have, and I think it gets me most of the way to a credible conversation with an operating partner.",
+    metrics: [
+      { value: "35%", label: "of regional pipeline from 15+ ISV and agency partners at Brightcove Asia" },
+      { value: "~$4M → ~$11.5M", label: "ARR at Brightcove Asia as VP, 120%+ of quota every year" },
+      { value: "7-figure", label: "exclusive global reseller agreement via Roche Diagnostics" },
+    ],
+    coverLetter: "/letters/weflow-partnerships.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
