@@ -1450,6 +1450,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/weflow-partnerships.pdf",
     longWayRound: true,
   },
+  {
+    slug: "desertant-partnerships",
+    company: "Desert Ant Labs",
+    role: "Partnerships Manager, Europe",
+    headline: "Partner deals taken from the first call to a launched integration.",
+    sub: "18+ years of partnerships at developer platforms and video infrastructure, an engineer who went from solutions engineer to VP, and someone who pays per-call API bills on his own AI products. Fully remote from Valencia, on CET.",
+    why: [
+      {
+        title: "The only person in the function, more than once",
+        body: "At Watching That there was no partnerships function, so I was it. I found the targets, ran the calls, wrote the proposals and signed Brightcove, a platform the company had chased for 3-4 years, then three more across Europe, the US and APAC. For Mux I built a qualified APAC partner pipeline of 15 in six months.",
+      },
+      {
+        title: "Technical enough for the CTO in the room",
+        body: "I trained as an engineer (MEng Electronic Engineering) and went from Senior Solutions Engineer to Technical Director to VP at Brightcove. The partner channel I ran there reached 35% of regional pipeline whilst the region grew from ~$4M to ~$11.5M ARR. Most of those years were spent explaining video infrastructure to broadcaster and platform engineering teams.",
+      },
+      {
+        title: "Pricing and terms, held under pressure",
+        body: "For a small IoT company I got to an exclusive global reseller agreement through Roche Diagnostics, seven figures on a three-year minimum. It stalled in Roche's legal process. I kept Roche's sponsors visible and held the founder firm on exclusivity and the minimum, and the channel went on to produce NHS sales and a ten-year OLVG contract in the Netherlands.",
+      },
+    ],
+    differentiator:
+      "Your first models are video and audio models (Clear, Clips, Who, Align, Voz), and video is where I spent 18 years: Brightcove, Grass Valley, Encoding.com, Mux, Livepeer, Watching That. I also build my own AI products on the Claude API and pay the per-call bill, so no per-call cost and data staying on the device is a pitch I would buy before I sold it. To be clear - I have not shipped an on-device model. I think the video platforms I know are probably the fastest first partner segment for you.",
+    metrics: [
+      { value: "15", label: "qualified APAC partners in six months for Mux, a developer video API" },
+      { value: "35%", label: "of regional pipeline from 15+ ISV and agency partners at Brightcove Asia" },
+      { value: "~$4M → ~$11.5M", label: "ARR at Brightcove Asia as VP, 120%+ of quota every year" },
+    ],
+    coverLetter: "/letters/desertant-partnerships.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
