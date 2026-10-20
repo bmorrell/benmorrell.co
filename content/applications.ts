@@ -1480,6 +1480,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/desertant-partnerships.pdf",
     longWayRound: true,
   },
+  {
+    slug: "kanpla-hardware-partnerships",
+    company: "Kanpla",
+    role: "Head of Hardware and Partnerships",
+    headline: "Hardware that is live on the date you promised, and the partners who get it there.",
+    sub: "An engineer who has specified, procured and stood up field hardware against deadlines that could not move, then negotiated the partner agreements that took a device company into Europe. Fully remote from Valencia, inside the EU.",
+    why: [
+      {
+        title: "Field hardware that works on arrival",
+        body: "At Nine Network I designed, built and supported ~20 flyaway broadcast kits that went live within 2-3 minutes of landing, in disaster and conflict zones on every continent. I was also the sole design and delivery lead for the Beijing 2008 Olympics. At a systems integrator I specified and procured equipment and delivered it on customer sites in Australia, Papua New Guinea and Malaysia.",
+      },
+      {
+        title: "Partner agreements with the commercials held",
+        body: "An Australian IoT device company had no European channel. I signed Roche Diagnostics as the distribution partner and expanded it into an exclusive global reseller agreement, seven figures over a three-year minimum. I held firm on exclusivity and the minimum through Roche's legal and compliance process, and the channel produced NHS sales and a ten-year contract with OLVG.",
+      },
+      {
+        title: "A function built across countries",
+        body: "As VP Asia at Brightcove I built a 20+ person team over Singapore, Mumbai and New Delhi, managed managers and formally opened the India office. The region grew from ~$4M to ~$11.5M ARR, with 15+ partners driving 35% of pipeline.",
+      },
+    ],
+    differentiator:
+      "I'm an engineer (MEng) who has spent the last decade on the commercial side, so I can read a device spec and negotiate the margin on it in the same meeting. I also build my own tooling (AI agents, CRM automation, dashboards), which matters when the demand forecast has to come out of the sales pipeline. To be clear - I have not run a POS or kiosk fleet, or owned customs and Incoterms for a European distribution operation. I think the field-hardware habit gets me to grips with both quickly, with Delivery and Finance as the sounding board.",
+    metrics: [
+      { value: "~20 kits", label: "flyaway broadcast kits designed and built, live within 2-3 minutes of landing" },
+      { value: "7-figure", label: "exclusive global reseller agreement via Roche Diagnostics, three-year minimum" },
+      { value: "20+ / 3 offices", label: "people led over Singapore, Mumbai and New Delhi, managers included" },
+    ],
+    coverLetter: "/letters/kanpla-hardware-partnerships.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
