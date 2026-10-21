@@ -26,7 +26,7 @@ export const TIERS: Tier[] = [
     timeline: "About 1 week from content",
     summary: "A clear, professional presence: who you are, what you do and how to reach you.",
     features: [
-      "Up to 5 pages",
+      "All the pages you need",
       "About, services, contact, links",
       "Contact form",
       "Basic copywriting",
@@ -42,7 +42,7 @@ export const TIERS: Tier[] = [
     timeline: "3–4 weeks from content",
     summary: "A site that does more, and that you can update yourself.",
     features: [
-      "Up to 8 pages",
+      "Everything in Brochure",
       "Easy editor (CMS)",
       "Video, audio and galleries",
       "Blog, news or events",
@@ -129,9 +129,9 @@ export const ADD_ONS: AddOn[] = [
     price: { GBP: "£49", EUR: "€59", USD: "$65", AUD: "A$99" },
   },
   {
-    name: "Extra page during the build",
-    detail: "New pages or landing pages after launch are quoted",
-    price: { GBP: "£95", EUR: "€110", USD: "$125", AUD: "A$195" },
+    name: "New pages or landing pages after launch",
+    detail: "Pages during the build are included; anything after launch is quoted",
+    price: { GBP: "Quoted", EUR: "Quoted", USD: "Quoted", AUD: "Quoted" },
   },
 ];
 
