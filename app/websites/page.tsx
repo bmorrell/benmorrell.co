@@ -36,10 +36,14 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image", title: TITLE, description: DESCRIPTION, images: ["/websites/parkside.jpg"] },
 };
 
+const BROCHURE = "/websites/website-builds-brochure.pdf";
+
+const WHATSAPP = `https://wa.me/447796656897?text=${encodeURIComponent("Hi Ben, I'm interested in a website build.")}`;
+
 const MAILTO = `mailto:hello@benmorrell.co?subject=${encodeURIComponent("Website build")}`;
 
 const STEPS = [
-  ["Tell me about your business.", "Email me and I'll send a short online questionnaire, about 10 minutes."],
+  ["Tell me about your business.", "Email or WhatsApp me and I'll send a short online questionnaire, about 10 minutes."],
   ["Get a fixed quote.", "A package recommendation and a simple contract to agree online."],
   ["Pay a 50% deposit.", "I set up your site and share a private preview link."],
   ["Shape it together.", "Review the preview and tell me what to change."],
@@ -81,6 +85,10 @@ export default function WebsitesPage() {
             <a href="#pricing" className="hover:text-wb-ink">Pricing</a>
             <a href="#care" className="hover:text-wb-ink">Hosting</a>
             <a href="#work" className="hover:text-wb-ink">Work</a>
+            <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-[44px] items-center gap-1.5 hover:text-wb-ink">
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+              WhatsApp
+            </a>
             <a
               href={MAILTO}
               className="inline-flex min-h-[44px] items-center rounded-md bg-wb-ink px-4 font-semibold text-white hover:bg-wb-blue"
@@ -115,6 +123,25 @@ export default function WebsitesPage() {
             className="inline-flex min-h-[48px] items-center rounded-md border border-wb-ink px-6 font-semibold hover:bg-white"
           >
             See prices
+          </a>
+          <a
+            href={WHATSAPP}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex min-h-[48px] items-center gap-2 rounded-md border border-wb-ink px-6 font-semibold hover:bg-white"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+            WhatsApp me
+          </a>
+          <a
+            href={BROCHURE}
+            download
+            className="inline-flex min-h-[48px] items-center gap-2 rounded-md px-3 font-semibold text-wb-blue underline-offset-4 hover:underline"
+          >
+            <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M8 2v8m0 0L4.5 6.5M8 10l3.5-3.5M3 13h10" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+            Download the brochure (PDF)
           </a>
         </div>
 
@@ -198,14 +225,28 @@ export default function WebsitesPage() {
         <div className="flex flex-col gap-6 rounded-xl bg-wb-blue p-8 text-white sm:flex-row sm:items-center sm:justify-between sm:p-12">
           <div>
             <h2 className="font-wb text-3xl font-extrabold tracking-tight sm:text-4xl">Ready to start?</h2>
-            <p className="mt-2 text-lg text-white/90">Email me and I&apos;ll come back with a short questionnaire and a fixed quote.</p>
+            <p className="mt-2 text-lg text-white/90">Email or WhatsApp me and I&apos;ll come back with a short questionnaire and a fixed quote.</p>
+            <a href={BROCHURE} download className="mt-3 inline-block font-semibold text-white underline underline-offset-4 hover:text-wb-tint">
+              Download the brochure (PDF, 4 pages)
+            </a>
           </div>
-          <a
-            href={MAILTO}
-            className="inline-flex min-h-[48px] flex-none items-center justify-center rounded-md bg-white px-6 font-semibold text-wb-blue hover:bg-wb-tint"
-          >
-            hello@benmorrell.co
-          </a>
+          <div className="flex flex-none flex-col gap-3 sm:items-end">
+            <a
+              href={MAILTO}
+              className="inline-flex min-h-[48px] items-center justify-center rounded-md bg-white px-6 font-semibold text-wb-blue hover:bg-wb-tint"
+            >
+              hello@benmorrell.co
+            </a>
+            <a
+              href={WHATSAPP}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-md border border-white px-6 font-semibold text-white hover:bg-white/10"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+              WhatsApp me
+            </a>
+          </div>
         </div>
       </section>
 
