@@ -1510,6 +1510,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/kanpla-hardware-partnerships.pdf",
     longWayRound: true,
   },
+  {
+    slug: "circle-partnerships",
+    company: "Circle",
+    role: "Director, Partner Manager, Enterprise, EMEA",
+    headline: "The work after the signature, carried through to live, growing usage.",
+    sub: "18+ years of enterprise partnerships and strategic accounts across EMEA and APAC, from Roche Diagnostics to Brightcove's largest global deal. I build my own AI tooling too. Fully remote from Valencia, on UK time ±1h.",
+    why: [
+      {
+        title: "Through Legal and Compliance, and out the other side",
+        body: "For a small IoT company I signed Roche Diagnostics, an $80B regulated business, and expanded it into an exclusive global reseller agreement, seven figures on a three-year minimum. It stalled in Roche's legal and compliance review. I kept their commercial sponsors engaged and answered every question fast and complete, and the channel went live with NHS sales and a 10-year contract with OLVG.",
+      },
+      {
+        title: "Growth inside the account",
+        body: "As VP Asia at Brightcove I grew the region from ~$4M to ~$11.5M ARR at 120%+ of quota every year. Average account value went from $40K to $250K+ ACV as customers added teams, products and markets. I also led the team that closed the company's largest global deal, $12M over three years.",
+      },
+      {
+        title: "A model built where none existed",
+        body: "At Livepeer there was no commercial process, so I put one in: forecasting, contracting cadence, deal documentation and the CRM as the one source of truth. At Watching That I built the partnerships function from nothing and signed Brightcove, a partner they had chased for 3-4 years.",
+      },
+    ],
+    differentiator:
+      "Your posting asks for AI fluency in almost every line: reporting, playbooks, enablement, forecasting. I build that tooling myself, with LLM applications on the Claude API, a production MCP server for shared business context and the automation behind my own pipeline reporting. I have also worked with blockchain infrastructure at Livepeer, where I signed Aptos ($500K). To be clear - treasury, cross-border payments and MiCA are not my background, and I would lean on your Legal and Compliance teams early.",
+    metrics: [
+      { value: "7-figure", label: "exclusive global reseller agreement via Roche Diagnostics, live with NHS and OLVG" },
+      { value: "$40K → $250K+", label: "average account value at Brightcove Asia" },
+      { value: "~$4M → ~$11.5M", label: "ARR at Brightcove Asia as VP, 120%+ of quota every year" },
+    ],
+    coverLetter: "/letters/circle-partnerships.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
