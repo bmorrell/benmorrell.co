@@ -1540,6 +1540,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/circle-partnerships.pdf",
     longWayRound: true,
   },
+  {
+    slug: "percona-partnerships",
+    company: "Percona",
+    role: "Director, Global Partnerships & Channels",
+    headline: "Fewer partners, each one actually producing pipeline.",
+    sub: "18+ years building partner programmes from nothing and running them on pipeline rather than partner count, with VARs and regional SIs as the contracting vehicle in markets direct sales could not reach. I build the attribution tooling myself. Fully remote from Valencia.",
+    why: [
+      {
+        title: "A VAR as the contracting vehicle",
+        body: "An Australian IoT company had no European channel. I signed Roche Diagnostics, an $80B regulated business, as the distribution partner, then expanded it into an exclusive global reseller agreement, seven figures on a three-year minimum. Local paper, local relationships, in markets a small company could not transact in on its own. It stalled inside Roche's Legal and Compliance review, so I kept their commercial sponsors visible and got every question answered fast and complete, whilst holding our side firm on exclusivity and the minimum. The channel produced NHS sales and a ten-year contract with OLVG in the Netherlands.",
+      },
+      {
+        title: "Partners measured on pipeline",
+        body: "At Brightcove I recruited 15+ ISV and agency partners across Asia and the channel drove 35% of regional pipeline. That was the number the function was run, reviewed and resourced on. I also ran regional execution of the global partner programs, including the rules of engagement that got direct sales selling with partners rather than around them.",
+      },
+      {
+        title: "The operating foundation, built from nothing",
+        body: "At Livepeer there was no commercial process at all, so I put one in: forecasting, contracting cadence, deal documentation and the CRM as the one source of truth. At Watching That I built the partnerships function from scratch and signed Brightcove, a partner they had chased for 3-4 years. Opening APAC for a US video SaaS company, I signed the region's largest systems integrator for delivery and support, and moved qualified pipeline 1200%.",
+      },
+    ],
+    differentiator:
+      "Partner-sourced and partner-influenced attribution, deal registration and the reporting on top of it are a systems problem, and I build systems. I ship LLM applications on the Claude API, a production MCP server for shared business context, and my own CRM automation and pipeline dashboards. To be clear - I have not run hyperscaler Marketplace listings, private offers or committed-spend motions, and I have not built VARs in LATAM. Asia/EMEA yes, LATAM no. I think the channel build is the harder half to learn, and I would want AWS partner-side help on the rest.",
+    metrics: [
+      { value: "35%", label: "of regional pipeline through partners at Brightcove, from 15+ ISV and agency partners" },
+      { value: "7-figure", label: "exclusive global reseller agreement via Roche Diagnostics, live with NHS and OLVG" },
+      { value: "1200%", label: "qualified pipeline growth opening APAC, with the region's largest systems integrator signed" },
+    ],
+    coverLetter: "/letters/percona-partnerships.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
