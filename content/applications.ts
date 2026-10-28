@@ -1600,6 +1600,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/hightouch-tam.pdf",
     longWayRound: true,
   },
+  {
+    slug: "atom-ecosystem",
+    company: "Atom.com",
+    role: "Head of Ecosystem",
+    headline: "The first ecosystem hire, who has already been the whole function.",
+    sub: "18+ years building partner programmes from nothing and running them on pipeline rather than partner count. At Brightcove the channel I built produced 35% of regional pipeline. I also ship production AI software, so I meet AI startups and developer-tool founders as a peer. Fully remote from Valencia.",
+    why: [
+      {
+        title: "Built from zero, then signed the partner they had chased for years",
+        body: "At Watching That I was Head of Partnerships and I was the function. Nothing existed when I arrived, so I built the thing, ran outbound BD to net-new targets and signed Brightcove, a partner the company had pursued for 3-4 years, plus three more across Europe, the US and APAC. That is a partnerships programme from concept to signed revenue, done solo.",
+      },
+      {
+        title: "Partners measured on pipeline, not partner count",
+        body: "At Brightcove I recruited 15+ ISV and agency partners across Asia and the channel produced 35% of regional pipeline. That was the number the function was run, reviewed and resourced on. I also ran regional execution of the global partner programs: enablement, joint go-to-market, co-marketing and the rules of engagement that got direct sales selling with partners rather than around them.",
+      },
+      {
+        title: "The operating system underneath, and the hard negotiation on top",
+        body: "At Livepeer there was no commercial process at all, so I put one in: forecasting, contracting cadence, deal documentation and the CRM as the single source of truth. On the deal side, for a small IoT company I signed Roche Diagnostics, an $80B regulated business, and negotiated it up into an exclusive global reseller agreement, seven figures on a three-year minimum. It produced NHS sales and a ten-year contract with OLVG.",
+      },
+    ],
+    differentiator:
+      "Your partner universe is AI startups, developer tools, accelerators and venture funds, and I build in that world rather than only sell into it. I ship LLM applications on the Claude API, a production remote MCP server that gives AI tools a shared business-context layer, and my own go-to-market automation and pipeline dashboards. Alongside that I have advised 20+ SaaS and AI founders and I host a GTM podcast, 26+ episodes with sales and partnerships leaders. To be clear - my relationships are strongest in video/SaaS and across APAC/EMEA, not a US AI-VC book. Some of those I would be building from a standing start, and the podcast and the founder advisory work are the warm route in.",
+    metrics: [
+      { value: "35%", label: "of regional pipeline through partners at Brightcove, from 15+ ISV and agency partners" },
+      { value: "3 functions", label: "built from zero: Watching That partnerships, Livepeer commercial ops, Encoding.com APAC" },
+      { value: "7-figure", label: "exclusive global reseller agreement via Roche Diagnostics, live with NHS and OLVG" },
+    ],
+    coverLetter: "/letters/atom-ecosystem.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
