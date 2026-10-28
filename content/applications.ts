@@ -1570,6 +1570,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/percona-partnerships.pdf",
     longWayRound: true,
   },
+  {
+    slug: "hightouch-tam",
+    company: "Hightouch",
+    role: "Technical Account Manager, EMEA",
+    headline: "The technical owner of the account, who also grows it.",
+    sub: "I went Senior Solutions Engineer to Technical Director to VP at Brightcove, technically responsible for every customer in a 15+ country region. The accounts went from $40K to $250K+ average value. I build data and AI tooling myself. Fully remote from Valencia, on UK time ±1h.",
+    why: [
+      {
+        title: "Retention and expansion, with a number on it",
+        body: "As VP Asia at Brightcove I grew the region from ~$4M to ~$11.5M ARR at 120%+ of quota every year. Average account value went from $40K to $250K+ ACV, because existing customers added teams, products and markets. I also led the team that closed the company's largest global deal, $12M over three years.",
+      },
+      {
+        title: "Technically accountable for every customer in the region",
+        body: "Before VP I was Technical Director at Brightcove, technically responsible for all sales and customers across 15+ countries. Solution design, onboarding, best-practice guidance and the escalation path when a live platform broke, for hundreds of customers from mid-market up to the largest in Asia. Regional use cases and integration gaps went back to engineering in Boston on a weekly cadence.",
+      },
+      {
+        title: "Escalations against a deadline that cannot move",
+        body: "At Nine Network I ran on-call incident process management for 24/7 live broadcast output, including the Qantas news service, where root cause analysis happened against a transmission deadline. I also designed and delivered the broadcaster's entire digital presence for the Beijing 2008 Olympics on my own, with 8 weeks on the ground in Beijing.",
+      },
+    ],
+    differentiator:
+      "Your users are data teams, and I build. LLM applications on the Claude API, a production MCP server that gives AI tools a shared business-context layer, API integrations, CRM data sync and my own reporting dashboards, with an MEng in Electronic Engineering underneath it. To be clear - I am not a warehouse specialist. No dbt models or Snowflake in production, so I would be learning your stack properly in month one rather than arriving with it. What I bring is the ability to understand a customer's problem at the systems level and then carry the commercial outcome on top of it.",
+    metrics: [
+      { value: "$40K → $250K+", label: "average account value at Brightcove Asia, on expansion inside existing customers" },
+      { value: "~$4M → ~$11.5M", label: "regional ARR as VP, at 120%+ of quota every year" },
+      { value: "24/7", label: "on-call incident and escalation management for live broadcast output" },
+    ],
+    coverLetter: "/letters/hightouch-tam.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
