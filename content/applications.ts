@@ -1630,6 +1630,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/atom-ecosystem.pdf",
     longWayRound: true,
   },
+  {
+    slug: "scout-global-channel",
+    company: "Scout Global",
+    role: "Global Channel Leader",
+    headline: "A channel leader who has owned the number, not the programme.",
+    sub: "18+ years of partner-generated revenue across Europe and Asia. I have built the partner function from nothing twice, led a 20+ person team across Singapore, Mumbai and New Delhi, and turned a dormant relationship into a seven-figure global reseller agreement. Identity security is the part I would be learning. Fully remote from Valencia.",
+    why: [
+      {
+        title: "Measured on partner revenue, not partner count",
+        body: "At Brightcove I recruited 15+ ISV and agency partners across Asia and that channel produced 35% of regional pipeline. The 35% was how the function was run, reviewed and resourced, whilst I grew the region from ~$4M to ~$11.5M ARR at 120%+ of quota. I also ran regional execution of the global partner programmes: joint business plans, enablement, and the rules of engagement that got direct sales selling with partners instead of around them.",
+      },
+      {
+        title: "Turned an existing partnership into scalable revenue",
+        body: "An Australian IoT company had a relationship with Roche Diagnostics and very little coming out of it. I expanded it into an exclusive global reseller agreement, seven figures on a three-year minimum. It then stalled inside Roche's Legal and Compliance review, which is where most of these die, so I kept their commercial sponsors visible to carry business pressure and held our side firm on exclusivity and the minimum. That channel produced multiple NHS sales and a ten-year contract with OLVG in the Netherlands.",
+      },
+      {
+        title: "SIs, VARs and resellers are the motion I came up through",
+        body: "At Grass Valley I sold across 12+ Asian countries almost entirely through integrators and resellers. Opening Asia-Pacific for a US software vendor I signed the region's largest systems integrator and moved qualified pipeline 1200%. Before any of it I did solutions engineering inside a systems integrator, which is the partner's side of this desk. On the team half: 20+ people across Singapore, Mumbai and New Delhi, managing managers, under 10% turnover and 80% of AE promotions home-grown.",
+      },
+    ],
+    differentiator:
+      "A vendor rebuilding its go-to-market around partners needs the layer under the channel to work, and that is a systems problem. I build it. Deal registration, partner attribution, forecasting and contracting cadence, the CRM as one source of truth, and alongside that I ship production software: LLM applications on the Claude API, a remote MCP server, go-to-market automation and reporting dashboards, including the authentication and 2FA plumbing in my own builds. To be clear - I have not sold Identity/IAM or cyber security, and I would be learning the domain. I think the channel build is the harder half to hire for, and a business mid-transformation probably needs that more than another CV with IAM on it.",
+    metrics: [
+      { value: "35%", label: "of regional pipeline through partners at Brightcove, from 15+ ISV and agency partners" },
+      { value: "~$4M → ~$11.5M", label: "ARR grown as VP Asia, at 120%+ of quota every year" },
+      { value: "7-figure", label: "exclusive global reseller agreement via Roche Diagnostics, live with NHS and OLVG" },
+    ],
+    coverLetter: "/letters/scout-global-channel.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
