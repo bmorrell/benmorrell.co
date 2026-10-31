@@ -1660,6 +1660,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/scout-global-channel.pdf",
     longWayRound: true,
   },
+  {
+    slug: "tealium-partnerships",
+    company: "Tealium",
+    role: "Partner Development Director, EMEA",
+    headline: "You asked for a builder. That is the half I am good at.",
+    sub: "18+ years of technology partnerships across EMEA and Asia, and I ship the AI tooling myself rather than requesting it. I have built the partner function from nothing twice and turned a dormant relationship into a seven-figure global reseller agreement. Cloud marketplace listings are the part I would be learning. Fully remote from Valencia, on CET.",
+    why: [
+      {
+        title: "Built partner motions where no playbook existed",
+        body: "An Australian IoT company had a relationship with Roche Diagnostics and very little coming out of it, plus no European channel at all. I expanded it into an exclusive global reseller agreement, seven figures on a three-year minimum. It then stalled inside Roche's Legal and Compliance review, which is where most of these die, so I kept their commercial sponsors visible to carry business pressure and held our side firm on exclusivity and the minimum commitment. That channel produced multiple NHS sales and a ten-year contract with OLVG in the Netherlands.",
+      },
+      {
+        title: "New routes to market, from a thesis to signed partners",
+        body: "I opened Asia-Pacific for Encoding.com off a market-entry thesis I wrote myself. No presence, no partners, no playbook. I designed and ran an executive roadshow across Singapore, India, Malaysia and Thailand, moved qualified pipeline 1200%, and signed the region's largest systems integrator. At Brightcove I recruited 15+ ISV and technology partners and that channel produced 35% of regional pipeline, whilst I grew the region from ~$4M to ~$11.5M ARR at 120%+ of quota.",
+      },
+      {
+        title: "Credible with partner engineering, not just partner sales",
+        body: "I came up Senior Solutions Engineer to Technical Director to VP off an engineering degree, so the technical conversation is one I can hold without a solutions engineer sat next to me. That matters when the partnership is carried by an integration rather than a logo. At Livepeer I signed Tier-1 technology partnerships including Aptos at $500K and built the commercial operating system underneath: forecasting, contracting cadence and the CRM as one source of truth.",
+      },
+    ],
+    differentiator:
+      "Your spec asks for someone using AI-enabled workflows to prioritise partner investment and make faster decisions. I do not just use that tooling, I build it: LLM applications on the Claude API, a production remote MCP server, go-to-market automation, lead scoring and enrichment, and partner reporting dashboards, all shipped by me instead of queued with engineering. I think that combination is rarer than the partnerships CV on its own. To be clear on the gap - I have not built hyperscaler marketplace listings or run a formal AWS/GCP co-sell programme, and I would be learning that mechanic. The ecosystem thinking, the technical credibility and the from-nothing build I already have.",
+    metrics: [
+      { value: "7-figure", label: "exclusive global reseller agreement via Roche Diagnostics, live with NHS and OLVG" },
+      { value: "35%", label: "of regional pipeline through partners at Brightcove, from 15+ ISV and technology partners" },
+      { value: "~$4M → ~$11.5M", label: "ARR grown as VP Asia, at 120%+ of quota every year" },
+    ],
+    coverLetter: "/letters/tealium-partnerships.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
