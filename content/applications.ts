@@ -727,7 +727,7 @@ export const applications: Application[] = [
     metrics: [
       { value: "35%", label: "of regional pipeline via partners" },
       { value: "15+", label: "ISV and agency partners recruited" },
-      { value: "~$4M \u2192 ~$11.5M", label: "ARR grown at Brightcove Asia" },
+      { value: "~$4M → ~$11.5M", label: "ARR grown at Brightcove Asia" },
     ],
     coverLetter: "/letters/wikimedia-partnerships.pdf",
     longWayRound: true,
@@ -756,7 +756,7 @@ export const applications: Application[] = [
       "The posting asks for someone who notices where structure, tooling or process is missing and creates it. I do that literally. When my consultancy needed GTM tooling that did not exist I wrote it: LLM agents, a production MCP server, outbound automation and lead scoring. I also sit on CET, the same time zone as the founding European sales team you are hiring, so a partnerships lead here could open referral partners for that team while running the US motion on the afternoon overlap.",
     metrics: [
       { value: "35%", label: "of regional pipeline sourced by partners at Brightcove" },
-      { value: "~$4M \u2192 ~$11.5M", label: "ARR grown as VP Asia, Brightcove" },
+      { value: "~$4M → ~$11.5M", label: "ARR grown as VP Asia, Brightcove" },
       { value: "15+", label: "ISV and agency partners recruited into one program" },
     ],
     coverLetter: "/letters/tremendous-partnerships.pdf",
@@ -787,7 +787,7 @@ export const applications: Application[] = [
     metrics: [
       { value: "35%", label: "of regional pipeline via partners at Brightcove Asia" },
       { value: "3", label: "regional partner functions built for companies based elsewhere" },
-      { value: "~$4M \u2192 ~$11.5M", label: "ARR grown at Brightcove Asia" },
+      { value: "~$4M → ~$11.5M", label: "ARR grown at Brightcove Asia" },
     ],
     coverLetter: "/letters/supabase-partnerships.pdf",
     longWayRound: true,
@@ -817,7 +817,7 @@ export const applications: Application[] = [
     metrics: [
       { value: "15+", label: "ISV and agency partners recruited at Brightcove Asia" },
       { value: "35%", label: "of regional pipeline sourced by the partner channel" },
-      { value: "~$4M \u2192 ~$11.5M", label: "ARR grown at Brightcove Asia" },
+      { value: "~$4M → ~$11.5M", label: "ARR grown at Brightcove Asia" },
     ],
     coverLetter: "/letters/canonical-alliances.pdf",
     longWayRound: true,
@@ -1688,6 +1688,36 @@ export const applications: Application[] = [
       { value: "~$4M → ~$11.5M", label: "ARR grown as VP Asia, at 120%+ of quota every year" },
     ],
     coverLetter: "/letters/tealium-partnerships.pdf",
+    longWayRound: true,
+  },
+  {
+    slug: "matillion-partnerships",
+    company: "Matillion",
+    role: "Senior Director, Partnerships (EMEA)",
+    headline: "Partner-sourced revenue, not partner count.",
+    sub: "18+ years of technology and integrator partnerships across EMEA and Asia. I have built the partner function from nothing twice, led a 20+ person team across Singapore, Mumbai and New Delhi, and turned a dormant Roche Diagnostics relationship into a seven-figure exclusive global reseller agreement. Data and analytics is the part I would be learning. Fully remote from Valencia, on CET.",
+    why: [
+      {
+        title: "Measured on what partners actually produced",
+        body: "At Brightcove I recruited 15+ ISV and technology partners across Asia and that channel produced 35% of regional pipeline. The 35% was how the function was run, reviewed and resourced, not a statistic reported after the fact. Over the same years I grew the region from ~$4M to ~$11.5M ARR at 120%+ of quota. I also ran regional execution of the global partner programmes: joint business plans, enablement, and the rules of engagement that got direct sales selling with partners instead of around them.",
+      },
+      {
+        title: "Integrators are the motion I came up through",
+        body: "At Grass Valley I sold across 12+ Asian countries almost entirely via integrators and resellers. Opening Asia-Pacific for Encoding.com off a market-entry thesis I wrote myself, I signed the region's largest systems integrator and moved qualified pipeline 1200%. Before any of it I did solutions engineering inside a systems integrator, which is the partner's side of this desk. Boutique and global SIs are not a new vocabulary for me.",
+      },
+      {
+        title: "Negotiated at executive level, then unblocked it",
+        body: "An Australian IoT company had a dormant relationship with Roche Diagnostics. I expanded it into an exclusive global reseller agreement, seven figures on a three-year minimum. It then stalled inside Roche's Legal and Compliance review, which is where most of these die, so I kept their commercial sponsors visible to carry business pressure whilst holding our side firm on exclusivity and the minimum commitment. That channel produced multiple NHS sales and a ten-year contract with OLVG in the Netherlands.",
+      },
+    ],
+    differentiator:
+      "Maia is agentic AI, and it gets delivered through system integrators whose engineers will want a real conversation about it. I do not brief that software, I build it: LLM applications on the Claude API, a production remote MCP server, go-to-market automation, lead scoring and partner reporting dashboards. I build the layer under a channel too, which is where most partner programmes quietly fail: deal registration, partner attribution, forecasting cadence, the CRM as one source of truth. To be clear on the gap - I have not run a hyperscaler marketplace listing or a formal AWS/Azure co-sell programme, and data and analytics is adjacent to my background rather than my domain. I think the from-nothing partner build and the technical credibility are the harder halves to hire for, and a new CEO and CRO rebuilding go-to-market probably need those more than another CV with ETL on it.",
+    metrics: [
+      { value: "35%", label: "of regional pipeline through partners at Brightcove, from 15+ ISV and technology partners" },
+      { value: "~$4M → ~$11.5M", label: "ARR grown as VP Asia, at 120%+ of quota every year" },
+      { value: "7-figure", label: "exclusive global reseller agreement via Roche Diagnostics, live with NHS and OLVG" },
+    ],
+    coverLetter: "/letters/matillion-partnerships.pdf",
     longWayRound: true,
   },
 ];
