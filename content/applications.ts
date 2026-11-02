@@ -1750,6 +1750,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/itential-channel.pdf",
     longWayRound: true,
   },
+  {
+    slug: "toptal-vp-international",
+    company: "Toptal",
+    role: "Vice President, International",
+    headline: "Run the number across four regions. Still be in the room on the biggest deal.",
+    sub: "18+ years of enterprise sales leadership across Europe, the Middle East and Asia Pacific, in SaaS and in services. I grew Brightcove Asia from ~$4M to ~$11.5M ARR across 15+ countries at 120%+ of quota every year, and led the team that closed the company\u0027s largest deal globally. Fully remote from Valencia on CET, and used to running a region against a US head office.",
+    why: [
+      {
+        title: "A player-coach, which is what the posting actually asks for",
+        body: "Your JD says this person will not be here just to tell other people what to do. At Brightcove I ran Asia across 15+ countries and grew the region from ~$4M to ~$11.5M ARR, which made it the company\u0027s market leader in video SaaS. I also carried a number myself the whole time and hit 120%+ of quota every year, usually by hunting large deals above run-rate when the pipeline alone was not going to reach the target. Cove Club top performer in 2017, 2018 and 2019. I led the team that closed Brightcove\u0027s largest deal globally, $12M over three years, through consultative multi-stakeholder selling.",
+      },
+      {
+        title: "Markets open when someone takes the obstacles down",
+        body: "The hardest paragraph in your posting is the one about growth depending on solving the practical problems of doing business somewhere. That has been most of my work. I opened Vietnam, Taiwan, Thailand and the Philippines for $2M+ of new ARR, and formally opened the India office after a long legal and operating project. For an Australian vendor with no European channel I turned one Roche Diagnostics relationship into an exclusive global reseller agreement, seven figures on a three-year minimum, because what they actually needed was local paper and local relationships in markets they could not transact in directly. It produced multiple NHS sales and a ten-year contract with OLVG in the Netherlands.",
+      },
+      {
+        title: "Regional leaders who coach, not a reporting line",
+        body: "I built and led a 20+ person org across Singapore, Mumbai and New Delhi, covering sales, solutions engineering, sales operations, channel and customer success. I managed managers, held annual turnover under 10% in a competitive market, and 80% of AE promotions were people we developed in-house. Hiring, performance management and the underperformance conversations were mine. I also ran the operating rhythm against a US head office: forecast, pipeline review, account planning, and the awkward call when a number moved.",
+      },
+    ],
+    differentiator:
+      "Toptal sells talent, delivered services and AI-based solutions together, and your JD wants enough fluency in all three to know when a client needs one and who to bring in. I have sold SaaS at scale and then spent seven years selling services rather than licences, and the AI half is not a briefing I received. I build it: LLM applications on the Claude API, AI agents, a production remote MCP server, go-to-market automation, lead scoring and enrichment. So when a seller tells me a client needs an AI-based solution, I can judge whether that is real. To be clear on the gaps - my two deep regions are Asia Pacific and Europe, so the Middle East is partial for me (an enterprise proof of concept with Honda\u0027s regional operation) and Africa would be new ground. I have an MEng rather than an MBA. I think the rare combination here is a VP who can run four regional forecasts and still be the one a client wants in the room, and that is harder to hire for than the regional coverage.",
+    metrics: [
+      { value: "~$4M \u2192 ~$11.5M", label: "ARR grown as VP Asia across 15+ countries, at 120%+ of quota every year" },
+      { value: "$12M", label: "largest deal in the company globally, over three years, closed by the team I ran" },
+      { value: "4 new markets", label: "opened in Asia for $2M+ new ARR, plus the India office established" },
+    ],
+    coverLetter: "/letters/toptal-vp-international.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
