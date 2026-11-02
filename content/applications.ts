@@ -1720,6 +1720,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/matillion-partnerships.pdf",
     longWayRound: true,
   },
+  {
+    slug: "itential-channel",
+    company: "Itential",
+    role: "EMEA Senior Channel Account Manager",
+    headline: "Build the UK channel. Also build the agents.",
+    sub: "18+ years of partner-led go to market across the UK, Europe and Asia, selling infrastructure almost entirely through integrators and resellers. I have stood the partner function up from nothing twice. I also ship AI agents and MCP servers myself, so partner enablement on an agentic platform is something I can write rather than commission. Fully remote from Valencia on CET, UK citizen, in the UK on a regular cadence.",
+    why: [
+      {
+        title: "Built from a standing start, twice",
+        body: "Your posting asks for someone who can build channel programmes and process rather than operate inside an established one. At Watching That I built the partnerships function from nothing and signed Brightcove, a partner they had chased for three or four years. For an Australian IoT company with no European channel at all I turned a dormant Roche Diagnostics relationship into an exclusive global reseller agreement, seven figures on a three-year minimum, which produced multiple NHS sales and a ten-year contract with OLVG in the Netherlands. At Livepeer I built the operating layer underneath a channel, which is where most partner programmes quietly fail: deal registration, contracting cadence, forecasting and the CRM as one source of truth.",
+      },
+      {
+        title: "Measured on partner-sourced pipeline, not partner count",
+        body: "At Brightcove I recruited 15+ ISV and agency partners across Asia and that channel drove 35% of regional pipeline. The 35% was how the function was run, reviewed and resourced, not a number reported afterwards. Over the same years I grew the region from ~$4M to ~$11.5M ARR at 120%+ of quota, and ran regional execution of the global partner programmes: joint business plans, enablement, quarterly reviews, and the rules of engagement that got direct sales selling with partners instead of around them.",
+      },
+      {
+        title: "Integrators and resellers, from both sides of the desk",
+        body: "At Grass Valley I sold broadcast and playout infrastructure across 12+ Asian countries almost entirely through integrators and resellers. Opening Asia-Pacific for Encoding.com off a market-entry thesis I wrote myself, I signed the region's largest systems integrator and moved qualified pipeline 1200%. Before any of that I did solutions engineering inside a systems integrator, so I know how a partner scopes, prices and delivers someone else's technology, and what they want from a vendor before putting their own engineers on it.",
+      },
+    ],
+    differentiator:
+      "Itential sells governed, agentic action on production infrastructure, and your partners have to make enterprise buyers comfortable with deterministic execution and agentic reasoning in one engine. I do not brief that software, I build it: LLM applications on the Claude API, AI agents, and a production remote MCP server giving AI tools a shared business-context layer, with authentication and conflict detection underneath. The infrastructure half is not new either, between broadcast IT, playout systems, an IPTV build for Telkom Malaysia and on-call incident management for 24/7 live output, where a change either works or goes to air broken. To be clear on the gaps - I have not worked in network automation or NetOps, and I have not built a GSI or federal-SI practice, so the Nomios and Logicalis end of your partner grid I would get to faster than Leidos and CACI. I think the from-nothing channel build and the technical credibility to enable partners on agentic software are the harder halves to hire for.",
+    metrics: [
+      { value: "35%", label: "of regional pipeline through partners at Brightcove, from 15+ ISV and agency partners" },
+      { value: "~$4M → ~$11.5M", label: "ARR grown as VP Asia, at 120%+ of quota every year" },
+      { value: "7-figure", label: "exclusive global reseller agreement via Roche Diagnostics, live with NHS and OLVG" },
+    ],
+    coverLetter: "/letters/itential-channel.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
