@@ -1780,6 +1780,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/toptal-vp-international.pdf",
     longWayRound: true,
   },
+  {
+    slug: "gridbeyond-portfolio",
+    company: "GridBeyond",
+    role: "Head of Portfolio - UK & Ireland",
+    headline: "Grow the live portfolio from inside. Open the data-centre market from scratch.",
+    sub: "18+ years running regional portfolios and building the partnerships that grow them. At Brightcove I took Asia from ~$4M to ~$11.5M ARR, mostly out of existing accounts, with average account value moving from $40K to $250K+ ACV. I am an electronic engineer who still ships production AI software, so the infrastructure conversation and the commercial one are the same conversation. Fully remote from Valencia, in the UK and Ireland on a regular cadence.",
+    why: [
+      {
+        title: "Share of wallet is most of this job",
+        body: "Your first two responsibility blocks are retention, renewals and structured cross-sell and upsell into a live portfolio. That is the motion I ran at Brightcove. I owned the Asia region across 15+ countries and grew it from ~$4M to ~$11.5M ARR, and the majority came from inside existing accounts rather than new logos. Average account value went from $40K to $250K+ ACV as customers took on more sites and more business units, which made Asia the company\u0027s market leader in video SaaS. I hit 120%+ of quota every year doing it, and led the team that closed the largest deal in the company globally at $12M over three years. The method was unglamorous: know every account\u0027s estate, review it on a fixed cadence, and put the strongest people on the highest-potential accounts.",
+      },
+      {
+        title: "Partnerships are the other half of the seat",
+        body: "You want technology providers, OEMs, utilities, infrastructure developers and channel partners, and you want the business case and the governance as well as the handshake. At Brightcove I recruited 15+ strategic ISV and agency partners and that channel ended up driving 35% of regional pipeline. For a small Australian IoT company with no European channel I signed Roche Diagnostics, an $80B regulated business, and turned it into an exclusive global reseller agreement, seven figures over a three-year minimum. The interesting part was the governance. It stalled inside Roche\u0027s legal and compliance review, so I kept their commercial sponsors visible to keep business pressure on the process, and held our founder firm on exclusivity and the minimum whilst conceding what was simply policy at that scale. It produced multiple NHS sales and a ten-year contract with OLVG in the Netherlands.",
+      },
+      {
+        title: "Opening a new sector is a pattern, not a first attempt",
+        body: "The data-centre and AI-infrastructure remit is the part of this role with no playbook yet, which is the part I have done most often. I opened Vietnam, Taiwan, Thailand and the Philippines for $2M+ of new ARR, and formally opened the Brightcove India office after a long legal and operating project. For Encoding.com I wrote the Asia-Pacific market-entry thesis myself, then executed it: qualified pipeline up 1200%, the region\u0027s largest systems integrator signed as a partner, multiple six-figure ARR contracts closed. Each of those started the same way, with a written view of who buys, why, through whom, and what has to be true before the first deal.",
+      },
+    ],
+    differentiator:
+      "GridBeyond\u0027s product is AI-driven optimisation and your next market is AI infrastructure, which means the person opening it has to hold a technical conversation and a commercial one in the same meeting. I am an electronic engineer by training and I have spent 18 years in infrastructure go-to-market, from broadcast IT and playout systems to an IPTV build for Telkom Malaysia and on-call incident management for 24/7 live output, where a change either works or goes to air broken. The AI half is not a briefing I received either. I build it: LLM applications on the Claude API, AI agents, and a production remote MCP server giving AI tools a shared business-context layer, with authentication and conflict detection underneath. So I can sit with a data-centre buyer on grid connection, power availability and cost/resilience without a solutions engineer in the room, and then write the proposition and the partner business case afterwards. To be clear on the gaps - I have not worked inside energy markets or trading, and flexibility, BESS dispatch and energy management are domains I would be learning rather than teaching. I have sold to enterprises and broadcasters, not to utilities or hyperscale operators. I think the portfolio-expansion arithmetic and the technical credibility to open an energy-intensive sector are the harder halves to hire for, and the energy-market knowledge is the half that a strong team and a few months will close.",
+    metrics: [
+      { value: "$40K \u2192 $250K+", label: "average account value grown at Brightcove Asia through structured cross-sell and upsell" },
+      { value: "~$4M \u2192 ~$11.5M", label: "ARR grown as VP Asia across 15+ countries, at 120%+ of quota every year" },
+      { value: "35%", label: "of regional pipeline through partners, from 15+ ISV and agency partners recruited" },
+    ],
+    coverLetter: "/letters/gridbeyond-portfolio.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
