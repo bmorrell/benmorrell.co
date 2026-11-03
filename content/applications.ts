@@ -1810,6 +1810,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/gridbeyond-portfolio.pdf",
     longWayRound: true,
   },
+  {
+    slug: "goodwall-partnerships",
+    company: "Goodwall",
+    role: "Strategic Partnerships Director",
+    headline: "The small company at the big organisation's table. For eighteen years.",
+    sub: "Your posting asks for several 6-7 figure partnerships, most of the pipeline self-built, bespoke rather than off a playbook. I turned one Roche Diagnostics relationship into an exclusive global reseller agreement for a vendor Roche had never heard of, and built the partnerships function from zero at two other companies. I also build with the models behind your AI fluency programmes. Fully remote from Valencia on CET, applying for Global remote.",
+    why: [
+      {
+        title: "Giant counterparty, small company, no playbook",
+        body: "For an Australian IoT vendor with no European presence I turned one Roche Diagnostics relationship into an exclusive global reseller agreement, seven figures on a three-year minimum. I sourced it by outreach to Roche, Siemens and Beckman Coulter, then built the commercial case from nothing. When it stalled inside Legal and Compliance at an $80B business I worked both organisations at once: kept Roche's commercial sponsors visible so the process carried business pressure rather than sitting in a queue, and pushed our own founder to concede on policy whilst holding firm on exclusivity and the minimum commitment. That channel produced multiple NHS sales and a ten-year contract with OLVG in Amsterdam.",
+      },
+      {
+        title: "I originate the pipeline rather than work a queue",
+        body: "I opened Asia Pacific for Encoding.com off a market-entry thesis I wrote myself, with no presence and no referrals to lean on. Qualified pipeline moved 1200%, the region's largest systems integrator signed, and multiple 6-figure ARR contracts closed. At Watching That I built the partnerships function from nothing and signed Brightcove, a partner they had chased for three or four years. At Brightcove itself I recruited 15+ ISV and agency partners and that channel drove 35% of regional pipeline, whilst I grew the region from ~$4M to ~$11.5M ARR at 120%+ of quota every year.",
+      },
+      {
+        title: "Programmes get scoped against the partner's goals, not ours",
+        body: "Your six-stage model starts by defining success against the partner's own priorities and KPIs, which is the step most vendors skip. I came up through solutions engineering to Technical Director before VP, so I can sit with the implementer working out what a programme actually delivers and then sit with the sponsor on what it is worth. The Roche agreement worked because the commercial shape was designed around what Roche's diagnostics business units needed, and the same instinct is why I led the team that closed Brightcove's largest deal globally, $12M over three years.",
+      },
+    ],
+    differentiator:
+      "Goodwall's flagship partnerships are AI fluency programmes with Microsoft, HP, GitHub and Cognizant. I do not brief that technology, I build with it: applications on the Claude / Anthropic API, AI agents, a production remote MCP server giving AI tools a shared business-context layer, plus go-to-market automation and lead scoring. So in a partner's room I can talk about what a course should teach a sixteen-year-old and not only about the commercials, which is a rare pairing on a partnerships CV. To be clear on the gap - I have sold to IT, product and clinical budgets, never to a CSR or foundation budget, so the buying centre is new to me even though the deal shape is not. The youth development half is genuine but unpaid: I founded lacrosse clubs on two continents, ran one as President for three years and grew it to 80 members, and 80% of AE promotions on my Brightcove team were people we developed in-house.",
+    metrics: [
+      { value: "7-figure", label: "exclusive global reseller agreement with Roche Diagnostics, 3-year minimum, live with NHS and OLVG" },
+      { value: "1200%", label: "qualified pipeline growth opening Asia Pacific from a thesis I wrote myself" },
+      { value: "~$4M \u2192 ~$11.5M", label: "ARR grown as VP Asia across 15+ countries, at 120%+ of quota every year" },
+    ],
+    coverLetter: "/letters/goodwall-partnerships.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
