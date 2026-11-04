@@ -1840,6 +1840,50 @@ export const applications: Application[] = [
     coverLetter: "/letters/goodwall-partnerships.pdf",
     longWayRound: true,
   },
+  {
+    slug: "flexcompute-channel",
+    company: "Flexcompute",
+    role: "Director of Channel and Distribution Sales, Europe",
+    headline: "A European distributor channel, built from nothing. Twice.",
+    sub: "18+ years selling technically deep infrastructure to engineering buyers through distributors, resellers and integrators across Europe and Asia. A distributor already owns the domain. The work is making their engineers confident enough to put their own name on the product.",
+    why: [
+      {
+        title: "A European channel built from zero",
+        body: "An Australian IoT vendor had a dormant Roche Diagnostics ($80B) relationship and nothing else in Europe. I turned it into an exclusive global reseller agreement, seven figures on a three-year minimum. It stalled inside Roche's Legal and Compliance review, so I kept their commercial sponsors visible and held our side firm on exclusivity. That channel produced NHS sales plus a ten-year contract with OLVG in the Netherlands.",
+      },
+      {
+        title: "Partner-sourced pipeline, and the number it was judged on",
+        body: "At Brightcove I recruited 15+ ISV and agency partners across Asia and ran regional execution of the global partner programmes. The channel drove 35% of regional pipeline, which is how the function was resourced. I grew the region from ~$4M to ~$11.5M ARR at 120%+ of quota.",
+      },
+      {
+        title: "I have sat on the partner's side of the desk",
+        body: "At Grass Valley I sold playout infrastructure across 12+ Asian countries almost entirely through distributors and integrators. Before that I did solutions engineering inside a systems integrator, so I know what a partner needs from a vendor before committing their own people to it.",
+      },
+    ],
+    differentiator:
+      "I am an engineer by training. MEng Electronic Engineering, then a decade in broadcast infrastructure, and I still build the current technology myself: LLM applications on the Claude API, AI agents and a production MCP server. A 50-500x speed-up changes how often an engineer can afford to ask a question, and a channel built on that needs someone who can hold the technical argument without a sales engineer in the room. FlexAgent is not an abstraction to me.",
+    metrics: [
+      { value: "7-figure", label: "exclusive global Roche reseller agreement" },
+      { value: "35%", label: "of regional pipeline via partners" },
+      { value: "~$4M \u2192 ~$11.5M", label: "ARR grown at Brightcove Asia" },
+    ],
+    approach: [
+      {
+        title: "Qualify the existing channel before adding to it",
+        body: "Most European distributor networks carry partners who signed once and never sold. I would start by ranking who actually transacts, who has the engineering bench to support a solver, and who is simply holding territory. That decides whether this is a recruitment problem or an enablement one.",
+      },
+      {
+        title: "Enablement that a partner's engineer can defend",
+        body: "A distributor sells what their own engineers believe. I would build the competitive argument against the incumbent solvers into something their pre-sales team can run themselves, with the demo doing most of the work. That is the part I came up doing.",
+      },
+      {
+        title: "KPIs the partner agrees to before signing",
+        body: "Define the performance metrics, the deal registration rules and the minimum commitment at contract stage rather than at the first review. I held exclusivity and a three-year minimum through Roche's legal process, so I know which terms are worth the argument.",
+      },
+    ],
+    longWayRound: true,
+    coverLetter: "/letters/flexcompute-channel.pdf",
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
