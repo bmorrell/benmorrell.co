@@ -1884,54 +1884,6 @@ export const applications: Application[] = [
     longWayRound: true,
     coverLetter: "/letters/flexcompute-channel.pdf",
   },
-  {
-    slug: "infoblox-channel-ecosystem",
-    company: "Infoblox",
-    role: "Senior Director, EMEA Channel & Ecosystem",
-    headline: "Three pillars, one number. I have carried the partner number before.",
-    sub: "18+ years in enterprise software and infrastructure across EMEA and Asia. I have built partner-sourced revenue from a standing start and then been measured on it, run the long tail through distributors, and sat on the partner's side of the desk inside a systems integrator.",
-    why: [
-      {
-        title: "Partner-sourced revenue, and the number it was judged on",
-        body: "At Brightcove I recruited 15+ ISV and agency partners and ran regional execution of the global partner programs. That channel drove 35% of regional pipeline, which is how the function earned its investment. The region grew from ~$4M to ~$11.5M ARR at 120%+ of quota every year.",
-      },
-      {
-        title: "A reseller channel built from nothing, held through legal review",
-        body: "An Australian IoT vendor had a dormant Roche Diagnostics ($80B) relationship and no European channel at all. I built it into an exclusive global reseller agreement, seven figures on a three-year minimum. It stalled inside Roche's Legal and Compliance review, so I kept their commercial sponsors visible and held our side firm on exclusivity and the minimum. That channel produced multiple NHS sales plus a ten-year contract with OLVG in the Netherlands.",
-      },
-      {
-        title: "Distribution and the long tail, not just the top 50",
-        body: "At Grass Valley I sold playout infrastructure across 12+ Asian countries almost entirely through distributors and integrators. Before that I did solutions engineering inside a systems integrator, so I know what a partner wants from a vendor before they commit their own engineers.",
-      },
-      {
-        title: "A multi-market team, led across three countries",
-        body: "I built and led a 20+ person organisation across Singapore, Mumbai and New Delhi, managing managers, at under 10% annual turnover with 80% of AE promotions grown internally. Distributed and multicultural is the normal condition, not the hard part.",
-      },
-    ],
-    differentiator:
-      "I am an engineer by training. MEng Electronic Engineering, then a decade in network and IP infrastructure, and I still build the current technology myself: LLM applications on the Claude API, AI agents and a production MCP server. For a vendor whose partners sell on architecture, a channel leader who can hold the technical argument without a sales engineer in the room is rare. One straight thing: I have not run AWS/Azure/GCP co-sell or marketplace programs directly. I have signed SI partnerships and built what co-sell runs on underneath, and I would rather say that now than in a first review.",
-    metrics: [
-      { value: "35%", label: "of regional pipeline via partners" },
-      { value: "7-figure", label: "exclusive global Roche reseller agreement" },
-      { value: "~$4M \u2192 ~$11.5M", label: "ARR grown at Brightcove Asia" },
-    ],
-    approach: [
-      {
-        title: "Re-tier the channel around the new story, not the old one",
-        body: "Kentik and Axur give partners materially more to carry than DDI alone. That is usually the point where a channel either re-tiers around the new value or quietly keeps selling what it already knows how to sell. I would start by working out which partners can carry the wider story and which are holding territory on the original franchise.",
-      },
-      {
-        title: "Separate the three pillars' economics before optimising coverage",
-        body: "Strategic resellers, hyperscaler co-sell and distribution-led long tail do not respond to the same incentives, and blending their forecasts hides which one is actually producing new logos. I would get each segment on its own joint business plan, targets and cadence first, then argue about investment levels with numbers rather than instinct.",
-      },
-      {
-        title: "Fix channel conflict at the rules, not the deal",
-        body: "Most partner-sourced leakage I have seen is a rules-of-engagement problem that gets re-litigated deal by deal. Deal registration, direct-versus-partner motions and the escalation path are worth settling with the direct sales leaders early, because every unresolved case costs the partner relationship more than it costs us.",
-      },
-    ],
-    longWayRound: true,
-    coverLetter: "/letters/infoblox-channel-ecosystem.pdf",
-  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
