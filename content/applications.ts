@@ -1928,6 +1928,36 @@ export const applications: Application[] = [
     longWayRound: true,
     coverLetter: "/letters/elevenlabs-model-partnerships.pdf",
   },
+  {
+    slug: "canonical-alliances-channels",
+    company: "Canonical",
+    role: "Alliances & Channels Leader",
+    headline: "An alliances leader who owns the forecast the channel produces.",
+    sub: "18+ years building partner channels from nothing and carrying the revenue through them, across EMEA and APAC. An engineer by training who still ships software, so partner engineering conversations do not need a translator.",
+    why: [
+      {
+        title: "A channel that carried the region",
+        body: "At Brightcove I recruited 15+ ISV and agency partners into a regional ecosystem that did not exist when I arrived. That channel grew to source 35% of regional pipeline whilst I led Asia from ~$4M to ~$11.5M ARR, at 120%+ of quota every year. I ran regional execution of the global partner programmes too: enablement, co-selling, joint go-to-market plans and commercial terms adapted to each market.",
+      },
+      {
+        title: "The operating system behind the partnerships",
+        body: "Your posting asks for operating cadence, pipeline governance and data-driven accountability. At Livepeer the partnerships existed and the machinery behind them did not, so I stood up the forecasting, the deal and contracting cadence, the partner training and the CRM discipline. Pipeline governance is what makes a partner forecast something the business can commit to.",
+      },
+      {
+        title: "A route to market built from nothing",
+        body: "For BinaryTech, a medical IoT company of only 15 people, I sourced Roche Diagnostics cold and built the business case from nothing. It became an exclusive global reseller agreement with an $80B business. It stalled inside Legal and Compliance, and it ended up being signed because I kept Roche's commercial sponsors visible whilst holding firm on exclusivity and the minimum commitment. That channel produced multiple NHS sales and a ten-year contract with OLVG, a large Amsterdam hospital group.",
+      },
+    ],
+    differentiator:
+      "Open source is why this one interests me. I led global Go to Market for Livepeer, an open video infrastructure network, and that is where I learned how an open project earns money: the software is free, whilst the assurance and integration work is what companies pay for. That is recognisably the Ubuntu Pro conversation. On the engineer-to-CxO line, I trained as an engineer (MEng), designed the all-IP broadcast system for Nine Network's Beijing 2008 Olympics on my own, and I still build. This site runs on Vercel, with a Cloudflare Worker and a production MCP server behind it.",
+    metrics: [
+      { value: "~$4M → ~$11.5M", label: "ARR led at Brightcove Asia" },
+      { value: "35%", label: "of regional pipeline via partners" },
+      { value: "120%+", label: "of quota, every year" },
+    ],
+    coverLetter: "/letters/canonical-alliances-channels.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
