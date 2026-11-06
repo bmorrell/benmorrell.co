@@ -1884,6 +1884,50 @@ export const applications: Application[] = [
     longWayRound: true,
     coverLetter: "/letters/flexcompute-channel.pdf",
   },
+  {
+    slug: "elevenlabs-model-partnerships",
+    company: "ElevenLabs",
+    role: "Model Partnerships - ElevenCreative",
+    headline: "Your model partners are video companies. I have spent eighteen years in video.",
+    sub: "Eighteen years building technology partner ecosystems, most of it on the infrastructure side of video: Brightcove, Encoding.com, Livepeer, Mux, Visionular. I also build with the current models myself. ElevenCreative's model partnerships are the rare seat where both halves are the actual job.",
+    why: [
+      {
+        title: "A partnership function built from nothing",
+        body: "Watching That was a London streaming-data company with no partnerships function. I wrote the target list, the pitch and the commercial shape, then signed Brightcove, a partner they had chased for three or four years. Three more followed across Europe, the US and APAC. That is the same shape as this seat, pointed the other way: they were the small company going after the platform.",
+      },
+      {
+        title: "The commercial half, held through a giant's legal review",
+        body: "I turned a dormant Roche Diagnostics ($80B) relationship into an exclusive global reseller agreement, seven figures on a three-year minimum. It stalled inside their Legal and Compliance review, which is where these quietly die. I conceded everything that was only policy at that scale and held firm on exclusivity and the minimum commitment. That channel produced NHS sales and a ten-year contract with OLVG in Amsterdam.",
+      },
+      {
+        title: "Partner-sourced pipeline, and the number it was judged on",
+        body: "At Brightcove I recruited 15+ ISV and technology partners across Asia and ran regional execution of the global partner programmes. The channel drove 35% of regional pipeline, which is how the function was resourced. I grew the region from ~$4M to ~$11.5M ARR at 120%+ of quota every year.",
+      },
+    ],
+    differentiator:
+      "I can read the generative video landscape without a briefing. Brightcove, Encoding.com and Telestream, Livepeer, Mux, Visionular: encoding, transcoding, streaming and the economics of selling video by the minute. So a model provider's engineering lead and their commercial lead are both conversations I can hold on my own. On the pricing question, Encoding.com sold per minute and Livepeer sold usage-based compute, so consumption/credit economics are old ground. I also build with these models instead of only buying them: LLM applications on the Claude API, AI agents, a production MCP server. One more practical thing - you ask for flexibility toward partners in Asia, and I spent eight years based in Singapore doing deals across 15+ countries there, so those hours are a habit by now.",
+    metrics: [
+      { value: "~$4M → ~$11.5M", label: "ARR grown as VP Asia, at 120%+ of quota every year" },
+      { value: "35%", label: "of regional pipeline sourced by the 15+ partners I recruited" },
+      { value: "7-figure", label: "exclusive global Roche Diagnostics reseller agreement, 3-year minimum" },
+    ],
+    approach: [
+      {
+        title: "Rank the model landscape before signing any of it",
+        body: "Video model quality moves monthly and the providers creators actually ask for are not always the ones with the loudest launch. I would start with a ranked view of who matters for your users, which providers have the serving capacity to take your volume, and which are a one-release wonder. That decides where the commercial effort goes rather than who emailed first.",
+      },
+      {
+        title: "Price the partnership against the credit economics",
+        body: "A model partnership that looks good on announcement day can be unprofitable per generation. I would work the commercial terms with Finance from the cost per call upward, so the credit pricing your users see and the rate card you pay the provider are set in the same conversation. I have done the margin side of usage-based products at Encoding.com and Livepeer.",
+      },
+      {
+        title: "The joint launch is the deal, not the paperwork",
+        body: "Providers sign with the platform that makes them look good to their own market. I would build the co-marketing offer into the agreement at the start: launch slot, campaign, named placement in the product. At Brightcove the partner programmes that worked were the ones where the partner got something they could not buy elsewhere.",
+      },
+    ],
+    longWayRound: true,
+    coverLetter: "/letters/elevenlabs-model-partnerships.pdf",
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
