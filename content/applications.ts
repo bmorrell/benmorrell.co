@@ -1958,6 +1958,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/canonical-alliances-channels.pdf",
     longWayRound: true,
   },
+  {
+    slug: "oyster-ai-gtm",
+    company: "Oyster",
+    role: "Senior AI Solutions Engineer, GTM",
+    headline: "I ran the five functions this role rebuilds. Now I build the systems.",
+    sub: "18+ years across sales, partnerships, solutions engineering, customer success and revenue operations in B2B SaaS. Since 2024, production AI: a remote MCP server, agents against real enterprise data, orchestration written rather than configured.",
+    why: [
+      {
+        title: "I have been the person the workflow was slow for",
+        body: "Your posting asks for a strong understanding of B2B GTM operations across Sales, Marketing, Customer Success, Partnerships and Revenue Operations. I owned four of those for a region. At Brightcove I ran Asia across sales, partnerships, solutions engineering and customer success in 15+ countries, grew it from ~$4M to ~$11.5M ARR at 120%+ of quota, and led a 20+ person team over Singapore, Mumbai and Delhi. When a GTM leader tells me what is costing them a day a week, I usually recognise it.",
+      },
+      {
+        title: "Operating models, not isolated tasks",
+        body: "The distinction your posting draws is the one that matters, and Livepeer is where I did it. They had early traction and no repeatable commercial motion. I led global go to market and left an operating system behind: forecasting, a deal and contracting cadence, documentation, team training, with the CRM as the single frame of reference. That work signed Tier-1 partnerships including Aptos at $500K. The redesign was the deliverable. The automation came after.",
+      },
+      {
+        title: "The build half is current, and it is in production",
+        body: "I authored a remote MCP server exposing a GitHub-backed shared context layer to both Claude chat and Claude Code: eight tools, Bearer auth, SHA-checked atomic writes with conflict detection. I built AI agents that fan out across Companies House, the FCA and news sources through Playwright to produce vendor due-diligence reports. And an AI go-to-market platform on the Claude API with Stripe billing, 2FA and an open-source CRM integration. MCP is in your bonus list. I have written one, not only used one.",
+      },
+    ],
+    differentiator:
+      "Most people answering this advert are engineers who have picked up commercial context. I came the other way, which is rarer and I think more useful for a seat whose job is to change how five revenue functions work. I can sit in a CRO's staff meeting, in an engineering review, and in the editor. On the honest limit: my hands-on AI work runs to about two years. The automation, systems-integration and revenue-operations half behind it runs eighteen, and I would rather you probed that than took my word for it. I also write the orchestration in code instead of configuring it in a no-code tool, which I would argue is the more useful end of comparable orchestration technologies.",
+    metrics: [
+      { value: "~$4M → ~$11.5M", label: "ARR led at Brightcove Asia" },
+      { value: "1200%", label: "pipeline growth, APAC from a written thesis" },
+      { value: "8 tools", label: "in a production remote MCP server" },
+    ],
+    coverLetter: "/letters/oyster-ai-gtm.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
