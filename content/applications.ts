@@ -1988,6 +1988,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/oyster-ai-gtm.pdf",
     longWayRound: true,
   },
+  {
+    slug: "napster-partnerships",
+    company: "Napster",
+    role: "Partner Account Manager, Europe",
+    headline: "Signing a partner is the start. I have spent most of my career on what comes after.",
+    sub: "18+ years onboarding, enabling and growing ISV, reseller, SI and agency partners across EMEA and APAC, and I build AI agents and MCP servers on the Claude API. Fully remote from Valencia, on CET.",
+    why: [
+      {
+        title: "Signed, then grown for years",
+        body: "For BinaryTech, a 15-person medical IoT company with no European presence, I sourced Roche Diagnostics cold and negotiated an exclusive global reseller agreement with an $80B business. Most of the work came after the signature. That channel went on to produce multiple NHS sales and a ten-year contract with OLVG, a very large hospital group in Amsterdam.",
+      },
+      {
+        title: "Onboarding and enablement at programme scale",
+        body: "At Brightcove I recruited 15+ ISV and agency partners across Asia Pacific and ran regional execution of the global partner programme: onboarding, enablement, joint business plans and partner reviews. The channel reached 35% of regional pipeline whilst I led the region from ~$4M to ~$11.5M ARR.",
+      },
+      {
+        title: "Structure and follow-through",
+        body: "At Livepeer I built the commercial operating system (forecasting, contracting cadence, CRM, team training) so every commitment had an owner and pipeline reviews started from the same numbers. Before that I was a solutions engineer, so supporting a partner-led pursuit alongside Sales and SE is familiar ground.",
+      },
+    ],
+    differentiator:
+      "Napster sells AI agents through partners. I build AI agents myself (agents, a production MCP server and my own GTM automation on the Claude API), so I can enable a partner on an agent product as someone who has built one. The gap, said plainly: I have not run a Microsoft co-sell motion. The Microsoft ecosystem is new to me, however activating and growing partners across EMEA/APAC is not.",
+    metrics: [
+      { value: "10-year", label: "OLVG contract grown out of the Roche channel" },
+      { value: "35%", label: "of regional pipeline via partners at Brightcove" },
+      { value: "~$4M → ~$11.5M", label: "ARR, Brightcove Asia, as VP" },
+    ],
+    coverLetter: "/letters/napster-partnerships.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
