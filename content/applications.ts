@@ -2047,6 +2047,36 @@ export const applications: Application[] = [
     ],
     coverLetter: "/letters/fastned-partnerships.pdf",
   },
+  {
+    slug: "fli-ai-industry",
+    company: "Future of Life Institute",
+    role: "AI Industry Associate/Lead",
+    headline: "I build AI tools for real businesses. The ones that earn their place are the controllable kind.",
+    sub: "18+ years inside technology companies and start-ups, an engineer by training, and I build AI agents and a production MCP server on the Claude API myself. Fully remote from Valencia, on CET, and happy to be in Brussels when it matters.",
+    why: [
+      {
+        title: "Human-directed AI, built and shipped",
+        body: "My production MCP server gives a model eight scoped tools, checks every write against the last known version and logs every session, so the person using it can see everything it has done. Alongside it I run a research agent that works from public sources and an AI go-to-market platform on the Claude API. Most of the AI value I saw across 20+ founders at Ziplake looked like this: one job, done reliably, for someone who stays in charge.",
+      },
+      {
+        title: "Reliability as a hard requirement",
+        body: "I started in live broadcast. Sole design and delivery of Nine Network's digital presence for the Beijing 2008 Olympics, the broadcaster's first all-IP Games, plus on-call cover for 24/7 live output where 100% is the minimum. Later I sold into Roche Diagnostics and the NHS, regulated buyers who need reliability proven before anything goes live.",
+      },
+      {
+        title: "Coalitions between very unequal organisations",
+        body: "For BinaryTech, a 15-person startup, I closed an exclusive global reseller agreement with Roche, an $80B business, after it stalled inside their Legal and Compliance review. I kept Roche's commercial sponsors visible, and moved our own founder to concede on policy whilst holding firm on exclusivity and the minimum commitment. That channel went on to produce NHS sales and a ten-year contract with OLVG in Amsterdam.",
+      },
+    ],
+    differentiator:
+      "Most voices arguing for controllable AI come from policy or research. I come from industry, and I build these tools myself, so I can say what a human-directed AI tool looks like when a business actually ships and pays for it. The gap, said plainly: I have not worked in policy. The audience is new to me, however landing a technical argument with senior people who are not engineers, across 15+ countries, is not.",
+    metrics: [
+      { value: "8", label: "scoped tools in my production MCP server, every write checked and logged" },
+      { value: "$80B", label: "Roche, signed for a 15-person startup" },
+      { value: "~$4M → ~$11.5M", label: "ARR, Brightcove Asia, as VP" },
+    ],
+    coverLetter: "/letters/fli-ai-industry.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
