@@ -2018,6 +2018,35 @@ export const applications: Application[] = [
     coverLetter: "/letters/napster-partnerships.pdf",
     longWayRound: true,
   },
+  {
+    slug: "fastned-partnerships",
+    company: "Fastned",
+    role: "Head of Partnerships",
+    headline: "80% of Fastned's revenue comes through partners. Building and growing that kind of channel is what I do.",
+    sub: "18+ years of partner channels built from nothing and then grown, plus the cadences, process and CRM underneath. Based in Valencia, a direct flight from Schiphol, and happy to be in Amsterdam on a regular cadence.",
+    why: [
+      {
+        title: "Long, tailored deals with much bigger partners",
+        body: "For BinaryTech, a 15-person medical IoT company, I sourced Roche Diagnostics cold and closed an exclusive global reseller agreement with an $80B business, seven figures on a three-year minimum. It stalled inside their Legal and Compliance review, and I kept the commercial sponsors visible whilst holding firm on exclusivity and the minimum commitment. That channel went on to produce NHS sales and a ten-year contract with OLVG in Amsterdam.",
+      },
+      {
+        title: "A hands-on leader who stays in the deals",
+        body: "At Brightcove I led Asia from ~$4M to ~$11.5M ARR at 120%+ of quota, with a 20+ person team across Singapore, Mumbai and New Delhi. Partners drove 35% of regional pipeline, and I led the team that closed the company's $12M largest global deal.",
+      },
+      {
+        title: "The way of working, built and run",
+        body: "At Livepeer I put the commercial operating system in place: forecasting, contracting cadence, documentation, the CRM as the single source of truth and team training. Weekly cadences and progress metrics alongside revenue are where I start with any team.",
+      },
+    ],
+    differentiator:
+      "I am an engineer by training (MEng) who moved into partnerships, and I still build my own go-to-market tooling with AI agents. So the operational half of this role, partner data, invoicing visibility and how Fastned shows up in navigation systems, is a conversation I can have with Product as well as with the partner. The gap, said plainly: e-mobility is new to me, however long-cycle partnerships with organisations far bigger than my own are not.",
+    metrics: [
+      { value: "$80B", label: "Roche, signed for a 15-person company" },
+      { value: "35%", label: "of regional pipeline via partners at Brightcove" },
+      { value: "~$4M → ~$11.5M", label: "ARR, Brightcove Asia, as VP" },
+    ],
+    coverLetter: "/letters/fastned-partnerships.pdf",
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
