@@ -2077,6 +2077,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/fli-ai-industry.pdf",
     longWayRound: true,
   },
+  {
+    slug: "amber-gtm",
+    company: "Amber",
+    role: "Director, Go-To-Market (B2B SaaS)",
+    headline: "I have opened a market from nothing three times, and run the first deals myself.",
+    sub: "18+ years selling enterprise software, most of it owning a number. Asia-Pacific for Encoding.com, the UK for an edtech, Europe for a 15-person medical IoT company. Fully remote from Valencia, on UK time +1h, and happy to travel for the deals and the events calendar.",
+    why: [
+      {
+        title: "Into universities and institutional buyers",
+        body: "For Campus Plus, an Australian edtech, I led UK market entry. I worked the sector conferences, ran a 20-part webinar series as the acquisition channel and signed a UK university. Through the Roche channel I sold into the NHS and won a ten-year contract with OLVG, a large hospital group in Amsterdam.",
+      },
+      {
+        title: "Long cycles with committee buyers",
+        body: "For BinaryTech, a 15-person startup, I sourced Roche Diagnostics cold and closed an exclusive global reseller agreement, seven figures on a three-year minimum. It stalled in Legal and Compliance at an $80B business. I kept Roche's commercial sponsors visible and held firm on exclusivity and the minimum commitment, and it ended up being signed.",
+      },
+      {
+        title: "The team you are about to hire",
+        body: "At Brightcove I built and led 20+ people across sales, solutions engineering and customer success, plus channel and sales ops, and grew Asia from ~$4M to ~$11.5M ARR at 120%+ of quota. 15+ ISV/agency partners drove 35% of regional pipeline, which is the integration-partner half of your brief.",
+      },
+    ],
+    differentiator:
+      "I formally opened Brightcove's India office and led teams in Mumbai and New Delhi, so working between a Pune HQ and UK/EU buyers is familiar. I am also an engineer by training and build my own go-to-market tooling with AI agents, pricing and CRM sync included. The gap, said plainly: accommodation and estates teams are a new buyer to me, however institutional procurement and building the playbook from the first deal are not.",
+    metrics: [
+      { value: "~$4M → ~$11.5M", label: "ARR, Brightcove Asia, as VP" },
+      { value: "$80B", label: "Roche, signed for a 15-person startup" },
+      { value: "20+", label: "people across sales, SE and CS, Singapore/Mumbai/New Delhi" },
+    ],
+    coverLetter: "/letters/amber-gtm.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
