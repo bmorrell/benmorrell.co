@@ -2128,7 +2128,7 @@ export const applications: Application[] = [
       },
     ],
     differentiator:
-      "I am an engineer by training and I build things myself. A recent example is a quoting tool for a UK glass supplier whose owner was working out every estimate by hand. It saved the owner about 10 hours a week, quotes going out tripled and revenue doubled within two months. The gaps, said plainly: most of my deals have been larger than yours, and I have not sold vertical SaaS with a payments component. The deal size is new to me, however running the pipeline, coaching the person carrying it and leading the late-stage calls are not.",
+      "I am an engineer by training and I build things myself. A recent example is a quoting tool for a UK glass supplier whose owner was working out every estimate by hand. It saved the owner about 10 hours a week, quotes going out tripled and revenue doubled within two months. On deal size, the volume deals at Brightcove ran at $10-25K a year, which is your range. The gap, said plainly: I have not sold vertical SaaS with a payments component. Payments revenue is new to me, however running the pipeline, coaching the person carrying it and leading the late-stage calls are not.",
     metrics: [
       { value: "4 → 20+", label: "people, Brightcove Asia, joined at under $300K ARR" },
       { value: "80%", label: "of AE promotions home-grown, under 10% turnover" },
