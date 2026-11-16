@@ -2107,6 +2107,36 @@ export const applications: Application[] = [
     coverLetter: "/letters/amber-gtm.pdf",
     longWayRound: true,
   },
+  {
+    slug: "vertical-saas-cco",
+    company: "a vertical SaaS company (via Fractional Jobs)",
+    role: "Fractional Chief Commercial Officer",
+    headline: "I join small commercial teams and help them close more of what they already have.",
+    sub: "Seven years as a fractional commercial lead inside small B2B software companies, after five years at Brightcove in Asia. Based in Valencia, a UK citizen, and happy to travel for trade shows and customer visits in Europe.",
+    why: [
+      {
+        title: "Sales process, built from scratch",
+        body: "At Livepeer, a video infrastructure company with early traction and no repeatable sales motion, I led sales and GTM. I built the commercial operating system myself, covering forecasting, deal/contracting cadence, documentation and team training, with the CRM as the frame of reference.",
+      },
+      {
+        title: "Coaching a small team as it grows",
+        body: "Brightcove's Asia office was 4 people and under $300K ARR when I joined. As VP I led a team of 20+ and we grew the region from ~$4M to ~$11.5M ARR at 120%+ of quota. 80% of our AE promotions were home-grown and turnover stayed under 10% a year.",
+      },
+      {
+        title: "Buyers who are slow to change",
+        body: "For BinaryTech, an IoT company of only 15 people, I opened Europe across hospital labs and brewers. That led to a reseller agreement with Roche Diagnostics, NHS sales, a ten-year contract with OLVG in Amsterdam, and Asahi and Heineken UK on the beverage side.",
+      },
+    ],
+    differentiator:
+      "I am an engineer by training and I build things myself. A recent example is a quoting tool for a UK glass supplier whose owner was working out every estimate by hand. It saved the owner about 10 hours a week, quotes going out tripled and revenue doubled within two months. The gaps, said plainly: most of my deals have been larger than yours, and I have not sold vertical SaaS with a payments component. The deal size is new to me, however running the pipeline, coaching the person carrying it and leading the late-stage calls are not.",
+    metrics: [
+      { value: "4 → 20+", label: "people, Brightcove Asia, joined at under $300K ARR" },
+      { value: "80%", label: "of AE promotions home-grown, under 10% turnover" },
+      { value: "~$4M → ~$11.5M", label: "ARR, Brightcove Asia, as VP" },
+    ],
+    coverLetter: "/letters/vertical-saas-cco.pdf",
+    longWayRound: true,
+  },
 ];
 
 export function getApplication(slug: string): Application | undefined {
