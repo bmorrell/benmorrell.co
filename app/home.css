@@ -110,3 +110,6 @@
 .bm .bm-section--tight{padding-top:64px}
 .bm h2.bm-label{font-weight:400}
 .bm-hero__portrait img{object-fit:cover;object-position:50% 20%}
+.bm-display--hero{text-wrap:wrap}
+.bm-display--hero span{white-space:nowrap}
+.bm-display--hero span:first-child{display:block}

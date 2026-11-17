@@ -149,7 +149,11 @@ export default function HomePage() {
 
       <section className="bm-wrap bm-hero">
         <div className="bm-hero__text">
-          <h1 className="bm-display">{LINE}</h1>
+          {/* Same words as LINE. Split so it always breaks after the comma, and
+              "12+ years." never splits. */}
+          <h1 className="bm-display bm-display--hero">
+            <span>Engineer at heart,</span> commercial for <span>12+ years.</span>
+          </h1>
           <p className="bm-lead">{SUB}</p>
           <p className="bm-small bm-muted">
             Partnerships, market entry and AI for Seed to Series B tech. Fully remote.
