@@ -17,8 +17,9 @@ const inter = Inter({
   display: "swap",
 });
 
-// Site-wide default. Deliberately track-neutral: the root is a router, and each
-// track page (commercial, building, mission) sets its own title and share card.
+// Site-wide default for every route except the root. The root page (app/page.tsx)
+// sets its own title, share card and `index: true`; everything else inherits the
+// noindex below. Each track page sets its own title and share card.
 export const metadata: Metadata = {
   title: "Ben Morrell",
   description:

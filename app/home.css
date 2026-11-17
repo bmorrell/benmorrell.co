@@ -1,0 +1,112 @@
+/* Root page styles. Implements the Ben Morrell design system (Claude Design):
+   one sans family set large and light, paper ground, warm grey cards, ink pills,
+   petrol-teal used only for the status dot, hover and focus.
+   Scoped to .bm so the track pages and per-role pages keep the old look. */
+.bm{
+  --bm-paper:#f7f4ef;--bm-surface:#fff;--bm-card:#ece8e1;--bm-stone:#d9d4cb;
+  --bm-ink:#1c1b19;--bm-slate:#605c55;--bm-rule:#d8d2c7;
+  --bm-accent:#0f6e56;--bm-accent-strong:#0b5642;--bm-accent-soft:#e7f1ec;
+  --bm-r-card:12px;--bm-r-pill:999px;
+  --bm-font:var(--font-hanken),"Helvetica Neue",Arial,sans-serif;
+  --bm-gutter:40px;--bm-section:128px;--bm-pad:40px;
+}
+@media (max-width:760px){.bm{--bm-gutter:16px;--bm-section:64px;--bm-pad:24px}}
+.bm{min-height:100vh;font-family:var(--bm-font);font-size:16px;line-height:1.6;color:var(--bm-ink);background:var(--bm-paper);-webkit-font-smoothing:antialiased;margin:0}
+.bm *{box-sizing:border-box}
+.bm p,.bm h1,.bm h2,.bm h3,.bm ol,.bm ul{margin:0;padding:0}
+.bm a{color:inherit}
+.bm :focus-visible{outline:2px solid var(--bm-accent);outline-offset:3px}
+.bm-wrap{max-width:1240px;margin:0 auto;padding-left:var(--bm-gutter);padding-right:var(--bm-gutter)}
+.bm-section{padding-top:var(--bm-section)}
+.bm .bm-label{font-size:15px;line-height:1.4;color:var(--bm-slate);margin-bottom:24px}
+
+/* type */
+.bm-display{font-size:clamp(36px,4.6vw,56px);line-height:1.06;font-weight:300;letter-spacing:-.025em;text-wrap:balance}
+.bm-statement{font-size:clamp(26px,3.3vw,40px);line-height:1.2;font-weight:300;letter-spacing:-.02em;max-width:26em}
+.bm-statement p+p{margin-top:.7em;color:var(--bm-slate)}
+.bm-title{font-size:24px;line-height:1.25;font-weight:400;letter-spacing:-.01em}
+.bm-lead{font-size:20px;line-height:1.45}
+.bm-small{font-size:14px;line-height:1.5}
+.bm-muted{color:var(--bm-slate)}
+
+/* status pill */
+.bm-pill{display:inline-flex;align-items:center;gap:8px;height:30px;padding:0 12px 0 10px;border-radius:var(--bm-r-pill);background:var(--bm-surface);border:1px solid var(--bm-rule);font-size:13px;line-height:1;color:var(--bm-ink);white-space:nowrap}
+.bm-pill::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--bm-accent);box-shadow:0 0 0 4px var(--bm-accent-soft)}
+
+/* buttons */
+.bm-btn{display:inline-flex;align-items:center;justify-content:center;height:48px;padding:0 26px;border-radius:var(--bm-r-pill);background:var(--bm-ink);color:var(--bm-paper);font:inherit;font-size:15px;font-weight:500;text-decoration:none;border:1px solid var(--bm-ink);cursor:pointer;transition:background .15s,color .15s}
+.bm .bm-btn{color:var(--bm-paper)}
+.bm-btn:hover{background:var(--bm-accent-strong);border-color:var(--bm-accent-strong)}
+.bm-btn--quiet,.bm .bm-btn--quiet{background:transparent;color:var(--bm-ink)}
+.bm-btn--quiet:hover,.bm .bm-btn--quiet:hover{background:var(--bm-ink);border-color:var(--bm-ink);color:var(--bm-paper)}
+.bm-link{color:var(--bm-ink);text-decoration:underline;text-decoration-color:var(--bm-rule);text-underline-offset:4px}
+.bm-link:hover{color:var(--bm-accent-strong);text-decoration-color:currentColor}
+
+/* header */
+.bm-header{display:flex;align-items:center;gap:16px;padding-top:24px;padding-bottom:24px}
+.bm-header__name{font-size:17px;font-weight:500;letter-spacing:-.01em;text-decoration:none}
+.bm-header__link{margin-left:auto;font-size:15px}
+
+/* hero */
+.bm-hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:12px;align-items:stretch}
+.bm-hero__text{display:flex;flex-direction:column;justify-content:center;gap:24px;padding:64px 48px 64px 0;min-height:560px}
+.bm-hero__text .bm-lead{max-width:30em}
+.bm-hero__cta{margin-top:8px}
+.bm-hero__portrait{border-radius:var(--bm-r-card);background:var(--bm-stone);overflow:hidden;position:relative;min-height:320px}
+.bm-hero__portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 20%;display:block}
+@media (max-width:760px){.bm-hero{grid-template-columns:1fr}.bm-hero__text{padding:32px 0 24px;min-height:0}.bm-hero__portrait{aspect-ratio:4/5}}
+
+/* name row */
+.bm-names{border-top:1px solid var(--bm-rule);border-bottom:1px solid var(--bm-rule);padding:28px 0;display:flex;flex-wrap:wrap;gap:12px 40px;justify-content:space-between;list-style:none;font-size:20px;font-weight:500;letter-spacing:-.01em;color:var(--bm-slate)}
+
+/* cards */
+.bm-card{background:var(--bm-card);border-radius:var(--bm-r-card);padding:var(--bm-pad);display:flex;flex-direction:column;gap:16px;min-width:0}
+.bm-card__eyebrow{font-size:15px;color:var(--bm-accent)}
+.bm-card p{max-width:34em}
+.bm-ways{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.bm-ways .bm-card--lead{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:16px 48px;align-items:start;padding-top:56px;padding-bottom:56px}
+.bm-card--lead .bm-title{font-size:clamp(26px,3.3vw,40px);font-weight:300;letter-spacing:-.02em;line-height:1.15}
+.bm-card--lead p{font-size:18px}
+@media (max-width:900px){.bm-ways{grid-template-columns:1fr}.bm-ways .bm-card--lead{grid-template-columns:1fr;padding-top:var(--bm-pad);padding-bottom:var(--bm-pad)}}
+
+/* work card */
+.bm-work{display:grid;gap:12px}
+.bm-workcard{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);border-radius:var(--bm-r-card);overflow:hidden;background:var(--bm-card);min-height:380px}
+.bm-workcard__text{padding:var(--bm-pad);display:flex;flex-direction:column;justify-content:flex-end;gap:16px}
+.bm-workcard__text p{max-width:32em}
+.bm-workcard__figure{background:var(--bm-stone);display:flex;align-items:center;justify-content:center;padding:24px;font-size:clamp(72px,11vw,150px);line-height:1;font-weight:300;letter-spacing:-.04em;font-variant-numeric:tabular-nums}
+@media (max-width:760px){.bm-workcard{grid-template-columns:1fr;min-height:0}.bm-workcard__figure{order:-1;padding:40px 24px}}
+
+/* steps */
+.bm-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;list-style:none;counter-reset:step}
+.bm-steps li{counter-increment:step;border-top:1px solid var(--bm-ink);padding-top:20px;display:flex;flex-direction:column;gap:20px}
+.bm-steps li::before{content:counter(step);font-size:40px;font-weight:300;line-height:1;letter-spacing:-.02em}
+@media (max-width:900px){.bm-steps{grid-template-columns:1fr 1fr;gap:32px 12px}}
+@media (max-width:520px){.bm-steps{grid-template-columns:1fr}}
+
+/* accordion */
+.bm-faq{border-top:1px solid var(--bm-rule)}
+.bm-faq details{border-bottom:1px solid var(--bm-rule)}
+.bm-faq summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:24px 0;font-size:clamp(19px,2vw,24px);line-height:1.25;letter-spacing:-.01em}
+.bm-faq summary::-webkit-details-marker{display:none}
+.bm-faq summary::after{content:"";flex:none;width:14px;height:14px;background:linear-gradient(var(--bm-ink),var(--bm-ink)) 50% 50%/100% 1.5px no-repeat,linear-gradient(var(--bm-ink),var(--bm-ink)) 50% 50%/1.5px 100% no-repeat;transition:transform .2s}
+.bm-faq details[open] summary::after{transform:rotate(45deg)}
+.bm-faq details p{padding:0 48px 28px 0;max-width:40em;color:var(--bm-slate);font-size:17px}
+@media (prefers-reduced-motion:reduce){.bm-faq summary::after,.bm-btn{transition:none}}
+
+/* about, contact, footer */
+.bm-about{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:24px 48px}
+.bm-about p{font-size:20px;line-height:1.5;max-width:32em}
+@media (max-width:760px){.bm-about{grid-template-columns:minmax(0,1fr)}}
+.bm-about>div{min-width:0}
+.bm-contact{background:var(--bm-card);border-radius:var(--bm-r-card);padding:clamp(40px,8vw,96px) var(--bm-pad);display:flex;flex-direction:column;align-items:flex-start;gap:32px}
+.bm-contact .bm-display{max-width:12em}
+.bm-footer{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:32px;padding-bottom:40px;font-size:14px;color:var(--bm-slate)}
+
+/* the long way round (short) */
+.bm-boat{margin-top:48px;border-top:1px solid var(--bm-rule);padding-top:32px}
+.bm-about .bm-boat__line{font-size:clamp(22px,2.6vw,30px);line-height:1.25;font-weight:300;letter-spacing:-.015em;max-width:26em}
+.bm-about .bm-boat__sub{margin-top:16px;font-size:17px;color:var(--bm-slate)}
+.bm .bm-section--tight{padding-top:64px}
+.bm h2.bm-label{font-weight:400}
+.bm-hero__portrait img{object-fit:cover;object-position:50% 20%}

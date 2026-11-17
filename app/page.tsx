@@ -1,155 +1,293 @@
 import type { Metadata } from "next";
+import { Hanken_Grotesk } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import headshot from "@/public/headshot.png";
+import "./home.css";
 
-// The root is a router, not a pitch. It says who Ben is in neutral terms and lets
-// the visitor choose their track: commercial (A), building (B), or mission (C).
+// The root is the shopfront: one page, one pitch. Copy is approved and lives in
+// the vault (Profile/benmorrell.co - root rebuild (proposal).md) - change it
+// there first. Look: the Ben Morrell design system (styles in home.css, scoped
+// to .bm). The track pages (/commercial, /building, /mission) stay live but are
+// not linked from here, and per-role pages are untouched.
 
+const hanken = Hanken_Grotesk({
+  subsets: ["latin"],
+  weight: ["300", "400", "500"],
+  variable: "--font-hanken",
+  display: "swap",
+});
+
+const LINE = "Engineer at heart, commercial for 12+ years.";
+const SUB =
+  "I'm embedded in your team and get the tech/commercial work done that nobody else has the cycles for.";
+const TITLE = `Ben Morrell - ${LINE}`;
+
+// One string to change when it stops being true. Matches the LinkedIn headline.
+const STATUS = "Capacity now";
+
+// The only indexable route on the site. Everything else inherits noindex from
+// the root layout or sets it itself.
 export const metadata: Metadata = {
-  title: "Ben Morrell",
-  description: "Technology and commercial leader. Engineer by training, and still building.",
-  robots: { index: false, follow: false },
+  title: TITLE,
+  description: SUB,
+  alternates: { canonical: "https://benmorrell.co" },
+  robots: { index: true, follow: true },
+  openGraph: {
+    title: TITLE,
+    description: SUB,
+    url: "https://benmorrell.co",
+    siteName: "Ben Morrell",
+    type: "website",
+    images: [{ url: "/og-root.png", width: 1200, height: 630, alt: `Ben Morrell. ${LINE}` }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: SUB,
+    images: ["/og-root.png"],
+  },
 };
 
-const DOORS = [
+const NAMES = [
+  "Brightcove",
+  "Roche Diagnostics",
+  "NHS",
+  "BBC",
+  "Encoding.com",
+  "Asahi",
+  "Nine Network",
+];
+
+// Partnerships leads and gets the wide card.
+const WAYS = [
   {
-    href: "/commercial",
-    eyebrow: "Commercial",
-    title: "Partnerships, GTM and revenue leadership",
-    body: "Building partner ecosystems and scaling revenue in B2B SaaS and infrastructure. Brightcove, Livepeer, Encoding.com, Roche.",
-    cta: "See the commercial track",
+    title: "Partnerships",
+    body: "If you need partnerships built but aren't ready for a full-time Head of Partnerships, I fill that role. Anything from building out the programme from scratch to finding the partners worth targeting, pitching them, getting the agreement signed and then managing them until they produce pipeline.",
   },
   {
-    href: "/mission",
-    eyebrow: "Mission",
-    title: "Technology for mission-driven organisations",
-    body: "Turning technology into things that actually run in the field, for organisations whose work is measured in outcomes rather than ARR.",
-    cta: "See the mission track",
+    title: "Commercial operations and market entry",
+    body: "Opening a new region, or getting the sales process into a state where you can forecast from it.",
   },
   {
-    href: "/building",
-    eyebrow: "Building",
-    title: "What I build, hands on",
-    body: "LLM agents on the Claude API, a remote MCP context server, automation and monitoring dashboards. Shipped and running, not slideware.",
-    cta: "See what I build",
+    title: "Getting things done with AI",
+    body: "I'll work out with you where AI is worth it, then get on and do it as part of your team. To be clear - I'm not an agency and I don't outsource it.",
+  },
+  {
+    title: "Moving off legacy systems/processes",
+    body: "An old system or a manual process that everyone knows needs replacing, and you want to move to a better state.",
   },
 ];
 
-const PROOF = [
-  { value: "18+ yrs", label: "engineering, delivery and commercial leadership" },
-  { value: "15+", label: "countries lived in, worked in and delivered across" },
-  { value: "Shipping now", label: "LLM agents, MCP servers and GTM automation, in production" },
+// Each card carries one figure, and the figure is always in the story itself.
+const WORK = [
+  {
+    figure: "$80B",
+    title: "A 15-person startup into an $80B channel",
+    body: "BinaryTech is an Australian IoT company of about 15 people. I went after the big diagnostics companies as partners, and Roche came first. It grew into an exclusive global agreement for Roche to resell through its own channel - 7 figures over a minimum of 3 years. It took working with 30+ people inside Roche.",
+  },
+  {
+    figure: "1200%",
+    title: "Opening Asia Pacific from a written plan",
+    body: "Encoding.com is a video SaaS company in San Francisco with no presence in Asia Pacific. I wrote the market entry thesis, ran the first executive visit across four countries and picked up the BD from there. Qualified pipeline grew 1200% and they signed the largest system integrator in the region.",
+  },
+  {
+    figure: "35%",
+    title: "A partner channel that produced a third of the pipeline",
+    body: "As VP at Brightcove I led Asia from ~$4M to ~$11.5M ARR with a team of 20+. Part of how we got there was a partner channel - 15+ ISV and agency partners across the region. That channel drove 35% of the regional pipeline.",
+  },
+  {
+    figure: "2x",
+    title: "A quoting tool for a glass supplier",
+    body: "A UK supplier of glass balustrades was quoting by hand. I built a guided quote tool for their website in about a week. It saved the owner about 10 hours a week, the number of quotes going out tripled, and the whole business's revenue doubled within two months.",
+  },
 ];
 
-export default function StartPage() {
+const STEPS = [
+  "A call. You tell me what is stuck and I'll say whether I think I can help (and if I can't, I'll say that too).",
+  "A short note back from me with what I'd take on first, roughly how many days a week it needs, and the day rate.",
+  "A first month. We pick one or two things together and I get them done. I think a month is enough for both of us to know whether it is working.",
+  "After that it rolls month to month, and the days go up or down as you need.",
+];
+
+// No figure in the cost answer. Ever.
+const QUESTIONS = [
+  {
+    q: "Why part-time and embedded, vs a full-time hire?",
+    a: "Most companies between Seed and Series B have plenty of tech/commercial work and nobody with the cycles for it. A full-time senior hire is usually too early, or too slow. I can get going in a week or two.",
+  },
+  {
+    q: "Are you an agency?",
+    a: "No. I own the piece of work and I deliver it myself, as part of your team. I don't outsource it.",
+  },
+  {
+    q: "Do you only work with tech companies?",
+    a: "Mostly, but not only. I also work with owners and MDs of businesses that are not tech companies, and the PE folks who sit alongside them. The work is the same shape.",
+  },
+  {
+    q: "Where are you, and how do you invoice?",
+    a: "Fully remote, from Valencia in Spain. I invoice as myself - by the hour, week, month or for a defined role, whichever is most straightforward for you.",
+  },
+  {
+    q: "What does it cost?",
+    a: "It depends on what you need and how many days a week. After a first call I send a short note with what I'd take on first and the day rate.",
+  },
+];
+
+export default function HomePage() {
   return (
-    <main className="min-h-screen">
-      <header className="border-b border-rule">
-        <div className="mx-auto flex max-w-content items-center justify-between px-6 py-4">
-          <Link href="/" className="font-serif text-lg font-semibold tracking-tight">
-            Ben Morrell
-          </Link>
-          <a href="#contact" className="text-sm text-slate hover:text-ink">
-            Get in touch
-          </a>
-        </div>
+    <main className={`bm ${hanken.variable}`}>
+      <header className="bm-wrap bm-header">
+        <Link href="/" className="bm-header__name">
+          Ben Morrell
+        </Link>
+        <span className="bm-pill">{STATUS}</span>
+        <a href="#contact" className="bm-link bm-header__link">
+          Get in touch
+        </a>
       </header>
 
-      {/* Hero: neutral. Says who he is, claims no single lane. */}
-      <section className="mx-auto max-w-content px-6 pb-16 pt-16 sm:pt-24">
-        <div className="grid items-center gap-12 lg:grid-cols-[1.5fr_1fr]">
-          <div>
-            <p className="eyebrow text-accent">Ben Morrell</p>
-            <h1 className="mt-4 font-serif text-4xl font-semibold leading-[1.08] tracking-tight sm:text-5xl">
-              <span className="block text-balance">Engineer who learned to sell.</span>
-              <span className="block text-balance">Commercial leader who never stopped building.</span>
-            </h1>
-            <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate">
-              The first half of my career was building infrastructure that could not fail. The
-              second has been selling and leading it. The technical half never went away.
-            </p>
-            <p className="mt-4 text-sm text-slate">
-              Open to new roles. Fully remote, from Valencia, Spain.
-            </p>
+      <section className="bm-wrap bm-hero">
+        <div className="bm-hero__text">
+          <h1 className="bm-display">{LINE}</h1>
+          <p className="bm-lead">{SUB}</p>
+          <p className="bm-small bm-muted">
+            Partnerships, market entry and AI for Seed to Series B tech. Fully remote.
+          </p>
+          <div className="bm-hero__cta">
+            <a className="bm-btn" href="mailto:hello@benmorrell.co">
+              {"Let's chat"}
+            </a>
           </div>
+        </div>
+        {/* Stand-in: the current headshot. A new full-height portrait replaces it. */}
+        <div className="bm-hero__portrait">
+          <Image
+            src={headshot}
+            alt="Ben Morrell"
+            fill
+            priority
+            sizes="(min-width: 760px) 40vw, 100vw"
+            placeholder="blur"
+          />
+        </div>
+      </section>
 
-          <div className="mx-auto w-full max-w-xs">
-            <div className="relative aspect-square overflow-hidden rounded-full border border-rule">
-              <Image
-                src={headshot}
-                alt="Ben Morrell"
-                fill
-                priority
-                sizes="(min-width: 1024px) 320px, 60vw"
-                className="object-cover"
-                placeholder="blur"
-              />
+      <section className="bm-wrap bm-section bm-section--tight">
+        <p className="bm-label">{"Some of the companies I've worked for and with"}</p>
+        <ul className="bm-names">
+          {NAMES.map((n) => (
+            <li key={n}>{n}</li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="bm-wrap bm-section">
+        <div className="bm-statement">
+          <p>
+            I mostly work with founders, COOs and CROs at tech companies, usually somewhere
+            between Seed and Series B.
+          </p>
+          <p>
+            There is something commercial that needs a technical head on it (or the other way
+            round), nobody in the team has the time, and a full-time hire is either too early or
+            too slow.
+          </p>
+        </div>
+      </section>
+
+      <section className="bm-wrap bm-section">
+        <h2 className="bm-label">The usual places to start</h2>
+        <div className="bm-ways">
+          {WAYS.map((w, i) => (
+            <article key={w.title} className={i === 0 ? "bm-card bm-card--lead" : "bm-card"}>
+              <h3 className="bm-title">{w.title}</h3>
+              <p>{w.body}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="bm-wrap bm-section">
+        <h2 className="bm-label">Some of the work</h2>
+        <div className="bm-work">
+          {WORK.map((w) => (
+            <article key={w.title} className="bm-workcard">
+              <div className="bm-workcard__text">
+                <h3 className="bm-title">{w.title}</h3>
+                <p className="bm-muted">{w.body}</p>
+              </div>
+              <div className="bm-workcard__figure" aria-hidden="true">
+                {w.figure}
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="bm-wrap bm-section">
+        <h2 className="bm-label">How it starts</h2>
+        <ol className="bm-steps">
+          {STEPS.map((s) => (
+            <li key={s}>
+              <p>{s}</p>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      <section className="bm-wrap bm-section">
+        <h2 className="bm-label">Questions</h2>
+        <div className="bm-faq">
+          {QUESTIONS.map((item, i) => (
+            <details key={item.q} open={i === 0}>
+              <summary>{item.q}</summary>
+              <p>{item.a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      <section className="bm-wrap bm-section">
+        <div className="bm-about">
+          <h2 className="bm-label">About</h2>
+          <div>
+            <p>
+              {"I've lived in APAC for 13 years, EMEA for 7 and consider myself culturally fluent. I love the diversity of the world and I'm comfortable working across timezones/countries/languages/cultures. I am a Dad of two, care deeply about the future and love getting stuck into difficult problems."}
+            </p>
+            {/* The long way round, short. Same words as components/LongWayRound.tsx. */}
+            <div className="bm-boat">
+              <p className="bm-label">The long way round</p>
+              <p className="bm-boat__line">
+                In 2019 we sold everything and sailed 6,000 miles with two kids under four. None
+                of us knew how to sail.
+              </p>
+              <p className="bm-boat__sub">
+                Four and a half years, nine countries, one 40-foot boat called The Long Summer. I
+                ran the business the whole way.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Neutral proof. Deliberately not ARR-led, so it reads the same to both audiences. */}
-      <section className="border-y border-rule bg-surface">
-        <div className="mx-auto grid max-w-content grid-cols-1 gap-8 px-6 py-10 sm:grid-cols-3">
-          {PROOF.map((m) => (
-            <div key={m.label}>
-              <p className="font-serif text-3xl font-semibold text-accent">{m.value}</p>
-              <p className="mt-1 text-sm leading-snug text-slate">{m.label}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* The router itself. */}
-      <section className="mx-auto max-w-content px-6 py-20">
-        <p className="eyebrow text-accent">Depending on why you are here</p>
-        <h2 className="mt-3 max-w-2xl font-serif text-3xl font-semibold leading-tight tracking-tight">
-          Three ways into the same career.
-        </h2>
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {DOORS.map((d) => (
-            <Link
-              key={d.href}
-              href={d.href}
-              className="group flex flex-col rounded-2xl border border-rule bg-surface p-6 transition-colors hover:border-accent"
-            >
-              <p className="eyebrow text-accent">{d.eyebrow}</p>
-              <h3 className="mt-3 font-serif text-xl font-semibold leading-snug">{d.title}</h3>
-              <p className="mt-3 flex-1 text-sm leading-relaxed text-slate">{d.body}</p>
-              <span className="mt-5 text-sm font-medium text-ink group-hover:text-accent">
-                {d.cta} &rarr;
-              </span>
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      <section id="contact" className="border-t border-rule bg-surface">
-        <div className="mx-auto flex max-w-content flex-col gap-6 px-6 py-16 sm:flex-row sm:items-center sm:justify-between">
-          <div>
-            <h2 className="font-serif text-3xl font-semibold tracking-tight">Let&apos;s talk.</h2>
-            <p className="mt-2 text-sm text-slate">
-              Easiest by email, or find me on LinkedIn.
-            </p>
-          </div>
-          <a
-            href="mailto:hello@benmorrell.co"
-            className="inline-flex flex-none items-center justify-center rounded-md bg-accent px-6 py-3 text-sm font-medium text-paper transition-colors hover:bg-accent-strong"
-          >
+      <section className="bm-wrap bm-section">
+        <div className="bm-contact" id="contact">
+          <h2 className="bm-display">{"It all starts with a message, let's chat."}</h2>
+          <a className="bm-btn" href="mailto:hello@benmorrell.co">
             hello@benmorrell.co
           </a>
-        </div>
-      </section>
-
-      <footer className="border-t border-rule">
-        <div className="mx-auto flex max-w-content items-center justify-between px-6 py-8 text-sm text-slate">
-          <span className="font-serif text-base text-ink">Ben Morrell</span>
-          <a href="https://linkedin.com/in/morrellbc" className="hover:text-ink">
+          <a className="bm-link bm-small" href="https://linkedin.com/in/morrellbc">
             linkedin.com/in/morrellbc
           </a>
         </div>
+      </section>
+
+      <footer className="bm-wrap bm-footer">
+        <span>Ben Morrell</span>
+        <a className="bm-link" href="https://linkedin.com/in/morrellbc">
+          linkedin.com/in/morrellbc
+        </a>
       </footer>
     </main>
   );
