@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Hanken_Grotesk } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import headshot from "@/public/headshot.png";
+import headshot from "@/public/headshot-cutout.png";
 import "./home.css";
 
 // The root is the shopfront: one page, one pitch. Copy is approved and lives in
@@ -164,7 +164,7 @@ export default function HomePage() {
             </a>
           </div>
         </div>
-        {/* Stand-in: the current headshot. A new full-height portrait replaces it. */}
+        {/* The headshot cut off its old teal ground, so it sits on the panel's stone. */}
         <div className="bm-hero__portrait">
           <Image
             src={headshot}
@@ -172,7 +172,6 @@ export default function HomePage() {
             fill
             priority
             sizes="(min-width: 760px) 40vw, 100vw"
-            placeholder="blur"
           />
         </div>
       </section>
