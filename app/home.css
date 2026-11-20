@@ -112,4 +112,4 @@
 .bm-hero__portrait img{object-fit:cover;object-position:50% 12%}
 .bm-display--hero{text-wrap:wrap}
 .bm-display--hero span{white-space:nowrap}
-.bm-display--hero span:first-child{display:block}
+.bm-display--hero span:first-child{display:block;white-space:normal}

@@ -18,9 +18,9 @@ const hanken = Hanken_Grotesk({
   display: "swap",
 });
 
-const LINE = "Engineer at heart, commercial for 12+ years.";
+const LINE = "Technical and commercial, in one person, in your team.";
 const SUB =
-  "I'm embedded in your team and get the tech/commercial work done that nobody else has the cycles for.";
+  "I get the work done that nobody else has the cycles for. Engineer at heart, commercial for 12+ years.";
 const TITLE = `Ben Morrell - ${LINE}`;
 
 // One string to change when it stops being true. Matches the LinkedIn headline.
@@ -149,10 +149,10 @@ export default function HomePage() {
 
       <section className="bm-wrap bm-hero">
         <div className="bm-hero__text">
-          {/* Same words as LINE. Split so it always breaks after the comma, and
-              "12+ years." never splits. */}
+          {/* Same words as LINE. Split so it always breaks after the first comma, and
+              "in your team." never splits. */}
           <h1 className="bm-display bm-display--hero">
-            <span>Engineer at heart,</span> commercial for <span>12+ years.</span>
+            <span>Technical and commercial,</span> in one person, <span>in your team.</span>
           </h1>
           <p className="bm-lead">{SUB}</p>
           <p className="bm-small bm-muted">
