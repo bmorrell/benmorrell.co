@@ -5,7 +5,7 @@ export type Application = {
   slug: string; // {company}-{short-role}, e.g. "vercel-partnerships"
   company: string;
   role: string;
-  headline: string; // Fraunces hero line, tailored to this role
+  headline: string; // hero line, tailored to this role
   sub: string; // 1-2 supporting lines
   why: { title: string; body: string }[]; // 3-4 tailored proof points
   differentiator: string; // the one rare thing for this company

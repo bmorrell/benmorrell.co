@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Hanken_Grotesk } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import headshot from "@/public/headshot-root.jpg";
@@ -8,15 +7,7 @@ import "./home.css";
 // The root is the shopfront: one page, one pitch. Copy is approved and lives in
 // the vault (Profile/benmorrell.co - root rebuild (proposal).md) - change it
 // there first. Look: the Ben Morrell design system (styles in home.css, scoped
-// to .bm). The track pages (/commercial, /building, /mission) stay live but are
-// not linked from here, and per-role pages are untouched.
-
-const hanken = Hanken_Grotesk({
-  subsets: ["latin"],
-  weight: ["300", "400", "500"],
-  variable: "--font-hanken",
-  display: "swap",
-});
+// to .bm). The font is loaded once in the root layout.
 
 const LINE = "Technical and commercial, in one person, in your team.";
 const SUB =
@@ -136,7 +127,7 @@ const QUESTIONS = [
 
 export default function HomePage() {
   return (
-    <main className={`bm ${hanken.variable}`}>
+    <main className="bm">
       <header className="bm-wrap bm-header">
         <Link href="/" className="bm-header__name">
           Ben Morrell

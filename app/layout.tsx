@@ -1,29 +1,25 @@
 import type { Metadata } from "next";
-import { Fraunces, Inter } from "next/font/google";
+import { Hanken_Grotesk } from "next/font/google";
 import CookieConsent from "./components/CookieConsent";
 import "./globals.css";
 
-const fraunces = Fraunces({
+const hanken = Hanken_Grotesk({
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-fraunces",
+  weight: ["300", "400", "500"],
+  variable: "--font-hanken",
   display: "swap",
 });
 
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-inter",
-  display: "swap",
-});
+// Site-wide default. The root page (app/page.tsx) sets its own title, share card
+// and `index: true`; every per-role page sets its own title and inherits the
+// noindex below.
+const LINE = "Technical and commercial, in one person, in your team.";
+const SUB =
+  "I get the work done that nobody else has the cycles for. Engineer at heart, commercial for 12+ years.";
 
-// Site-wide default for every route except the root. The root page (app/page.tsx)
-// sets its own title, share card and `index: true`; everything else inherits the
-// noindex below. Each track page sets its own title and share card.
 export const metadata: Metadata = {
   title: "Ben Morrell",
-  description:
-    "Technology and commercial leader. 18+ years across engineering, delivery and commercial leadership in 15+ countries, and I still build production software myself.",
+  description: SUB,
   metadataBase: new URL("https://benmorrell.co"),
   robots: {
     index: false,
@@ -40,34 +36,22 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Ben Morrell",
-    description:
-      "Technology and commercial leader. Engineer by training, and still building.",
+    description: SUB,
     url: "https://benmorrell.co",
     siteName: "Ben Morrell",
     type: "website",
-    // 1.91:1 share card in the brand system. The old square headshot unfurled as a
-    // thumbnail rather than a card, which is what LinkedIn Featured renders.
-    images: [
-      {
-        url: "/og.png",
-        width: 1200,
-        height: 630,
-        alt: "Ben Morrell — engineer who learned to sell, commercial leader who never stopped building.",
-      },
-    ],
+    images: [{ url: "/og-root.png", width: 1200, height: 630, alt: `Ben Morrell. ${LINE}` }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Ben Morrell",
-    description:
-      "Technology and commercial leader. Engineer by training, and still building.",
-    images: ["/og.png"],
+    description: SUB,
+    images: ["/og-root.png"],
   },
 };
 
 // Microsoft Clarity, loaded only after cookie consent (CookieConsent). Lives in
-// the root layout so it covers every route:
-// the router, all three track pages, and every per-application page.
+// the root layout so it covers every route.
 const CLARITY_PROJECT_ID = "xpwrgf749e";
 
 export default function RootLayout({
@@ -76,7 +60,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${fraunces.variable} ${inter.variable}`}>
+    <html lang="en" className={hanken.variable}>
       <body className="font-sans">
         {children}
         <CookieConsent clarityId={CLARITY_PROJECT_ID} />

@@ -4,7 +4,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { applications, getApplication } from "@/content/applications";
 import LongWayRound from "../components/LongWayRound";
-import headshot from "@/public/headshot.png";
+import headshot from "@/public/headshot-root.jpg";
+import "../home.css";
 
 export function generateStaticParams() {
   return applications.map((a) => ({ slug: a.slug }));
@@ -16,8 +17,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const app = getApplication(params.slug);
   if (!app) return {};
   // Each application page carries its own share card. Without this the page
-  // inherits the root layout's partnerships positioning, which is wrong for
-  // any role that is not a partnerships role.
+  // inherits the root layout's fractional pitch, which is wrong for a role.
   const title = `Ben Morrell for ${app.company}`;
   const description = app.headline;
   return {
@@ -30,9 +30,9 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
       url: `https://benmorrell.co/${app.slug}`,
       siteName: "Ben Morrell",
       type: "website",
-      images: ["/headshot.png"],
+      images: ["/headshot-root.jpg"],
     },
-    twitter: { card: "summary", title, description, images: ["/headshot.png"] },
+    twitter: { card: "summary", title, description, images: ["/headshot-root.jpg"] },
   };
 }
 
@@ -45,132 +45,100 @@ export default function ApplicationPage({ params }: { params: { slug: string } }
   )}`;
 
   return (
-    <main className="min-h-screen">
-      <header className="border-b border-rule">
-        <div className="mx-auto flex max-w-content items-center justify-between px-6 py-4">
-          <Link href="/" className="font-serif text-lg font-semibold tracking-tight">
-            Ben Morrell
-          </Link>
-          <a href="/" className="text-sm text-slate hover:text-ink">
-            benmorrell.co
-          </a>
-        </div>
+    <main className="bm">
+      <header className="bm-wrap bm-header">
+        <Link href="/" className="bm-header__name">
+          Ben Morrell
+        </Link>
+        <Link href="/" className="bm-link bm-header__link">
+          benmorrell.co
+        </Link>
       </header>
 
-      {/* Hero */}
-      <section className="mx-auto max-w-content px-6 pb-16 pt-16 sm:pt-20">
-        <div className="grid items-center gap-12 lg:grid-cols-[1.5fr_1fr]">
-          <div>
-            <p className="eyebrow text-accent">
-              For {app.company} · {app.role}
-            </p>
-            <h1 className="mt-4 font-serif text-4xl font-semibold leading-[1.08] tracking-tight sm:text-5xl">
-              {app.headline}
-            </h1>
-            <p className="mt-5 max-w-2xl text-lg leading-relaxed text-slate">{app.sub}</p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <a
-                href={mailto}
-                className="rounded-md bg-accent px-5 py-3 text-sm font-medium text-paper transition-colors hover:bg-accent-strong"
-              >
-                Get in touch
+      <section className="bm-wrap bm-hero">
+        <div className="bm-hero__text">
+          <p className="bm-label">
+            For {app.company} · {app.role}
+          </p>
+          <h1 className="bm-display">{app.headline}</h1>
+          <p className="bm-lead">{app.sub}</p>
+          <div className="bm-hero__cta bm-hero__cta--row">
+            <a className="bm-btn" href={mailto}>
+              Get in touch
+            </a>
+            {app.coverLetter ? (
+              <a className="bm-btn bm-btn--quiet" href={app.coverLetter}>
+                Download Cover Letter
               </a>
-              {app.coverLetter ? (
-                <a
-                  href={app.coverLetter}
-                  className="rounded-md border border-ink px-5 py-3 text-sm font-medium text-ink transition-colors hover:bg-ink hover:text-paper"
-                >
-                  Download Cover Letter
-                </a>
-              ) : null}
-            </div>
+            ) : null}
           </div>
-
-          {/* Headshot */}
-          <div className="mx-auto w-full max-w-xs">
-            <div className="relative aspect-square overflow-hidden rounded-full border border-rule">
-              <Image
-                src={headshot}
-                alt="Ben Morrell"
-                fill
-                priority
-                sizes="(min-width: 1024px) 320px, 60vw"
-                className="object-cover"
-                placeholder="blur"
-              />
-            </div>
-          </div>
+        </div>
+        <div className="bm-hero__portrait">
+          <Image
+            src={headshot}
+            alt="Ben Morrell"
+            fill
+            priority
+            sizes="(min-width: 760px) 40vw, 100vw"
+          />
         </div>
       </section>
 
       {/* Proof strip */}
-      <section className="border-y border-rule bg-surface">
-        <div className="mx-auto grid max-w-content grid-cols-1 gap-8 px-6 py-10 sm:grid-cols-3">
+      <section className="bm-wrap bm-section bm-section--tight">
+        <div className="bm-figs">
           {app.metrics.map((m) => (
-            <div key={m.label}>
-              <p className="font-serif text-3xl font-semibold text-accent">{m.value}</p>
-              <p className="mt-1 text-sm leading-snug text-slate">{m.label}</p>
+            <div key={m.label} className="bm-fig">
+              <p className="bm-fig__value">{m.value}</p>
+              <p className="bm-muted">{m.label}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* Why me for this role */}
-      <section className="mx-auto max-w-content px-6 py-20">
-        <p className="eyebrow text-accent">Why me for this role</p>
-        <div className="mt-8 grid gap-6 md:grid-cols-3">
+      <section className="bm-wrap bm-section">
+        <h2 className="bm-label">Why me for this role</h2>
+        <div className="bm-ways bm-ways--3">
           {app.why.map((w) => (
-            <div key={w.title} className="rounded-2xl border border-rule bg-surface p-6">
-              <h2 className="font-serif text-lg font-semibold">{w.title}</h2>
-              <p className="mt-2 text-sm leading-relaxed text-slate">{w.body}</p>
-            </div>
+            <article key={w.title} className="bm-card">
+              <h3 className="bm-title">{w.title}</h3>
+              <p className="bm-muted">{w.body}</p>
+            </article>
           ))}
         </div>
       </section>
 
       {/* Field deployments, only on pages that define them */}
       {app.deployments?.length ? (
-        <section className="border-t border-rule bg-surface">
-          <div className="mx-auto max-w-content px-6 py-20">
-            <p className="eyebrow text-accent">Where the work happened</p>
-            <h2 className="mt-3 font-serif text-3xl font-semibold leading-tight tracking-tight">
-              Deployments
-            </h2>
-            <ul className="mt-10 divide-y divide-rule border-t border-rule">
-              {app.deployments.map((d) => (
-                <li
-                  key={d.place}
-                  className="grid gap-2 py-6 sm:grid-cols-[minmax(0,14rem)_1fr] sm:gap-8"
-                >
-                  <div>
-                    <h3 className="font-serif text-xl font-semibold leading-snug">{d.place}</h3>
-                    <p className="mt-1 text-xs uppercase tracking-[0.12em] text-accent">{d.meta}</p>
-                  </div>
-                  <p className="text-sm leading-relaxed text-slate">{d.detail}</p>
-                </li>
-              ))}
-            </ul>
-          </div>
+        <section className="bm-wrap bm-section">
+          <h2 className="bm-label">Where the work happened</h2>
+          <ul className="bm-rows">
+            {app.deployments.map((d) => (
+              <li key={d.place}>
+                <div>
+                  <h3 className="bm-title">{d.place}</h3>
+                  <p className="bm-small bm-muted">{d.meta}</p>
+                </div>
+                <p className="bm-muted">{d.detail}</p>
+              </li>
+            ))}
+          </ul>
         </section>
       ) : null}
 
       {/* How I would approach the role, only on pages that define it */}
       {app.approach?.length ? (
-        <section className="border-t border-rule">
-          <div className="mx-auto max-w-content px-6 py-20">
-            <p className="eyebrow text-accent">How I would approach it</p>
-            <div className="mt-8 grid gap-10 md:grid-cols-3">
-              {app.approach.map((a, i) => (
-                <div key={a.title}>
-                  <p className="font-serif text-3xl font-semibold leading-none text-accent/30">
-                    {String(i + 1).padStart(2, "0")}
-                  </p>
-                  <h3 className="mt-3 font-serif text-lg font-semibold leading-snug">{a.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-slate">{a.body}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+        <section className="bm-wrap bm-section">
+          <h2 className="bm-label">How I would approach it</h2>
+          <ol className="bm-steps bm-steps--3">
+            {app.approach.map((a) => (
+              <li key={a.title}>
+                <h3 className="bm-title">{a.title}</h3>
+                <p className="bm-muted">{a.body}</p>
+              </li>
+            ))}
+          </ol>
         </section>
       ) : null}
 
@@ -178,40 +146,29 @@ export default function ApplicationPage({ params }: { params: { slug: string } }
       {app.longWayRound ? <LongWayRound /> : null}
 
       {/* Differentiator */}
-      <section className="border-t border-rule">
-        <div className="mx-auto max-w-content px-6 py-20">
-          <div className="max-w-3xl border-l-2 border-accent pl-6">
-            <p className="eyebrow text-accent">The difference</p>
-            <p className="mt-3 font-serif text-2xl font-semibold leading-snug tracking-tight text-ink">
-              {app.differentiator}
-            </p>
-          </div>
+      <section className="bm-wrap bm-section">
+        <h2 className="bm-label">The difference</h2>
+        <div className="bm-statement bm-statement--long">
+          <p>{app.differentiator}</p>
         </div>
       </section>
 
       {/* Contact */}
-      <section id="contact" className="border-t border-rule bg-surface">
-        <div className="mx-auto flex max-w-content flex-col gap-6 px-6 py-16 sm:flex-row sm:items-center sm:justify-between">
-          <div>
-            <h2 className="font-serif text-3xl font-semibold tracking-tight">Let&apos;s talk.</h2>
-            <p className="mt-2 text-sm text-slate">This page was made for {app.company}.</p>
-          </div>
-          <a
-            href={mailto}
-            className="inline-flex flex-none items-center justify-center rounded-md bg-accent px-6 py-3 text-sm font-medium text-paper transition-colors hover:bg-accent-strong"
-          >
+      <section className="bm-wrap bm-section">
+        <div className="bm-contact" id="contact">
+          <h2 className="bm-display">Let&apos;s talk.</h2>
+          <p className="bm-muted">This page was made for {app.company}.</p>
+          <a className="bm-btn" href={mailto}>
             hello@benmorrell.co
           </a>
         </div>
       </section>
 
-      <footer className="border-t border-rule">
-        <div className="mx-auto flex max-w-content items-center justify-between px-6 py-8 text-sm text-slate">
-          <Link href="/" className="font-serif text-base text-ink">
-            Ben Morrell
-          </Link>
-          <span>benmorrell.co</span>
-        </div>
+      <footer className="bm-wrap bm-footer">
+        <span>Ben Morrell</span>
+        <Link className="bm-link" href="/">
+          benmorrell.co
+        </Link>
       </footer>
     </main>
   );

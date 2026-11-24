@@ -1,7 +1,7 @@
-/* Root page styles. Implements the Ben Morrell design system (Claude Design):
+/* Site styles (root and per-role pages). Implements the Ben Morrell design system (Claude Design):
    one sans family set large and light, paper ground, warm grey cards, ink pills,
    petrol-teal used only for the status dot, hover and focus.
-   Scoped to .bm so the track pages and per-role pages keep the old look. */
+   Scoped to .bm. */
 .bm{
   --bm-paper:#f7f4ef;--bm-surface:#fff;--bm-card:#ece8e1;--bm-stone:#d9d4cb;
   --bm-ink:#1c1b19;--bm-slate:#605c55;--bm-rule:#d8d2c7;
@@ -113,3 +113,26 @@
 .bm-display--hero{text-wrap:wrap}
 .bm-display--hero span{white-space:nowrap}
 .bm-display--hero span:first-child{display:block;white-space:normal}
+
+/* per-role pages */
+.bm-hero__cta--row{display:flex;flex-wrap:wrap;gap:12px}
+.bm-hero__text .bm-label{margin-bottom:0}
+.bm-figs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.bm-fig{background:var(--bm-card);border-radius:var(--bm-r-card);padding:var(--bm-pad);display:flex;flex-direction:column;gap:12px;min-width:0}
+.bm-fig__value{font-size:clamp(30px,3.4vw,44px);line-height:1.05;font-weight:300;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.bm-ways--3 .bm-card{justify-content:flex-start}
+.bm-steps--3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.bm-steps--3 li{gap:12px}
+.bm-steps--3 li::before{margin-bottom:8px}
+.bm-rows{list-style:none;border-top:1px solid var(--bm-rule)}
+.bm-rows li{display:grid;grid-template-columns:minmax(0,16rem) minmax(0,1fr);gap:8px 48px;padding:28px 0;border-bottom:1px solid var(--bm-rule)}
+.bm-rows li p{max-width:40em}
+.bm-prose{display:flex;flex-direction:column;gap:20px;margin-top:32px;max-width:40em;color:var(--bm-slate);font-size:17px}
+.bm-about .bm-prose p,.bm-about .bm-lessons li{font-size:17px;line-height:1.6}
+.bm-lessons{list-style:none;display:flex;flex-direction:column;border-top:1px solid var(--bm-rule);max-width:40em}
+.bm-lessons li{padding:16px 0;border-bottom:1px solid var(--bm-rule)}
+.bm-boat--full{margin-top:0;border-top:0;padding-top:0}
+.bm-boat--full .bm-label{margin:40px 0 16px}
+@media (max-width:900px){.bm-figs,.bm-steps--3{grid-template-columns:1fr}}
+@media (max-width:760px){.bm-rows li{grid-template-columns:1fr}}
+.bm-statement--long{font-size:clamp(21px,2.3vw,28px);line-height:1.35;letter-spacing:-.015em;max-width:34em}
