@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Hanken_Grotesk } from "next/font/google";
-import CookieConsent from "./components/CookieConsent";
 import "./globals.css";
 
 const hanken = Hanken_Grotesk({
@@ -50,10 +49,6 @@ export const metadata: Metadata = {
   },
 };
 
-// Microsoft Clarity, loaded only after cookie consent (CookieConsent). Lives in
-// the root layout so it covers every route.
-const CLARITY_PROJECT_ID = "xpwrgf749e";
-
 export default function RootLayout({
   children,
 }: {
@@ -63,7 +58,6 @@ export default function RootLayout({
     <html lang="en" className={hanken.variable}>
       <body className="font-sans">
         {children}
-        <CookieConsent clarityId={CLARITY_PROJECT_ID} />
       </body>
     </html>
   );
